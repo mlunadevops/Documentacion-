@@ -56,4 +56,7 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
  Para acceder a la configuracion usar el siguiente enlace:
 
- https://console.cloud.google.com/auth/clients?project=linen-surface-507011-b0
+ [Valores de OUATH ](https://console.cloud.google.com/auth/clients?project=linen-surface-507011-b0)
+
+
+ ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
