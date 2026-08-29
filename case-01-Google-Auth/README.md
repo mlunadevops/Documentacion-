@@ -10,16 +10,24 @@ Hay 2 maneras de autenticacion:
 
 La diferencia principal radica en qué tipo de recursos controlan y cómo interactúan con tus datos personales:
 
-- **Clave de API** (Google AI Studio / la de tu imagen): Es una contraseña simple y directa pensada para consumir servicios públicos o modelos de inteligencia artificial (como Gemini). No sabe quién eres tú como persona ni accede a tus archivos personales; solo autoriza al software a usar una herramienta o cuota de IA dentro de un proyecto.
+**Clave de API** (Google AI Studio / la de tu imagen): Es una contraseña simple y directa pensada para consumir servicios públicos o modelos de inteligencia artificial (como Gemini). No sabe quién eres tú como persona ni accede a tus archivos personales; solo autoriza al software a usar una herramienta o cuota de IA dentro de un proyecto.
 
 - **OAuth 2.0** (el que estamos configurando para n8n): Es un protocolo de autorización segura diseñado para acceder a datos privados de usuario (tus documentos de Google Drive, tus correos de Gmail, tus hojas de cálculo, etc.). Requiere que tú (el usuario) inicies sesión explícitamente y des el consentimiento mediante una ventana de autorización (*Sign in with Google*) para que la aplicación externa pueda actuar en tu nombre.
 
 **En resumen:** la Clave de API es para consumir servicios generales o de IA, mientras que el OAuth es obligatorio cuando n8n necesita entrar a tus aplicaciones personales de Google.
 
+**Clave de API** 
+
+1. Abre una nueva pestaña en tu navegador y entra a: [aistudio.google.com](https://aistudio.google.com)
+2. Inicia sesión con la misma cuenta de Google que ya estás usando.
+3. En la esquina superior izquierda o en el menú principal, haz clic en el botón que dice **"Get API key"** (Obtener clave de API).
+4. Haz clic en **"Create API key in new project"** (Crear clave de API en un proyecto nuevo).
+5. ¡Listo! Te aparecerá tu llave secreta en pantalla de forma inmediata. Cópiala.
+
 
 [Set up Google Credentials in n8n in 5 minutes (2025)](https://www.youtube.com/watch?v=3Ai1EPznlAc)
 
-## Guía Paso a Paso en 5 Minutos (2025)
+## Guía Paso a Paso en 5 Minutos (2025) UTILIZANDO 
 
 ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
 
