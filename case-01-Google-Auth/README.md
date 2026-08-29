@@ -42,7 +42,7 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
  ![Aoth](images/01CrearclienteOAuth.png)
 
- - Nombre de cliente:
+ - Nombre de cliente y click en CREAR:
 
  ![Aoth](images/01nombreclientes.png)
 
