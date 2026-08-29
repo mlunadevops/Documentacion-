@@ -16,7 +16,7 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 
 **En resumen:** la Clave de API es para consumir servicios generales o de IA, mientras que el OAuth es obligatorio cuando n8n necesita entrar a tus aplicaciones personales de Google.
 
-**Clave de API** 
+**Para crear Clave de API** 
 
 1. Abre una nueva pestaña en tu navegador y entra a: [aistudio.google.com](https://aistudio.google.com)
 2. Inicia sesión con la misma cuenta de Google que ya estás usando.
