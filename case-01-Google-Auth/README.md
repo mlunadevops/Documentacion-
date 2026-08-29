@@ -109,6 +109,10 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 
 6. Dentro de esa ventana de credenciales, busca y haz clic en el botón "Sign in with Google" que ya conocemos:
 
+![n8n](images/02Workflow05.png)
+
+
+
 
 
 
