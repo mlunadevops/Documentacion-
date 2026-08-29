@@ -152,7 +152,7 @@ LISTO YA ESTA CONECTADO:
 
 4. Regresa aquí a n8n, cierra esta ventanita o haz clic en **"Check your credential"**, y vuelve a desplegar la lista de carpetas.
 
-5. Regresa aquí a n8n, cierra esta ventanita o haz clic en **"Check your credential"**, y vuelve a desplegar la lista de carpetas.
+5. Coloca y escoge las carpetas y la accion sobre esta carpeta:
 
 ![n8n](images/03Workflow03.png)
 
