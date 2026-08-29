@@ -124,6 +124,10 @@ Basándonos en el JSON que acabas de enviar, esto es lo que debes verificar y po
 
  7. Siguiente paso:Haz clic en el botón "Save" (Guardar) ubicado arriba a la derecha de esa ventana.  Luego, haz clic en el botón "Sign in with Google" que aparece al centro.  Si te sale la advertencia de que la app no está verificada, dale a Continuar (o Avanzado > Ir a n8n Drive) y acepta los permisos.
 
+![n8n](images/02Workflow06.png)
+
+
+
 
 
 
