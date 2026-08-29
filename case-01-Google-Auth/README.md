@@ -4,6 +4,8 @@ Conocimientos previos:
 
 La consola de Google Cloud (**Google Cloud Console**) es el panel de control web que ofrece Google para administrar y gestionar todos los servicios de su plataforma de computación en la nube, conocida como **Google Cloud Platform (GCP)**.
 
+Fuente (Set up Google Credentials in n8n in 5 minutes (2025)): https://www.youtube.com/watch?v=3Ai1EPznlAc
+
 ## Guía Paso a Paso en 5 Minutos (2025)
 
 ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
