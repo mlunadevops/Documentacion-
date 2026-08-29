@@ -80,6 +80,7 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 - En la sección de usuarios de prueba, agrega las cuentas de correo electrónico (la tuya) que tendrán permiso para realizar las pruebas y acceder a Google Drive, Docs y Gmail.
 - Haz clic en **Guardar y continuar**.
 
+![Aoth](images/01Usuarios1.png)
 
  Para acceder a la configuracion usar el siguiente enlace:
 
