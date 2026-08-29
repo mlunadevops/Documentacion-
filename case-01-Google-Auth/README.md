@@ -1,4 +1,4 @@
-# Cómo Configurar Credenciales de Google en n8n
+# Cómo Configurar Credenciales de Google en n8n utilizando **OAuth 2.0**
 
 Conocimientos previos:
 
@@ -27,7 +27,7 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 
 [Set up Google Credentials in n8n in 5 minutes (2025)](https://www.youtube.com/watch?v=3Ai1EPznlAc)
 
-## Guía Paso a Paso en 5 Minutos (2025) UTILIZANDO 
+## Guía Paso a Paso en 5 Minutos (2025) utilizando **OAuth 2.0**
 
 ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
 
