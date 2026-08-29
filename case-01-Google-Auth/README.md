@@ -9,9 +9,19 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
 
 #### Crear un Proyecto en Google Cloud
-- Entra a Google Cloud e inicia el proceso para crear un nuevo proyecto.
+1. - Entra a Google Cloud e inicia el proceso para crear un nuevo proyecto.
 
     https://console.cloud.google.com/
 
 - Asígnale un nombre (por ejemplo, `demo`) y haz clic en **Crear**.
 - Asegúrate de seleccionar el proyecto recién creado en la esquina superior de la consola.
+
+2. - Configurar la Pantalla de Consentimiento OAuth
+
+En el menú de navegación de GCP, ve a APIs y servicios > Pantalla de consentimiento OAuth.
+
+Haz clic en Crear para otorgarle a n8n el permiso de acceder a tu entorno de Google.
+
+Completa los campos básicos solicitados, como el nombre del producto (ej. demo) y un correo electrónico de asistencia.
+
+Haz clic en Guardar y continuar (puedes omitir los Scopes avanzados por ahora haciendo clic nuevamente en continuar).
