@@ -18,6 +18,10 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
 2. - Configurar la Pantalla de Consentimiento OAuth
 
+- Seleccionar el proyecto:
+
+  ![Aoth](images/0Seleccionarproyecto.png)
+
 En el menú de navegación de GCP, ve a APIs y servicios > Pantalla de consentimiento OAuth.
 
 Haz clic en Crear para otorgarle a n8n el permiso de acceder a tu entorno de Google.
