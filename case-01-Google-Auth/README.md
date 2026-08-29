@@ -93,9 +93,24 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 
  ![n8n](images/02Workflow01.png)
 
-3. Se abrirá un buscador a la derecha. Escribe **Google Drive**.
-4. Selecciona **Google Drive** de la lista de aplicaciones que aparecen.
-5. Una vez que se agregue el nodo, haz doble clic en él o ábrelo, selecciona una acción (por ejemplo, *Upload a file* o *Get a file*), y ahí es donde te pedirá tus credenciales con el botón de **"Sign in with Google"** que ya dejamos preparado.
+2. Se abrirá un buscador a la derecha. Escribe **Google Drive**.
+
+![n8n](images/02Workflow02.png)
+
+3. Selecciona **Google Drive** de la lista de aplicaciones que aparecen.
+
+4. Una vez que se agregue el nodo, haz doble clic en él o ábrelo, selecciona una acción (por ejemplo, *Upload a file* o *Get a file*), y ahí es donde te pedirá tus credenciales con el botón de **"Sign in with Google"** que ya dejamos preparado.
+
+![n8n](images/02Workflow03.png)
+
+5. Fíjate en la esquina superior derecha de ese panel de configuración: verás un ícono de un lápiz (o editar) al lado del desplegable de la credencial, o bien puedes hacer clic en el nombre de la credencial "Google Drive account" para abrir los detalles de la misma.
+
+![n8n](images/02Workflow04.png)
+
+6. Dentro de esa ventana de credenciales, busca y haz clic en el botón "Sign in with Google" que ya conocemos:
+
+
+
 
 
  
