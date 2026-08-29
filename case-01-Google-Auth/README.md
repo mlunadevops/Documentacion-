@@ -28,7 +28,7 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
 - En la barra de busqueda escoger (APIs y servicios habilitados):
 
- ![Aoth](images/ 01Seleccionarpantalladeconsentimiento.png)
+ ![Aoth](images/01Seleccionarpantalladeconsentimiento.png)
 
 
 
