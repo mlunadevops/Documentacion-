@@ -1,6 +1,6 @@
 # Configurar Credenciales de Google en n8n utilizando **OAuth 2.0**
 
-Conocimientos previos:
+Conocimientos previos: [Set up Google Credentials in n8n in 5 minutes (2025)](https://www.youtube.com/watch?v=3Ai1EPznlAc)
 
 La consola de Google Cloud (**Google Cloud Console**) es el panel de control web que ofrece Google para administrar y gestionar todos los servicios de su plataforma de computación en la nube, conocida como **Google Cloud Platform (GCP)**.
 
