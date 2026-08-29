@@ -11,7 +11,7 @@ Hay 2 maneras de autenticacion:
 La diferencia principal radica en qué tipo de recursos controlan y cómo interactúan con tus datos personales:
 
 - **Clave de API** (Google AI Studio / la de tu imagen): Es una contraseña simple y directa pensada para consumir servicios públicos o modelos de inteligencia artificial (como Gemini). No sabe quién eres tú como persona ni accede a tus archivos personales; solo autoriza al software a usar una herramienta o cuota de IA dentro de un proyecto.
-- 
+
 - **OAuth 2.0** (el que estamos configurando para n8n): Es un protocolo de autorización segura diseñado para acceder a datos privados de usuario (tus documentos de Google Drive, tus correos de Gmail, tus hojas de cálculo, etc.). Requiere que tú (el usuario) inicies sesión explícitamente y des el consentimiento mediante una ventana de autorización (*Sign in with Google*) para que la aplicación externa pueda actuar en tu nombre.
 
 **En resumen:** la Clave de API es para consumir servicios generales o de IA, mientras que el OAuth es obligatorio cuando n8n necesita entrar a tus aplicaciones personales de Google.
