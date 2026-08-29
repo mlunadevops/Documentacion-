@@ -46,6 +46,9 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
  ![Aoth](images/01nombreclientes.png)
 
+ - Ya queda creado el OUATH:
+
+ ![Aoth](images/01OAuthcreado.png)
 
 En el menú de navegación de GCP, ve a APIs y servicios > Pantalla de consentimiento OAuth.
 
