@@ -142,12 +142,12 @@ LISTO YA ESTA CONECTADO:
 
 [Habilitar Google Drive API ](https://console.cloud.google.com/apis/library/drive.googleapis.com?project=linen-surface-507011-b0)
 
-2.
+2. Una vez que se abra esa página en Google Cloud, haz clic en el botón azul que dice **"Habilitar"** (*Enable*).
 
 ![n8n](images/03Workflow01.png)
 
-
-
+3. Espera un par de minutos a que Google active el servicio en sus servidores.
+4. Regresa aquí a n8n, cierra esta ventanita o haz clic en **"Check your credential"**, y vuelve a desplegar la lista de carpetas.
 
 
 
