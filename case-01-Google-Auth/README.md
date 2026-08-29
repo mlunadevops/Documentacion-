@@ -136,6 +136,13 @@ LISTO YA ESTA CONECTADO:
 
 ![n8n](images/02Workflow11.png)
 
+ ### 🛠️ Fase 3: Configurar el la Carpeta y la accion:
+
+ 1. Ir al siguiente enlace para poder habilitar:
+
+[Habilitar Google Drive API ](https://console.cloud.google.com/apis/library/drive.googleapis.com?project=linen-surface-507011-b0)
+
+ 3. 
 
 
 
