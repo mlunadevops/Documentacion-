@@ -147,7 +147,10 @@ LISTO YA ESTA CONECTADO:
 ![n8n](images/03Workflow01.png)
 
 3. Espera un par de minutos a que Google active el servicio en sus servidores.
-4. Regresa aquí a n8n, cierra esta ventanita o haz clic en **"Check your credential"**, y vuelve a desplegar la lista de carpetas.
+   
+![n8n](images/03Workflow02.png)
+
+5. Regresa aquí a n8n, cierra esta ventanita o haz clic en **"Check your credential"**, y vuelve a desplegar la lista de carpetas.
 
 
 
