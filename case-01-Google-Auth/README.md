@@ -6,7 +6,7 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
 IMPORTANTE:
 
-Hay 2 maneras de autenticacion:
+Hay 2 maneras de autenticacion **Clave de API**  y **OAuth 2.0**:
 
 La diferencia principal radica en qué tipo de recursos controlan y cómo interactúan con tus datos personales:
 
