@@ -38,7 +38,10 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
    ![Aoth](images/01Seleccionarclientes.png)
 
-01Seleccionarclientes.png
+- Crear clientes:
+
+ ![Aoth](images/01CrearclienteOAuth.png)
+
 
 En el menú de navegación de GCP, ve a APIs y servicios > Pantalla de consentimiento OAuth.
 
