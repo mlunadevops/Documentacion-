@@ -50,5 +50,10 @@ La consola de Google Cloud (**Google Cloud Console**) es el panel de control web
 
  - Ya queda creado el OUATH:
 
+[Set up Google Credentials in n8n in 5 minutes (2025)](https://www.youtube.com/watch?v=3Ai1EPznlAc)
+
  ![Aoth](images/01OAuthcreado.png)
 
+ Para acceder a la configuracion usar el siguiente enlace:
+
+ https://console.cloud.google.com/auth/clients?project=linen-surface-507011-b0
