@@ -126,6 +126,10 @@ Basándonos en el JSON que acabas de enviar, esto es lo que debes verificar y po
 
 ![n8n](images/02Workflow06.png)
 
+![n8n](images/02Workflow07.png)
+
+
+
 
 
 
