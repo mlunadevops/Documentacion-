@@ -111,6 +111,16 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
 
 ![n8n](images/02Workflow05.png)
 
+¡Perfecto! Ya tienes colocados los campos más importantes en tu pantalla (el *Client ID* y la *OAuth Redirect URL* ya están puestos correctamente).  
+
+Basándonos en el JSON que acabas de enviar, esto es lo que debes verificar y poner en cada campo de la imagen:
+
+- **OAuth Redirect URL:**  
+  Debe ser: `http://localhost:5678/rest/oauth2-credential/callback` (ya lo tienes bien puesto en la imagen).  
+- **Client ID:**  
+  Copia y pega: `698172404587-m593sqrk7dubcmcq4cgb7drhb6or56eg.apps.googleusercontent.com` (también lo tienes perfecto en la imagen).  
+- **Client Secret:**  
+  Copia y pega exactamente este valor del JSON: `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` (asegúrate de que esté escrito o pegado correctamente en el campo con los puntos negros).
 
 
 
