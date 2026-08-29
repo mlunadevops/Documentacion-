@@ -87,4 +87,15 @@ La diferencia principal radica en qué tipo de recursos controlan y cómo intera
  [Valores de OUATH ](https://console.cloud.google.com/auth/clients?project=linen-surface-507011-b0)
 
 
- ### 🛠️ Fase 1: Prerrequisitos en Google Cloud Platform (GCP)
+ ### 🛠️ Fase 2: Creacion del Workflow en n8n:
+
+1. Haz clic en el botón con el signo **+** que dice **"Add first step..."** (Añadir primer paso).
+
+ ![n8n](images/02Workflow01.png)
+
+3. Se abrirá un buscador a la derecha. Escribe **Google Drive**.
+4. Selecciona **Google Drive** de la lista de aplicaciones que aparecen.
+5. Una vez que se agregue el nodo, haz doble clic en él o ábrelo, selecciona una acción (por ejemplo, *Upload a file* o *Get a file*), y ahí es donde te pedirá tus credenciales con el botón de **"Sign in with Google"** que ya dejamos preparado.
+
+
+ 
