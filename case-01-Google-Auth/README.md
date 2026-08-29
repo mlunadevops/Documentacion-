@@ -1,4 +1,4 @@
-#Configurar Credenciales de Google en n8n utilizando **OAuth 2.0**
+# Configurar Credenciales de Google en n8n utilizando **OAuth 2.0**
 
 Conocimientos previos:
 
