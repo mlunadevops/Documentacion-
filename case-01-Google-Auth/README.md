@@ -132,6 +132,12 @@ Basándonos en el JSON que acabas de enviar, esto es lo que debes verificar y po
 
 ![n8n](images/02Workflow09.png)
 
+![n8n](images/02Workflow10.png)
+
+LISTO YA ESTA CONECTADO:
+
+![n8n](images/02Workflow11.png)
+
 
 
 
