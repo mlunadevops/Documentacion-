@@ -2,6 +2,8 @@
 
 Este documento detalla el paso a paso para configurar la integración de Protocolo de Contexto de Modelo (MCP) entre Cisco Packet Tracer y Visual Studio Code, incluyendo la configuración del entorno de desarrollo local, archivos de seguridad y despliegue de módulos.
 
+![nfografia](images/0Infografia.jpg)
+
 ## Fase 1: Configuración del Backend y Seguridad
 
 ### 1. Clonación del Repositorio Local
