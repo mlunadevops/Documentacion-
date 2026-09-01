@@ -49,3 +49,8 @@ Si intentas iniciar el sistema sin el token de autenticación configurado, verá
 ![MCP Entorno Virtual](images/17CiscoPTcontinue.png)
 
 Para solucionarlo, crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
+
+```text
+New-Item -ItemType Directory -Force -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp"
+Set-Content -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp\bridge_token" -Value "token123"
+```
