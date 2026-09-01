@@ -97,3 +97,4 @@ python generar_word.py
 ```
 
 
+![Phyton](images/ejecutar.png)
