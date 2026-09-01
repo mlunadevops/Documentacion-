@@ -75,8 +75,6 @@ Haz clic en el botón **Add** para abrir el explorador de archivos de Windows y 
 
 ![MCP Entorno Virtual](images/03CiscoPTConfigscripts.png)
 
-![MCP Entorno Virtual](images/04CiscoPTConfigscripts.png)
-
 ### 7. Verificación e Inicio del Módulo MCP-BUILDER
 
 Una vez cargado correctamente, el módulo aparecerá integrado en la lista bajo el nombre de **MCP-BUILDER** (`com.matsoto.mcpbuilder`).
