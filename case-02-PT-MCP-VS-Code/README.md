@@ -97,11 +97,11 @@ Abre la paleta de comandos de VS Code presionando Ctrl + Shift + P, escribe pref
 
 ![MCP Entorno Virtual](images/10CiscoPTManagextension.png)
 
+### 11. Activación de la Galería mediante Configuración JSON
 
+Asegúrate de que tu archivo de configuración de usuario (`settings.json`) contenga la propiedad booleana que habilita el marketplace de chat para las extensiones MCP:
 
+![MCP Entorno Virtual](images/10CiscoPTManagextension.png)
 
-
-
-
-
+![MCP Entorno Virtual](images/11CiscoPTManagextension.png)
 
