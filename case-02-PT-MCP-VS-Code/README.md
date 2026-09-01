@@ -204,3 +204,6 @@ Abre ese archivo mcp.json y pega el siguiente código de configuración:
 ```
 
 ![MCP Entorno Virtual](images/38Carpetaraizdelproyecto.png) 
+
+
+Haz esto, guarda los cambios con Ctrl + S, envíame una captura de pantalla mostrando el archivo mcp.json creado dentro de .vscode y dime si quedó listo para dar luz verde al siguiente paso
