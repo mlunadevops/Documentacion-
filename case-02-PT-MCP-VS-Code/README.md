@@ -133,3 +133,14 @@ Abre tu proyecto en Visual Studio Code (en este caso, la carpeta donde tienes tu
 Asegúrate de estar en el directorio principal (la raíz).
 
 ![MCP Entorno Virtual](images/3Carpetaraizdelproyecto.png)
+
+Paso 2: Crear la carpeta .vscode (si no existe):
+
+En el explorador de archivos lateral de VS Code, verifica si ya existe una carpeta llamada .vscode.
+
+Si no la ves, haz clic derecho en un espacio vacío de la raíz del proyecto, selecciona Nueva carpeta (New Folder) y nómbrala exactamente así:
+
+
+```text
+.vscode
+```
