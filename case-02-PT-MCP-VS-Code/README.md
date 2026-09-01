@@ -37,3 +37,5 @@ Inicia el servidor basado en Uvicorn para que quede escuchando las peticiones lo
 ```text
 python -m packet_tracer_mcp
 ```
+
+![MCP Entorno Virtual](images/2activacion.png)
