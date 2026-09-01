@@ -144,3 +144,8 @@ Si no la ves, haz clic derecho en un espacio vacío de la raíz del proyecto, se
 ```text
 .vscode
 ```
+
+Paso 2: Crear una carpeta llamada PacketTracerWorkspace dentro de C:\Users\Admin>:
+
+![MCP Entorno Virtual](images/31Carpetaraizdelproyecto.png)
+
