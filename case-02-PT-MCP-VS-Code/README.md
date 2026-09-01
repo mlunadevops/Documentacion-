@@ -186,6 +186,7 @@ mcp.json
 Abre ese archivo mcp.json y pega el siguiente código de configuración:
 
 ```text{
+{
   "mcpServers": {
     "packet-tracer-mcp": {
       "command": "python",
