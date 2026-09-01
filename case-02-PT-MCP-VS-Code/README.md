@@ -71,5 +71,8 @@ Abre Cisco Packet Tracer, dirígete al menú de configuración de scripts de ext
 
 ![MCP Entorno Virtual](images/02CiscoPTConfigscripts.png)
 
+Haz clic en el botón **Add** para abrir el explorador de archivos de Windows y seleccionar el archivo de extensión `.pts`.
+
+
 
 
