@@ -5,7 +5,7 @@
 | Case | Title | Description |
 | :--- | :--- | :--- |
 | **01** | [Claude & n8n AI Agents](./case-01-Google-Auth/) | Agentes Claude . |
-| **02** | [BGP to EIGRP Redistribution](./BGP-to-EIGRP-Redistribution/) | BGP Routes into EIGRP. |
+| **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | BGP Routes into EIGRP. |
 | **03** | [BGP Loopback Interface & OSPF](./case-03-loopback-interfaces/) | Why Loopbacks break your BGP? (And how to fix it) . |
 | **04** | [Route aggregation in BGP](./case04-route-aggregation-in-BGP/) | Route aggregation in BGP. |
 | **05** | [Default Routes](./case05-default-routes-in-BGP/) | Defaul Routes in BGP |
