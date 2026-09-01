@@ -202,3 +202,5 @@ Abre ese archivo mcp.json y pega el siguiente código de configuración:
   }
 }
 ```
+
+![MCP Entorno Virtual](images/38Carpetaraizdelproyecto.png) 
