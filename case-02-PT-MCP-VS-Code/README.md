@@ -149,3 +149,9 @@ Paso 2: Crear una carpeta llamada PacketTracerWorkspace dentro de C:\Users\Admin
 
 ![MCP Entorno Virtual](images/31Carpetaraizdelproyecto.png)
 
+En VS Code, ve al menú superior izquierdo y haz clic en File > Open Folder... (Archivo > Abrir carpeta...).
+
+![MCP Entorno Virtual](images/32Carpetaraizdelproyecto.png)
+
+
+
