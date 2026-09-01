@@ -16,7 +16,7 @@ git clone https://github.com/Mats2208/MCP-Packet-Tracer.git
 
 ### 2. Creación del Entorno Virtual e Instalación de Dependencias:
 
-Entra a la carpeta del proyecto, crea y activa tu entorno virtual de Python, actualiza `pip` e instala el paquete en modo editable:
+Entra a la carpeta del proyecto, crea y activa tu entorno virtual de Python, actualiza `pip` e instala el paquete en modo editable (PowerShell):
 
 ```text
 cd MCP-Packet-Tracer
@@ -32,7 +32,7 @@ pip install -e .
 
 ### 3. Ejecución del Servidor MCP:
 
-Inicia el servidor basado en Uvicorn para que quede escuchando las peticiones locales:
+Inicia el servidor basado en Uvicorn para que quede escuchando las peticiones locales (PowerShell):
 
 ```text
 python -m packet_tracer_mcp
