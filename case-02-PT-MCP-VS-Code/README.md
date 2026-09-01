@@ -29,3 +29,11 @@ pip install -e .
 ![MCP Entorno Virtual](images/2Entornovirtual.png)
 
 ![MCP Entorno Virtual](images/2Pipinstall.png)
+
+### 3. Ejecución del Servidor MCP:
+
+Inicia el servidor basado en Uvicorn para que quede escuchando las peticiones locales:
+
+```text
+python -m packet_tracer_mcp
+```
