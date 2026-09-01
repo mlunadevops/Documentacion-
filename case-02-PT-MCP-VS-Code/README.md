@@ -124,3 +124,12 @@ Asegúrate de que tu archivo de configuración de usuario (`settings.json`) cont
 
 ![MCP Entorno Virtual](images/11CiscoPTManagextension.png)
 
+### 12. Conexion de Visual Studio Code con MCP Packet Tracert:
+
+Paso 1: Ubicar la carpeta raíz de tu proyecto:
+
+Abre tu proyecto en Visual Studio Code (en este caso, la carpeta donde tienes tu entorno o proyecto relacionado con la integración).
+
+Asegúrate de estar en el directorio principal (la raíz).
+
+![MCP Entorno Virtual](images/3Carpetaraizdelproyecto.png)
