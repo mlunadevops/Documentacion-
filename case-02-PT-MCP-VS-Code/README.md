@@ -46,16 +46,22 @@ python -m packet_tracer_mcp
 
 ### 4. Generación y Creación del Token de Seguridad
 
-Si intentas iniciar el sistema sin el token de autenticación configurado, verás una alerta de error en los registros de Packet Tracer.
+Crear la ruta local de configuración y generar el archivo bridge_token necesario para el puente de comunicación entre , crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
 
-![MCP Entorno Virtual](images/17CiscoPTcontinue.png)
-
-Para solucionarlo, crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
 
 ```text
 New-Item -ItemType Directory -Force -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp"
 Set-Content -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp\bridge_token" -Value "token123"
 ```
+
+Una vez generado El Token debe visualizarse de la siguiente manera:
+
+![MCP Entorno Virtual](images/17CiscoPTcontinue.png)
+
+
+
+Para solucionarlo, 
+
 
 Al verificar en el Explorador de archivos de Windows, la estructura de directorios y la carpeta interna se visualizarán correctamente.
 
