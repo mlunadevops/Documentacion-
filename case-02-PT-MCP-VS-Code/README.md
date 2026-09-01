@@ -41,3 +41,11 @@ python -m packet_tracer_mcp
 ![MCP Entorno Virtual](images/2activacion.png)
 
 > **Nota técnica:** El servidor se mantendrá activo por defecto en [http://127.0.0.1:39000](http://127.0.0.1:39000).
+
+### 4. Generación y Creación del Token de Seguridad
+
+Si intentas iniciar el sistema sin el token de autenticación configurado, verás una alerta de error en los registros de Packet Tracer.
+
+
+
+Para solucionarlo, crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
