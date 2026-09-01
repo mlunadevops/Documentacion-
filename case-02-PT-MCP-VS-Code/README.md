@@ -166,3 +166,5 @@ En el panel izquierdo de VS Code, pasa el cursor sobre el nombre PacketTracerWor
 ![MCP Entorno Virtual](images/34Carpetaraizdelproyecto.png)
 
 Nómbrala exactamente con un punto al inicio:
+
+![MCP Entorno Virtual](images/35Carpetaraizdelproyecto.png) 
