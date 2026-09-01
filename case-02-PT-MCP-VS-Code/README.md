@@ -13,3 +13,15 @@ cd ~
 git clone https://github.com/Mats2208/MCP-Packet-Tracer.git
 ```
 ![BGP WEIGTH](images/2Clone.png)
+
+### 2. Creación del Entorno Virtual e Instalación de Dependencias:
+
+Entra a la carpeta del proyecto, crea y activa tu entorno virtual de Python, actualiza `pip` e instala el paquete en modo editable:
+
+```text
+cd MCP-Packet-Tracer
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -e .
+```
