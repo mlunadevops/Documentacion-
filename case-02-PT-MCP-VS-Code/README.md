@@ -46,6 +46,12 @@ python -m packet_tracer_mcp
 
 ### 4. Generación y Creación del Token de Seguridad
 
+### ¿Para qué se utiliza?
+Esta ruta es una carpeta de almacenamiento local del sistema operativo (dentro del perfil del usuario actual `Admin`, en la carpeta oculta `AppData\Local`). Su función principal es albergar los archivos de configuración, datos temporales o de estado que necesita el servidor de **Model Context Protocol (MCP)** para operar en segundo plano en tu equipo Windows sin interferir con los archivos de instalación principales del programa.
+
+### Función técnica:
+Sirve como un contenedor seguro y específico de la aplicación para guardar credenciales, configuraciones de conexión o tokens de sesión locales que el script de Python (`packet_tracer_mcp`) y el módulo dentro de Packet Tracer consultan constantemente para saber cómo comunicarse entre sí.
+
 Crear la ruta local de configuración y generar el archivo bridge_token necesario para el puente de comunicación entre , crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
 
 
