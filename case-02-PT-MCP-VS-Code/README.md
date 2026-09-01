@@ -165,6 +165,35 @@ En el panel izquierdo de VS Code, pasa el cursor sobre el nombre PacketTracerWor
 
 ![MCP Entorno Virtual](images/34Carpetaraizdelproyecto.png)
 
-Nómbrala exactamente con un punto al inicio:
+Nómbrala exactamente con un punto al inicio (.vscode):
+
+```text
+.vscode
+```
 
 ![MCP Entorno Virtual](images/35Carpetaraizdelproyecto.png) 
+
+Haz clic derecho sobre la nueva carpeta .vscode que acabas de crear y selecciona Nuevo archivo (New File).
+
+Nómbralo exactamente (mcp.json):
+
+```text
+mcp.json
+```
+
+![MCP Entorno Virtual](images/35Carpetaraizdelproyecto.png) 
+
+Abre ese archivo mcp.json y pega el siguiente código de configuración:
+
+```text{
+  "mcpServers": {
+    "packet-tracer-mcp": {
+      "command": "python",
+      "args": [
+        "-m",
+        "packet_tracer_mcp"
+      ]
+    }
+  }
+}
+```
