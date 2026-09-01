@@ -8,8 +8,6 @@ Este documento detalla el paso a paso para configurar la integración de Protoco
 
 Abre una terminal de PowerShell y clona el repositorio oficial del proyecto en tu máquina local:
 
-**Router A (RTA - AS 100):**
-
 ```text
 cd ~
 git clone https://github.com/Mats2208/MCP-Packet-Tracer.git
