@@ -84,4 +84,4 @@ doc.add_paragraph('[Insertar imagen: 11CiscoPTManagextension.png]')
 # Guardar documento
 doc.save('Happy_Path_MCP_Cisco_Packet_Tracer.docx')
 print("¡Archivo Word generado con éxito como 'Happy_Path_MCP_Cisco_Packet_Tracer.docx'!")
-``
+```
