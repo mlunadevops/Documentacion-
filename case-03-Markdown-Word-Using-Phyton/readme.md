@@ -86,7 +86,7 @@ doc.save('Happy_Path_MCP_Cisco_Packet_Tracer.docx')
 print("¡Archivo Word generado con éxito como 'Happy_Path_MCP_Cisco_Packet_Tracer.docx'!")
 ```
 
-23 Para ejecutar el script correctamente, abre tu terminal o consola en la carpeta donde guardaste el archivo (generar_word.py) y escribe el siguiente comando:
+3) Para ejecutar el script correctamente, abre tu terminal o consola en la carpeta donde guardaste el archivo (generar_word.py) y escribe el siguiente comando:
 
 ```text
 python generar_word.py
