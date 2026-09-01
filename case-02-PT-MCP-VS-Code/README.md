@@ -27,3 +27,5 @@ pip install -e .
 ```
 
 ![MCP Entorno Virtual](images/2Entornovirtual.png)
+
+![MCP Entorno Virtual](images/2Pipinstall.png)
