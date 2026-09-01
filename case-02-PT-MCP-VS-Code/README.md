@@ -92,6 +92,12 @@ Abre Visual Studio Code y dirígete al panel de extensiones para ubicar la secci
 
 ![MCP Entorno Virtual](images/09CiscoPTmcpservers.png)
 
+10. Acceso a las Preferencias de Usuario
+Abre la paleta de comandos de VS Code presionando Ctrl + Shift + P, escribe preferences y selecciona la opción de gestión de preferencias o ajustes de usuario.
+
+![MCP Entorno Virtual](images/10CiscoPTManagextension.png)
+
+
 
 
 
