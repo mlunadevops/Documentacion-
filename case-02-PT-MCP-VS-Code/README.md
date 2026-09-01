@@ -12,6 +12,4 @@ Abre una terminal de PowerShell y clona el repositorio oficial del proyecto en t
 cd ~
 git clone https://github.com/Mats2208/MCP-Packet-Tracer.git
 ```
-
-
-![BGP WEIGTH](images/0Topologia.jpg)
+![BGP WEIGTH](images/2Clone.png)
