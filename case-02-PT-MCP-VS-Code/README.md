@@ -12,7 +12,7 @@ Abre una terminal de PowerShell y clona el repositorio oficial del proyecto en t
 cd ~
 git clone https://github.com/Mats2208/MCP-Packet-Tracer.git
 ```
-![BGP WEIGTH](images/2Clone.png)
+![MCP Packet Tracer](images/2Clone.png)
 
 ### 2. Creación del Entorno Virtual e Instalación de Dependencias:
 
@@ -25,3 +25,5 @@ python -m venv venv
 python -m pip install --upgrade pip
 pip install -e .
 ```
+
+![MCP Entorno Virtual](images/2Entornovirtual.png)
