@@ -6,7 +6,7 @@
 pip install python-docx
 ```
 
-3) Guarda el siguiente código en un archivo llamado `generar_word.py` este archivo (generar_word.py) contiene la informacion que se convertira a word:
+3) Guarda el siguiente código en un archivo llamado `generar_word.py` este archivo (generar_word.py) contiene la informacion que se convertira a word (es generada por IA):
 
 ```text
 from docx import Document
