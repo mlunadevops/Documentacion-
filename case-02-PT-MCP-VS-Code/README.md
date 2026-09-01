@@ -62,4 +62,6 @@ Al verificar en el Explorador de archivos de Windows, la estructura de directori
 5. Descarga de la Extensión Oficial (.pts)
 Dirígete al repositorio de GitHub y descarga el archivo de la extensión de Packet Tracer correspondiente a la versión oficial requerida (V5.2.pts).
 
-📷 Ubicación de imagen de referencia: 05CiscoPTConfigscripts.png
+![MCP Entorno Virtual](images/05CiscoPTConfigscripts.png)
+
+
