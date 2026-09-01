@@ -207,3 +207,8 @@ Abre ese archivo mcp.json y pega el siguiente código de configuración:
 
 
 Haz esto, guarda los cambios con Ctrl + S, envíame una captura de pantalla mostrando el archivo mcp.json creado dentro de .vscode y dime si quedó listo para dar luz verde al siguiente paso
+
+Click en Trust
+
+![MCP Entorno Virtual](images/39Carpetaraizdelproyecto.png) 
+
