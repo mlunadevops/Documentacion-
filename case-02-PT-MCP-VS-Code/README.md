@@ -177,11 +177,13 @@ Haz clic derecho sobre la nueva carpeta .vscode que acabas de crear y selecciona
 
 Nómbralo exactamente (mcp.json):
 
+![MCP Entorno Virtual](images/36Carpetaraizdelproyecto.png) 
+
+
 ```text
 mcp.json
 ```
 
-![MCP Entorno Virtual](images/35Carpetaraizdelproyecto.png) 
 
 Abre ese archivo mcp.json y pega el siguiente código de configuración:
 
