@@ -54,3 +54,5 @@ Para solucionarlo, crea manualmente la ruta de directorios local y genera el arc
 New-Item -ItemType Directory -Force -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp"
 Set-Content -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp\bridge_token" -Value "token123"
 ```
+
+Al verificar en el Explorador de archivos de Windows, la estructura de directorios y la carpeta interna se visualizarán correctamente
