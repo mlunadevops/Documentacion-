@@ -163,4 +163,6 @@ Ahora que ya tienes tu espacio de trabajo listo, vamos a crear los archivos de c
 
 En el panel izquierdo de VS Code, pasa el cursor sobre el nombre PacketTracerWorkspace y haz clic en el primer ícono que aparece ("Nuevo archivo" o "Nueva carpeta"), o haz clic derecho sobre el espacio en blanco debajo de PacketTracerWorkspace y selecciona Nueva carpeta (New Folder).
 
+![MCP Entorno Virtual](images/34Carpetaraizdelproyecto.png)
+
 Nómbrala exactamente con un punto al inicio:
