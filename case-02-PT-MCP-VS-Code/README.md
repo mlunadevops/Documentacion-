@@ -55,4 +55,11 @@ New-Item -ItemType Directory -Force -Path "C:\Users\Admin\AppData\Local\packet-t
 Set-Content -Path "C:\Users\Admin\AppData\Local\packet-tracer-mcp\bridge_token" -Value "token123"
 ```
 
-Al verificar en el Explorador de archivos de Windows, la estructura de directorios y la carpeta interna se visualizarán correctamente
+Al verificar en el Explorador de archivos de Windows, la estructura de directorios y la carpeta interna se visualizarán correctamente.
+
+### 5.Fase 2: Configuración del Módulo en Cisco Packet Tracer:
+
+5. Descarga de la Extensión Oficial (.pts)
+Dirígete al repositorio de GitHub y descarga el archivo de la extensión de Packet Tracer correspondiente a la versión oficial requerida (V5.2.pts).
+
+📷 Ubicación de imagen de referencia: 05CiscoPTConfigscripts.png
