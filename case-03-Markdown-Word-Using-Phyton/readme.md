@@ -1,8 +1,12 @@
 # Script de Python para generar el archivo Word (.docx)
 
-1) Asegúrate de tener instalado `python-docx` (si no lo tienes, instálalo con `pip install python-docx`).
+1) Asegúrate de tener instalado `python-docx`:
 
-2) Guarda el siguiente código en un archivo llamado `generar_word.py` y ejecútalo (`python generar_word.py`):
+```text
+pip install python-docx
+```
+
+3) Guarda el siguiente código en un archivo llamado `generar_word.py` y ejecútalo (`python generar_word.py`):
 
 ```text
 from docx import Document
