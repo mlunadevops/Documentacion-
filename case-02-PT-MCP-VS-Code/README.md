@@ -46,6 +46,6 @@ python -m packet_tracer_mcp
 
 Si intentas iniciar el sistema sin el token de autenticación configurado, verás una alerta de error en los registros de Packet Tracer.
 
-
+![MCP Entorno Virtual](images/17CiscoPTcontinue.png)
 
 Para solucionarlo, crea manualmente la ruta de directorios local y genera el archivo `bridge_token` ejecutando en PowerShell:
