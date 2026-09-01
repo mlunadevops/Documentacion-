@@ -52,6 +52,8 @@ A) C:\Users\Admin\AppData\Local\packet-tracer-mcp\
 
 Funcion: Sirve como un contenedor seguro y específico de la aplicación para guardar credenciales, configuraciones de conexión o tokens de sesión locales que el script de Python (`packet_tracer_mcp`)  que necesita el servidor de **Model Context Protocol (MCP)** y el módulo dentro de Packet Tracer consultan constantemente para saber cómo comunicarse entre sí.
 
+El path (C:\Users\Admin\AppData\Local\packet-tracer-mcp\) se crea cuando se ejecuta el comando del paso anterior: python -m packet_tracer_mcp
+
 B) C:\Users\Admin\AppData\Local\packet-tracer-mcp\bridge_token.
 
 Este es un archivo de texto plano o de credenciales específico (el token del puente o *bridge token*). Su propósito es actuar como una llave de autenticación local entre el servidor *backend* de Python y el módulo de Packet Tracer (`MCP-BUILDER`).
