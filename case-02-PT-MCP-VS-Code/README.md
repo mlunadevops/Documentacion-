@@ -64,4 +64,10 @@ Dirígete al repositorio de GitHub y descarga el archivo de la extensión de Pac
 
 ![MCP Entorno Virtual](images/05CiscoPTConfigscripts.png)
 
+6. Carga del Módulo en el Entorno
+Abre Cisco Packet Tracer, dirígete al menú de configuración de scripts de extensión (Configure PT Script Modules), donde verás la lista inicial de módulos nativos.
+
+![MCP Entorno Virtual](images/02CiscoPTConfigscripts.png)
+
+
 
