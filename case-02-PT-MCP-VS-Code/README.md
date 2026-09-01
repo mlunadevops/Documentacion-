@@ -85,6 +85,14 @@ Selecciónalo de la lista y haz clic en el botón **Start** para ponerlo en marc
 
 ![MCP Entorno Virtual](images/07CiscoPTConfigscripts.png)
 
+## Fase 3: Integración de MCP en Visual Studio Code
+
+### 9. Exploración del Marketplace de Servidores MCP
+Abre Visual Studio Code y dirígete al panel de extensiones para ubicar la sección de vista previa de los MCP Servers.
+
+![MCP Entorno Virtual](images/09CiscoPTmcpservers.png)
+
+
 
 
 
