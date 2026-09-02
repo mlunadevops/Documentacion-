@@ -187,9 +187,9 @@ pip install mcp requests
 
 ### Paso 2: Crear el archivo de tu Servidor MCP Personalizado
 
-IMPORTANTE: En este paso se va a crear el SERVIDOR MCP a traves de un script de python el cual llamaremos `server.py`,  un servidor MCP es un estandar abierto creado por ANTHROPIC el cual es utilizado por herramientas como VS CODE para que su modelo de IA, en nuestro caso estamos utilizando el modelo de IA Github COPILOT se comunique con GNS3.
+IMPORTANTE: En este paso se va a crear el SERVIDOR MCP a traves de un script de python el cual llamaremos `server.py`, un servidor MCP es un estandar abierto creado por ANTHROPIC el cual es utilizado por herramientas como VS CODE para que su modelo de IA, en nuestro caso estamos utilizando el modelo de IA Github COPILOT que viene incluido en VS CODE, para que se comunique con GNS3.
 
-El archivo MCP `server.py` es la implementación concreta de ese protocolo (MCP) para nuestro entorno. Utiliza la librería **FastMCP** de Python para levantar un servidor local que se comunica directamente con el cliente de IA de VS Code mediante la entrada/salida estándar (`stdio`) y expone las funciones (herramientas) que la IA puede usar. 
+El archivo MCP `server.py` es la implementación concreta del protocolo (MCP) para nuestro entorno, segun la siguiente arquitectura (VS CODE - GIT HUB COPILOT - MCP `server.py` - GNS3). El archivo MCP `server.py` utiliza la librería **FastMCP** de Python para levantar un servidor local que se comunica directamente con el cliente de IA de VS Code (GIT HUB COPILOT) mediante la entrada/salida estándar (`stdio`) y expone las funciones (herramientas) que la IA puede usar. 
 
 Vamos a implementar el MCP crea una carpeta nueva para tu proyecto (por ejemplo, `gns3-mcp-v2`) y dentro crea un archivo llamado `server.py` el cual sera el MODEL CONTEXT PROTOCOL. 
 
