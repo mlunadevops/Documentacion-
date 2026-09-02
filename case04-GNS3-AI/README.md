@@ -250,6 +250,7 @@ La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a 
 }
 ```
 
+(Asegúrate de cambiar la ruta por la ubicación real de tu archivo server.py).
 
 
 
