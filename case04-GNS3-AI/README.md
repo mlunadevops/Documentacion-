@@ -32,8 +32,15 @@ Es el formato estándar que se utiliza para empaquetar y transportar los datos e
 * El canal de transporte físico o la "autopista" por donde viaja todo es **HTTP** (con sus métodos como `GET` y `POST`).
 * El idioma o formato en el que va empaquetada la información que viaja por ese canal es **JSON**.
 
-Por lo tanto, se podría decir que el API REST utiliza **HTTP** como canal y **JSON** como lenguaje/formato para conectar al cliente con el servidor.
+Por lo tanto, se podría decir que el API REST utiliza el protocolo **HTTP** como canal de comunicacion, **JSON** como lenguaje/formato para conectar al cliente con el servidor y el metodo (verbo) son las instrucciones.
 
+En este contexto, un método (también conocido como verbo HTTP) es la acción explícita que le indica al servidor qué es lo que el cliente quiere hacer con el recurso.
+Imagina que el recurso es un archivo en una oficina:
+
+* El método `GET` dice: "Quiero ver este archivo".
+* El método `POST` dice: "Quiero crear un archivo nuevo".
+* El método `PUT` dice: "Quiero reemplazar este archivo por completo".
+* El método `DELETE` dice: "Quiero eliminar este archivo".
 
 
  
