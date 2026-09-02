@@ -24,7 +24,6 @@ Para conectar GNS3 (versión 2.2.60) a un cliente o agente compatible con el pro
 
 Es el formato estándar que se utiliza para empaquetar y transportar los datos entre el cliente y el servidor.
 
-
  **¿Que es un API REST?**
 
  El API REST es el sistema completo (el conjunto de reglas y la interfaz) que permite la comunicación, es una arquitectura cliente-servidor basada en HTTP, donde una parte (el cliente) pide un recurso y la otra (el servidor) lo procesa y responde. El REST Es una forma de aplicar ese modelo cliente-servidor utilizando los protocolos que ya existen en la web (principalmente HTTP).
