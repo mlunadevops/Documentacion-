@@ -88,6 +88,17 @@ pip install gns3-mcp
 
 ![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
 
+Opcional para actualizar el servidor MCP de GNS3 realizar lo siguiente:
+
+**POWERSHELL**
+
+```text
+python.exe -m pip install --upgrade pip
+```
+
+![GNS3 MCP Install](images/12pipinstallgns3mcp.png)
+
+
 3.2) Verificar la instalacion del Servidor MCP de GNS3.
 
 **POWERSHELL**
