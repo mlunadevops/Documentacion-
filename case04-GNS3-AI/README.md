@@ -59,6 +59,8 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
 ## 3. Implementacion:
 
+**POWERSHELL**
+
 3.0) Script, el siguiente script se utiliza unicamente para obtener el path de donde esta instalado el Python y crearlo automaticamente esto se hace basicamente, para que desde cualquier lugar que estemos en el prompt de POWERSELL, pueda ser ejecutados los comandos de python.
 
 ```text
