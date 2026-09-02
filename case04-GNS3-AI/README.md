@@ -56,18 +56,18 @@ Muestra el flujo completo:
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
-![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
+
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
 ## 3. IMPLEMENTACION:
 
-**Router A (RTA - AS 100):**
+**POWERSHELL**
 
 ```text
-! 
-router bgp 100
-!
+pip install gns3-mcp
 ```
+
+![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
 
 ### 4. BGP Configuration:
