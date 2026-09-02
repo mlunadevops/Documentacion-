@@ -184,6 +184,7 @@ pip install mcp requests
 ```
 
 
+![GNS3 MCP Install](images/16MCPpersonalizado.png)
 
 
 
