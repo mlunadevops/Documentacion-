@@ -7,7 +7,7 @@
 | **01** | [Claude & n8n AI Agents](./case-01-Google-Auth/) | Agentes Claude . |
 | **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
 | **03** | [Generar un Archivo Word desde Markdown usando Phyton](./case-03-Markdown-Word-Using-Phyton/) | Convierte un MD a Word usando Phyton |
-| **04** | [Route aggregation in BGP](./case04-route-aggregation-in-BGP/) | Route aggregation in BGP. |
+| **04** | [GNS3 AI](./case04-GNS3-AI/) | Conexion GNS3 MCP. |
 | **05** | [Default Routes](./case05-default-routes-in-BGP/) | Defaul Routes in BGP |
 | **06** | [BGP Load Balance](./case06-load-balance-in-BGP/) | Load Balance in BGP |
 | **07** | [BGP Load Balance](./case07-load-balancing-in-BGP/) | Load Balance in BGP |
