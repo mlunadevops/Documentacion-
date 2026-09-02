@@ -133,6 +133,7 @@ $env:GNS3_PASSWORD="gns3"
 # Ejecutar el servidor MCP
 gns3-mcp
 ```
+
 En la siguiente imagen podemos verificar que la conexion se realizo correctamente, sin embargo aparece el siguiente error:
 
 En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar autenticarse en la ruta **`http://10.0.30.50/v3/access/users/authenticate`.**
