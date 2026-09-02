@@ -109,9 +109,7 @@ pip list | Select-String "gns3-mcp"
 
 ![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
 
-3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp").
-
-Datos:
+3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp"), para esto hay que tener los siguientes datos.
 
         GNS3_BASE_URL": "10.0.30.50:80"
         GNS3_USERNAME": "gns3"
