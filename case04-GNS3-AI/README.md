@@ -62,6 +62,9 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
 ## 3. Implementacion:
 
+
+3.1) Instalar el Servidor MCP de GNS3: mediante la instalacion del siguiente paquete
+
 **POWERSHELL**
 
 ```text
