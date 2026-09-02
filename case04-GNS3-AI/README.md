@@ -141,11 +141,6 @@ En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar aute
 *   **El motivo:** El error `404` significa que la ruta o endpoint de la API no existe en esa dirección. Esto suele ocurrir porque la versión de GNS3 que estás utilizando (la `2.2.60`) utiliza una estructura de rutas distinta o un puerto diferente para la API (por ejemplo, GNS3 suele correr por defecto en el puerto `3080` en lugar del puerto `80`).
 *   **La solución:** Asegúrate de especificar el puerto correcto de GNS3 en la variable de entorno `$env:GNS3_PORT`. 
 
-Prueba configurando el puerto correcto (típicamente `3080`):
-
-```powershell
-$env:GNS3_PORT="3080"
-
 ![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
