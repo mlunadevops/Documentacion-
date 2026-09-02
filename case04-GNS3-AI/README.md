@@ -51,6 +51,8 @@ Muestra el flujo completo:
 * El Servidor procesa la petición interactuando con su base de datos.
 * El Servidor devuelve una Respuesta (Response) al Cliente, típicamente en formato JSON, confirmando el éxito (`200 OK`) con los datos solicitados.
 
+![GNS3 MCP Install](images/01APIrest.jpg)
+
 ## 2. Topologia e Infografia
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
