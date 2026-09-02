@@ -235,7 +235,7 @@ if __name__ == "__main__":
 
 Para que tu cliente de IA en VS Code (o la aplicación compatible con MCP que utilices) reconozca este servidor, debes declararlo en su archivo de configuración (generalmente llamado `mcp_config.json` o en la configuración de extensiones de MCP).
 
-La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a tu entorno de Python ejecutando tu script:
+La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a tu entorno de Python ejecutando tu script (G:\Mi unidad\Publicaciones Linkedin\gns3-mcp-v2):
 
 ```powershell
 {
@@ -243,7 +243,7 @@ La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a 
     "gns3-v2": {
       "command": "python",
       "args": [
-        "C:\\Ruta\\A\\Tu\\Carpeta\\server.py"
+        "G:\\Mi unidad\\Publicaciones Linkedin\\gns3-mcp-v2\\server.py"
       ]
     }
   }
