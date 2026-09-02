@@ -109,7 +109,7 @@ pip list | Select-String "gns3-mcp"
 
 ![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
 
-3.3)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP).
+3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp").
 
 Datos:
 
