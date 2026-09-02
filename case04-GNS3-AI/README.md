@@ -126,7 +126,7 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
     "gns3": {
       "command": "gns3-mcp",
       "env": {
-        "GNS3_BASE_URL": "http://localhost:3080",
+        "GNS3_BASE_URL": "http://10.0.30.50:3080",
         "GNS3_USERNAME": "gns3",
         "GNS3_PASSWORD": "gns3"
       }
