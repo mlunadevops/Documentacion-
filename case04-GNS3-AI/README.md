@@ -153,9 +153,9 @@ En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar aute
 
 ### Paso 1: Entrar a la consola interactiva de Python
 
-**PYTHON**
-
 Escribe `python` en tu PowerShell y presiona Enter (esto abrirá el intérprete de Python, donde los comandos `import` y `print` funcionarán perfectamente):
+
+**POWERSHELL**
 
 ```text
 import requests
