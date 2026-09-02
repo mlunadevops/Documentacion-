@@ -253,19 +253,6 @@ La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a 
 (Asegúrate de cambiar la ruta por la ubicación real de tu archivo server.py).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------------------------------------
 
 
@@ -277,53 +264,3 @@ La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a 
 
 
 
-
-
-
-
-
-
-
-
-Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
-
-```text
-{
-  "mcpServers": {
-    "gns3": {
-      "command": "gns3-mcp",
-      "env": {
-        "GNS3_BASE_URL": "http://10.0.30.50",
-        "GNS3_USERNAME": "gns3",
-        "GNS3_PASSWORD": "gns3"
-      }
-    }
-  }
-}
-```
-
-(Nota: Si usas una ruta absoluta o un entorno virtual, asegúrate de apuntar directamente al ejecutable del script o usar uvx gns3-mcp si prefieres gestión de paquetes moderna).
-
-La configuracion del cliente GEMINI para probar la conexion:
-
-### Configuración de Credenciales de GNS3
-
-
-3.2) Probar la ejecución manual del servidor (Modo Stdio):
-
-**POWERSHELL**
-
-```text
-gns3-mcp
-```
-
-![GNS3 MCP Install](images/12pipinstallgns3mcp.png)
-
-Dado que el servidor se comunica típicamente por flujos estándar (`stdio`) con el cliente de IA, puedes invocarlo directamente en una terminal para ver si arranca sin arrojar errores de dependencias:
-
-3.3). Validación de la Conexión
-
-Una vez configurado e iniciado tu cliente de Gemini, puedes verificar que las herramientas de GNS3 estén disponibles ejecutando el comando de inspección en tu agente (por ejemplo, /mcp list o solicitándole directamente a Gemini):
-
-
-### 4. BGP Configuration:
