@@ -58,8 +58,6 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
 
 
- four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
-
 ## 3. Implementacion:
 
 
@@ -72,5 +70,8 @@ pip install gns3-mcp
 ```
 
 ![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
+
+3.2)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP)
+
 
 ### 4. BGP Configuration:
