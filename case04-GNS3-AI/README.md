@@ -7,6 +7,8 @@ Para conectar GNS3 (versión 2.2.60) a un cliente o agente compatible con el pro
 
 Existen servidores comunitarios diseñados específicamente para esto (como `gns3-mcp` o `gns3-mcp-server`) que exponen toda la API REST de GNS3 y el control de consolas en formato de herramientas MCP.
 
+![GNS3 MCP Install](images/00APIrest.jpg)
+
 ---
 
 ## CONTENIDOS:
