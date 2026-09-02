@@ -175,6 +175,47 @@ print(response.json())
 Ok esta si funciona correctamente
 
 
+### Paso 1: Instalar las librerías necesarias en Python
+
+Abre tu terminal (PowerShell) en Windows y asegúrate de instalar la librería oficial de MCP de Python y la librería `requests`:
+
+```powershell
+pip install mcp requests
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
 
 ```text
@@ -197,7 +238,6 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 La configuracion del cliente GEMINI para probar la conexion:
 
 ### Configuración de Credenciales de GNS3
-
 
 
 3.2) Probar la ejecución manual del servidor (Modo Stdio):
