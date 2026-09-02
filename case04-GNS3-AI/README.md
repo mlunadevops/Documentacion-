@@ -141,7 +141,8 @@ La configuracion del cliente GEMINI para probar la conexion:
 
 Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos establecer las variables de entorno que el servidor está solicitando:
 
-text
+
+```text
 # Limpiar variables
 Remove-Item Env:\GNS3_* -ErrorAction SilentlyContinue
 
