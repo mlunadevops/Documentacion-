@@ -237,6 +237,18 @@ Para que tu cliente de IA en VS Code (o la aplicación compatible con MCP que ut
 
 La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a tu entorno de Python ejecutando tu script:
 
+```powershell
+{
+  "mcpServers": {
+    "gns3-v2": {
+      "command": "python",
+      "args": [
+        "C:\\Ruta\\A\\Tu\\Carpeta\\server.py"
+      ]
+    }
+  }
+}
+```
 
 
 
