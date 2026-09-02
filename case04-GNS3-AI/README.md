@@ -153,10 +153,19 @@ En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar aute
 
 ### Paso 1: Entrar a la consola interactiva de Python
 
-**PHYTHON**
+**PYTHON**
 
 Escribe `python` en tu PowerShell y presiona Enter (esto abrirá el intérprete de Python, donde los comandos `import` y `print` funcionarán perfectamente):
 
+```text
+import requests
+url = "http://10.0.30.50/v2/projects"
+response = requests.get(url, auth=("gns3", "gns3"))
+print(response.status_code)
+print(response.json())
+```
+
+![GNS3 MCP Install](images/15python.png)
 
 
 
