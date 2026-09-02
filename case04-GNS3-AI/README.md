@@ -135,13 +135,15 @@ gns3-mcp
 ```
 En la siguiente imagen podemos verificar que la conexion se realizo correctamente, sin embargo aparece el siguiente error:
 
-[12:39:47 02.09.2026] WARNING: Background authentication failed: HTTP 404: 404: Not Found
-[12:39:47 02.09.2026] INFO: Retrying in 300 seconds...
-[12:44:47 02.09.2026] INFO: HTTP Request: POST http://10.0.30.50/v3/access/users/authenticate "HTTP/1.1 404 Not Found"
-[12:44:47 02.09.2026] ERROR: [12:44:47 02.09.2026] Authentication failed: Client error '404 Not Found' for url **'http://10.0.30.50/v3/access/users/authenticate'**
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
-[12:44:47 02.09.2026] WARNING: Background authentication failed: HTTP 404: 404: Not Found
-[12:44:47 02.09.2026] INFO: Retrying in 300 seconds...
+En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar autenticarse en la ruta **`http://10.0.30.50/v3/access/users/authenticate`.**
+
+*   **El motivo:** El error `404` significa que la ruta o endpoint de la API no existe en esa dirección. Esto suele ocurrir porque la versión de GNS3 que estás utilizando (la `2.2.60`) utiliza una estructura de rutas distinta o un puerto diferente para la API (por ejemplo, GNS3 suele correr por defecto en el puerto `3080` en lugar del puerto `80`).
+*   **La solución:** Asegúrate de especificar el puerto correcto de GNS3 en la variable de entorno `$env:GNS3_PORT`. 
+
+Prueba configurando el puerto correcto (típicamente `3080`):
+
+```powershell
+$env:GNS3_PORT="3080"
 
 ![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
