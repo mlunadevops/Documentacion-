@@ -149,7 +149,16 @@ En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar aute
 
 ![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
-### SOLUCION TRABAJAR CON OTRA VERSION DE MCP QUE USE AUTHENTICATION V2 LA CUAL ES COMPATIBLE con GNS3 2.2.60 VIRTUAL MACHINE SERVER
+### SOLUCION TRABAJAR CON OTRA VERSION DE MCP QUE USE AUTHENTICATION V2 LA CUAL ES COMPATIBLE con GNS3 2.2.60 VIRTUAL MACHINE SERVER.
+
+### Paso 1: Entrar a la consola interactiva de Python
+
+**PHYTHON**
+
+Escribe `python` en tu PowerShell y presiona Enter (esto abrirá el intérprete de Python, donde los comandos `import` y `print` funcionarán perfectamente):
+
+
+
 
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
 
