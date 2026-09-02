@@ -119,15 +119,6 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 
 (Nota: Si usas una ruta absoluta o un entorno virtual, asegúrate de apuntar directamente al ejecutable del script o usar uvx gns3-mcp si prefieres gestión de paquetes moderna).
 
-Opcional para actualizar el servidor MCP de GNS3 realizar lo siguiente:
-
-**POWERSHELL**
-
-```text
-python.exe -m pip install --upgrade pip
-```
-
-![GNS3 MCP Install](images/12pipinstallgns3mcp.png)
 
 3.2) Probar la ejecución manual del servidor (Modo Stdio):
 
