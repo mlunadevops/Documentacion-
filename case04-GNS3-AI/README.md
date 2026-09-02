@@ -24,6 +24,13 @@ Para conectar GNS3 (versión 2.2.60) a un cliente o agente compatible con el pro
  
 ![GNS3 MCP Install](images/00APIrest.jpg)
 
+Esta imagen es un diagrama que ilustra el funcionamiento de una API REST.
+Muestra el flujo completo:
+
+* Un Cliente (como una app o navegador) realiza una Solicitud (Request) al Servidor a través de Internet usando métodos HTTP (`GET`, `POST`, etc.).
+* El Servidor procesa la petición interactuando con su base de datos.
+* El Servidor devuelve una Respuesta (Response) al Cliente, típicamente en formato JSON, confirmando el éxito (`200 OK`) con los datos solicitados.
+
 ## 2. Topologia e Infografia
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
