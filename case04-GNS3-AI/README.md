@@ -139,6 +139,20 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 
 La configuracion del cliente GEMINI para probar la conexion:
 
+### Configuración de Credenciales de GNS3
+
+Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos establecer las variables de entorno que el servidor está solicitando:
+
+```text
+$env:GNS3_HOST="http://localhost"
+$env:GNS3_PORT="3080"
+$env:GNS3_USER="gns3"
+$env:GNS3_PASSWORD="gns3"
+```
+
+Ejecuta el siguiente bloque en tu PowerShell para definir las variables de entorno de la sesión (reemplaza `tu_usuario` y `tu_password` con las credenciales reales de tu servidor GNS3, que por defecto suelen ser `admin` / `admin` o las que hayas configurado):
+
+
 
 
 3.2) Probar la ejecución manual del servidor (Modo Stdio):
