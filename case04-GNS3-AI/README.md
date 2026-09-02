@@ -24,7 +24,7 @@ Para conectar GNS3 (versión 2.2.60) a un cliente o agente compatible con el pro
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
-![BGP WEIGTH](images/01Topologia.jpg)
+![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
