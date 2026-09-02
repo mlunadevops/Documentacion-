@@ -158,6 +158,10 @@ Escribe `python` en tu PowerShell y presiona Enter (esto abrirá el intérprete 
 **POWERSHELL**
 
 ```text
+python
+```
+
+```text
 import requests
 url = "http://10.0.30.50/v2/projects"
 response = requests.get(url, auth=("gns3", "gns3"))
