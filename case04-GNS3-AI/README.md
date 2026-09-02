@@ -144,7 +144,7 @@ La configuracion del cliente GEMINI para probar la conexion:
 Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos establecer las variables de entorno que el servidor está solicitando:
 
 ```text
-$env:GNS3_HOST="http://localhost"
+$env:GNS3_HOST="http://10.0.30.50:3080"
 $env:GNS3_PORT="3080"
 $env:GNS3_USER="gns3"
 $env:GNS3_PASSWORD="gns3"
