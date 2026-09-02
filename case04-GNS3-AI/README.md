@@ -117,8 +117,9 @@ pip list | Select-String "gns3-mcp"
         GNS3_USERNAME": "gns3"
         GNS3_PASSWORD": "gns3"
 
-Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos configurar las variables de entorno que el servidor requiere para la conexion a traves del siguiente script:
+Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos configurar las variables de entorno que el servidor requiere para la conexion a traves del siguiente script en POWERSHELL:
 
+**POWERSHELL**
 
 ```text
 # Limpiar variables
