@@ -134,6 +134,7 @@ $env:GNS3_PASSWORD="gns3"
 gns3-mcp
 ```
 
+![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
 
