@@ -126,7 +126,7 @@ Remove-Item Env:\GNS3_* -ErrorAction SilentlyContinue
 
 # Apuntar al puerto de API REST 3080 con la IP de la VM
 $env:GNS3_HOST="10.0.30.50"
-$env:GNS3_PORT="3080"
+$env:GNS3_PORT="80"
 $env:GNS3_USER="gns3"
 $env:GNS3_PASSWORD="gns3"
 
