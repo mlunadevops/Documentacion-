@@ -91,4 +91,9 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 (Nota: Si usas una ruta absoluta o un entorno virtual, asegúrate de apuntar directamente al ejecutable del script o usar uvx gns3-mcp si prefieres gestión de paquetes moderna)
 
 
+3.3). Validación de la Conexión
+
+Una vez configurado e iniciado tu cliente de Gemini, puedes verificar que las herramientas de GNS3 estén disponibles ejecutando el comando de inspección en tu agente (por ejemplo, /mcp list o solicitándole directamente a Gemini):
+
+
 ### 4. BGP Configuration:
