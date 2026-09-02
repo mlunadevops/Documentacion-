@@ -174,7 +174,6 @@ print(response.json())
 
 Ok esta si funciona correctamente
 
-
 ### Paso 1: Instalar las librerías necesarias en Python
 
 Abre tu terminal (PowerShell) en Windows y asegúrate de instalar la librería oficial de MCP de Python y la librería `requests`:
@@ -237,11 +236,11 @@ def controlar_proyecto(project_id: str, accion: str) -> str:
 if __name__ == "__main__":
     mcp.run()
 ```
-### Paso 3: Configurar el Servidor MCP en Visual Studio Code
+### Paso 3: Apuntar el Modelo de IA (GIT HUB COPILOT en VS Code) al servidor MCP (`server.py`)
 
-Para que tu cliente de IA en VS Code (o la aplicación compatible con MCP que utilices) reconozca este servidor, debes declararlo en su archivo de configuración (generalmente llamado `mcp_config.json` o en la configuración de extensiones de MCP).
+Para que tu cliente de IA en VS Code (GIT HUB COPILOT) reconozca el servidor MCP (`server.py`) , debes declararlo en su archivo de configuración (generalmente llamado `mcp_config.json` o en la configuración de extensiones de MCP).
 
-La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a tu entorno de Python ejecutando tu script (G:\Mi unidad\Publicaciones Linkedin\gns3-mcp-v2):
+La ruta de ejecución que le darás a tu cliente de IA (GIT HUB COPILOT en VS Code) apuntará directamente a el entorno de Python ejecutando tu script (G:\Mi unidad\Publicaciones Linkedin\gns3-mcp-v2):
 
 ```powershell
 {
