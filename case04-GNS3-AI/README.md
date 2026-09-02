@@ -145,7 +145,7 @@ Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos estab
 
 ```text
 $env:GNS3_HOST="10.0.30.50"
-$env:GNS3_PORT="80"
+$env:GNS3_PORT="3080"
 $env:GNS3_USER="gns3"
 $env:GNS3_PASSWORD="gns3"
 ```
