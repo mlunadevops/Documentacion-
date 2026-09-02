@@ -113,7 +113,7 @@ pip list | Select-String "gns3-mcp"
 
 Datos:
 
-        GNS3_BASE_URL": "http://10.0.30.50:80"
+        GNS3_BASE_URL": "10.0.30.50:80"
         GNS3_USERNAME": "gns3"
         GNS3_PASSWORD": "gns3"
 
