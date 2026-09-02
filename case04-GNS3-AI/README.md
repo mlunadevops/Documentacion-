@@ -56,8 +56,6 @@ Muestra el flujo completo:
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
-
-
 ## 3. Implementacion:
 
 
@@ -71,7 +69,23 @@ pip install gns3-mcp
 
 ![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
 
-3.2)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP)
+3.2)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP).
 
+Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
+
+```text
+{
+  "mcpServers": {
+    "gns3": {
+      "command": "gns3-mcp",
+      "env": {
+        "GNS3_BASE_URL": "http://localhost:3080",
+        "GNS3_USERNAME": "admin",
+        "GNS3_PASSWORD": "tu_password_de_gns3"
+      }
+    }
+  }
+}
+```
 
 ### 4. BGP Configuration:
