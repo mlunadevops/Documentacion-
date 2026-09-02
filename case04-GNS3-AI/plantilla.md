@@ -42,3 +42,5 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 router bgp 100
 !
 ```
+
+### 4. BGP Configuration:
