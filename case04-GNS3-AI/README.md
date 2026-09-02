@@ -187,10 +187,15 @@ pip install mcp requests
 
 ### Paso 2: Crear el archivo de tu Servidor MCP Personalizado
 
-IMPORTANTE: En este paso se va a crear el SERVIDOR MCP 
-Crea una carpeta nueva para tu proyecto (por ejemplo, `gns3-mcp-v2`) y dentro crea un archivo llamado `server.py`. 
+IMPORTANTE: En este paso se va a crear el SERVIDOR MCP a traves de un script de python el cual llamaremos `server.py`,  un servidor MCP es un estandar abierto creado por ANTHROPIC el cual es utilizado por herramientas como VS CODE para que el modelo de IA se comunique con base de datos, servidores, routers, switches, etc.
 
-Copia y pega este código base en `server.py`. Este script ya incluye la lógica para conectarse a tu GNS3 2.2.60 en el puerto `3080` mediante la API v2:
+EL archivo MCP `server.py` es la implementación concreta de ese protocolo (MCP) para nuestro entorno. Utiliza la librería **FastMCP** de Python para levantar un servidor local que se comunica directamente con el cliente de IA de VS Code mediante la entrada/salida estándar (`stdio`) y expone las funciones (herramientas) que la IA puede usar. 
+
+Vamos a implementar el MCP crea una carpeta nueva para tu proyecto (por ejemplo, `gns3-mcp-v2`) y dentro crea un archivo llamado `server.py` el cual sera el MODEL CONTEXT PROTOCOL. 
+
+### Tu archivo `server.py`
+
+Copia y pega este código base en `server.py` para crear el servidor MCP. Este script ya incluye la lógica para conectarse a tu GNS3 2.2.60 en el puerto `3080` mediante la API v2:
 
 ```powershell
 from mcp.server.fastmcp import FastMCP
