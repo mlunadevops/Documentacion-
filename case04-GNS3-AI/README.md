@@ -183,10 +183,54 @@ Abre tu terminal (PowerShell) en Windows y asegúrate de instalar la librería o
 pip install mcp requests
 ```
 
-
 ![GNS3 MCP Install](images/16MCPpersonalizado.png)
 
+### Paso 2: Crear el archivo de tu Servidor MCP Personalizado
 
+Crea una carpeta nueva para tu proyecto (por ejemplo, `gns3-mcp-v2`) y dentro crea un archivo llamado `server.py`. 
+
+Copia y pega este código base en `server.py`. Este script ya incluye la lógica para conectarse a tu GNS3 2.2.60 en el puerto `3080` mediante la API v2:
+
+```powershell
+from mcp.server.fastmcp import FastMCP
+import requests
+
+# Inicializar FastMCP para tu puente GNS3 v2
+mcp = FastMCP("GNS3 v2 Bridge")
+
+GNS3_URL = "http://10.0.30.50/v2"
+AUTH = ("gns3", "gns3")
+
+@mcp.tool()
+def listar_proyectos() -> str:
+    """Lista todos los laboratorios/proyectos disponibles en GNS3 v2."""
+    try:
+        response = requests.get(f"{GNS3_URL}/projects", auth=AUTH)
+        if response.status_code == 200:
+            projects = response.json()
+            resultado = "Laboratorios encontrados en GNS3:\n"
+            for p in projects:
+                resultado += f"- Nombre: {p['name']} | Estado: {p['status']} | ID: {p['project_id']}\n"
+            return resultado
+        return f"Error al obtener proyectos: {response.status_code}"
+    except Exception as e:
+        return f"Excepción de conexión: {str(e)}"
+
+@mcp.tool()
+def controlar_proyecto(project_id: str, accion: str) -> str:
+    """Inicia (start) o detiene (stop) un proyecto de GNS3 usando su ID."""
+    try:
+        # accion puede ser start o stop
+        response = requests.post(f"{GNS3_URL}/projects/{project_id}/control/{accion}", auth=AUTH)
+        if response.status_code in [200, 204]:
+            return f"Acción '{accion}' ejecutada exitosamente en el proyecto {project_id}."
+        return f"No se pudo ejecutar la acción. Código: {response.status_code}, Resuesta: {response.text}"
+    except Exception as e:
+        return f"Excepción al controlar proyecto: {str(e)}"
+
+if __name__ == "__main__":
+    mcp.run()
+```
 
 
 
