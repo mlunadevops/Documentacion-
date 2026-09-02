@@ -120,6 +120,7 @@ $env:GNS3_HOST="10.0.30.50"
 $env:GNS3_PORT="3080"
 $env:GNS3_USER="gns3"
 $env:GNS3_PASSWORD="gns3"
+```
 
 Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos configurar las variables de entorno que el servidor requiere para la conexion a traves del siguiente script en POWERSHELL:
 
