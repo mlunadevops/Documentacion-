@@ -113,12 +113,13 @@ pip list | Select-String "gns3-mcp"
 
 ### Conexión del servidor MCP de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp") con GNS3 VIRTUAL MACHINE SERVER
 
-3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp" , para esto hay que tener los datos de conexion de la VM de GNS3.
+3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp" , para esto hay que tener los datos de conexion de la VM de GNS3, son los siguientes:
 
- IP SERVIDOR VM GNS3": 10.0.30.50
- PUERTO VM GNS3":
- USUARIO VM GNS3":   gns3
- PASSWORD VM GNS3":  gns3
+```powershell
+$env:GNS3_HOST="10.0.30.50"
+$env:GNS3_PORT="3080"
+$env:GNS3_USER="gns3"
+$env:GNS3_PASSWORD="gns3"
 
 Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos configurar las variables de entorno que el servidor requiere para la conexion a traves del siguiente script en POWERSHELL:
 
