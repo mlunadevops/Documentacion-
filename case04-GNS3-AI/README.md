@@ -145,7 +145,7 @@ En la siguiente imagen podemos verificar que la conexion se realizo correctament
 En los logs se observa un nuevo error: **`HTTP 404 Not Found`** al intentar autenticarse en la ruta **`http://10.0.30.50/v3/access/users/authenticate`.**
 
 *   **El motivo:** El error `404` significa que la ruta o endpoint de la API no existe en esa dirección. Esto suele ocurrir porque la versión de GNS3 que estás utilizando (la `2.2.60`) utiliza una estructura de rutas distinta en conclusion LA VERSION 2.2.60 DEL GNS3 USA AUTENTICACION V3 mientras que el MCP server utiliza la version V3), **ESTA INCOMPATIBILIDAD DE VERSIONES IMPOSIBILITA LA AUTENTICACION.**
-*   **La solución:** Asegúrate de especificar el puerto correcto de GNS3 en la variable de entorno `$env:GNS3_PORT`. 
+*   **La solución:** Instalar una version de MCP que trabaje con V2 o actualizar la version del GNS3`. 
 
 ![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
