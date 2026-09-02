@@ -117,7 +117,7 @@ pip list | Select-String "gns3-mcp"
         GNS3_USERNAME": "gns3"
         GNS3_PASSWORD": "gns3"
 
-Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos establecer las variables de entorno que el servidor requiere para la conexion a traves del siguiente script:
+Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos configurar las variables de entorno que el servidor requiere para la conexion a traves del siguiente script:
 
 
 ```text
@@ -133,6 +133,15 @@ $env:GNS3_PASSWORD="gns3"
 # Ejecutar el servidor MCP
 gns3-mcp
 ```
+En la siguiente imagen podemos verificar que la conexion se realizo correctamente, sin embargo aparece el siguiente error:
+
+[12:39:47 02.09.2026] WARNING: Background authentication failed: HTTP 404: 404: Not Found
+[12:39:47 02.09.2026] INFO: Retrying in 300 seconds...
+[12:44:47 02.09.2026] INFO: HTTP Request: POST http://10.0.30.50/v3/access/users/authenticate "HTTP/1.1 404 Not Found"
+[12:44:47 02.09.2026] ERROR: [12:44:47 02.09.2026] Authentication failed: Client error '404 Not Found' for url **'http://10.0.30.50/v3/access/users/authenticate'**
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+[12:44:47 02.09.2026] WARNING: Background authentication failed: HTTP 404: 404: Not Found
+[12:44:47 02.09.2026] INFO: Retrying in 300 seconds...
 
 ![GNS3 MCP Install](images/14pipinstallgns3mcp.png)
 
