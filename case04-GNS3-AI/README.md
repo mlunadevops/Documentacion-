@@ -25,7 +25,7 @@ Para conectar GNS3 (versión 2.2.60) a un cliente o agente compatible con el pro
 Es el formato estándar que se utiliza para empaquetar y transportar los datos entre el cliente y el servidor.
 
 
- ¿Que es un API REST?
+ **¿Que es un API REST?**
  
 ![GNS3 MCP Install](images/00APIrest.jpg)
 
