@@ -267,8 +267,32 @@ En lugar de depender de herramientas externas complejas, puedes aprovechar el co
 
 ![GNS3 MCP Install](images/17MCPpersonalizado.png)
 
+### Paso 4: Ampliar las capacidades del servidor MCP (`server.py`)
 
+En este punto el servidor MCP (`server.py`), debe ampliar sus capacidades para que soporte herramientas de creación de proyectos, despliegue de nodos, enlaces y configuración de routers.
 
+Aquí tienes el prompt maestro estructurado que debes enviar a tu chat de VS Code para que GitHub Copilot ejecute esta automatización completa:
+
+```powershell
+Actúa como un Ingeniero Senior de Automatización de Redes. Quiero que utilices nuestro puente MCP conectado a GNS3 v2.2.60 para desplegar y configurar automáticamente un laboratorio completo basado en el escenario de "BGP Backdoor" que tenemos documentado.
+
+Para lograrlo, por favor haz lo siguiente:
+
+1. AMPLIAR EL SERVIDOR MCP (`server.py`):
+   Actualiza o añade nuevas herramientas (tools) en nuestro `server.py` que permitan interactuar con la API v2 de GNS3 para:
+   - Crear un nuevo proyecto en GNS3 llamado "BGP_Backdoor_Lab".
+   - Crear tres nodos de routers (RTA en AS 100, RTB en AS 200, RTC en AS 300).
+   - Crear las conexiones físicas/lógicas entre los nodos:
+     * RTA conectado con RTB (vía IGP / EIGRP).
+     * RTA conectado con RTC (vía eBGP).
+     * RTB conectado con RTC (vía eBGP).
+   - Enviar comandos de configuración inicial CLI a los routers para simular el escenario BGP Backdoor (ej. configurar EIGRP 10, redes y el comando `network 172.31.160.0 backdoor` en RTA).
+
+2. EJECUCIÓN AUTOMATIZADA:
+   Invoca estas herramientas paso a paso a través de la IA para que el laboratorio quede completamente montado, encendido y configurado en el servidor GNS3 (10.0.30.50).
+
+Por favor, muéstrame el código actualizado de `server.py` con estas nuevas capacidades de despliegue y dime cómo proceder para ejecutarlo.
+```
 
 ------------------------------------------------------------
 
