@@ -88,7 +88,17 @@ pip install gns3-mcp
 
 ![GNS3 MCP Install](images/10pipinstallgns3mcp.png)
 
-3.2)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP).
+3.2) Verificar la instalacion del Servidor MCP de GNS3.
+
+**POWERSHELL**
+
+```text
+pip install gns3-mcp
+```
+
+![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
+
+3.3)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP).
 
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
 
@@ -108,16 +118,6 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 ```
 
 (Nota: Si usas una ruta absoluta o un entorno virtual, asegúrate de apuntar directamente al ejecutable del script o usar uvx gns3-mcp si prefieres gestión de paquetes moderna).
-
-3.2) Verificar la instalacion del Servidor MCP de GNS3.
-
-**POWERSHELL**
-
-```text
-pip install gns3-mcp
-```
-
-![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
 
 Opcional para actualizar el servidor MCP de GNS3 realizar lo siguiente:
 
