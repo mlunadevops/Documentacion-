@@ -187,6 +187,7 @@ pip install mcp requests
 
 ### Paso 2: Crear el archivo de tu Servidor MCP Personalizado
 
+IMPORTANTE: En este paso se va a crear el SERVIDOR MCP 
 Crea una carpeta nueva para tu proyecto (por ejemplo, `gns3-mcp-v2`) y dentro crea un archivo llamado `server.py`. 
 
 Copia y pega este código base en `server.py`. Este script ya incluye la lógica para conectarse a tu GNS3 2.2.60 en el puerto `3080` mediante la API v2:
