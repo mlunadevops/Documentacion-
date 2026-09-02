@@ -39,11 +39,7 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
-
-
-
-
-## 3. BGP Configuration:
+## 3. IMPLEMENTACION:
 
 **Router A (RTA - AS 100):**
 
