@@ -27,7 +27,7 @@ Es el formato estándar que se utiliza para empaquetar y transportar los datos e
 
  **¿Que es un API REST?**
 
- El API REST es el sistema completo (el conjunto de reglas y la interfaz) que permite la comunicación.
+ El API REST es el sistema completo (el conjunto de reglas y la interfaz) que permite la comunicación, es una arquitectura cliente-servidor basada en HTTP.
 
 * El canal de transporte físico o la "autopista" por donde viaja todo es **HTTP** (con sus métodos como `GET` y `POST`).
 * El idioma o formato en el que va empaquetada la información que viaja por ese canal es **JSON**.
