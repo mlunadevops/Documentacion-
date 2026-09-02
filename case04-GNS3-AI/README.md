@@ -143,13 +143,19 @@ La configuracion del cliente GEMINI para probar la conexion:
 
 Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos establecer las variables de entorno que el servidor está solicitando:
 
-```text
+text
+# Limpiar variables
+Remove-Item Env:\GNS3_* -ErrorAction SilentlyContinue
+
+# Apuntar al puerto de API REST 3080 con la IP de la VM
 $env:GNS3_HOST="10.0.30.50"
 $env:GNS3_PORT="3080"
 $env:GNS3_USER="gns3"
 $env:GNS3_PASSWORD="gns3"
-```
 
+# Ejecutar el servidor MCP
+gns3-mcp
+```
 Ejecuta el siguiente bloque en tu PowerShell para definir las variables de entorno de la sesión (reemplaza `tu_usuario` y `tu_password` con las credenciales reales de tu servidor GNS3, que por defecto suelen ser `admin` / `admin` o las que hayas configurado):
 
 
