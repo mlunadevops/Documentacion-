@@ -109,11 +109,30 @@ pip list | Select-String "gns3-mcp"
 
 ![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
 
-3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp"), para esto hay que tener los siguientes datos.
+### Conexión del servidor MCP de GNS3 "gns3-mcp"  (instalado en el paso 3.1 a traves del comando pip install "gns3-mcp") con GNS3 VIRTUAL MACHINE SERVER
+
+3.3)  Conectar el servidor MCP  de GNS3 "gns3-mcp" , para esto hay que tener los datos de conexion de la VM de GNS3.
 
         GNS3_BASE_URL": "10.0.30.50:80"
         GNS3_USERNAME": "gns3"
         GNS3_PASSWORD": "gns3"
+
+Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60 VIRTUAL MACHINE, necesitamos establecer las variables de entorno que el servidor requiere para la conexion a traves del siguiente script:
+
+
+```text
+# Limpiar variables
+Remove-Item Env:\GNS3_* -ErrorAction SilentlyContinue
+
+# Apuntar al puerto de API REST 3080 con la IP de la VM
+$env:GNS3_HOST="10.0.30.50"
+$env:GNS3_PORT="3080"
+$env:GNS3_USER="gns3"
+$env:GNS3_PASSWORD="gns3"
+
+# Ejecutar el servidor MCP
+gns3-mcp
+```
 
 
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
@@ -138,25 +157,6 @@ Debes registrar el servidor MCP en el archivo de configuración de tu cliente co
 La configuracion del cliente GEMINI para probar la conexion:
 
 ### Configuración de Credenciales de GNS3
-
-Para que el servidor MCP pueda comunicarse con el GNS3 2.2.60, necesitamos establecer las variables de entorno que el servidor está solicitando:
-
-
-```text
-# Limpiar variables
-Remove-Item Env:\GNS3_* -ErrorAction SilentlyContinue
-
-# Apuntar al puerto de API REST 3080 con la IP de la VM
-$env:GNS3_HOST="10.0.30.50"
-$env:GNS3_PORT="3080"
-$env:GNS3_USER="gns3"
-$env:GNS3_PASSWORD="gns3"
-
-# Ejecutar el servidor MCP
-gns3-mcp
-```
-Ejecuta el siguiente bloque en tu PowerShell para definir las variables de entorno de la sesión (reemplaza `tu_usuario` y `tu_password` con las credenciales reales de tu servidor GNS3, que por defecto suelen ser `admin` / `admin` o las que hayas configurado):
-
 
 
 
