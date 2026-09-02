@@ -93,7 +93,7 @@ pip install gns3-mcp
 **POWERSHELL**
 
 ```text
-pip install gns3-mcp
+pip list | Select-String "gns3-mcp"
 ```
 
 ![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
