@@ -111,6 +111,13 @@ pip list | Select-String "gns3-mcp"
 
 3.3)  Configurar el Cliente de Gemini (ej. Gemini CLI o archivo de configuración MCP).
 
+Datos:
+
+        "GNS3_BASE_URL": "http://10.0.30.50:3080",
+        "GNS3_USERNAME": "admin",
+        "GNS3_PASSWORD": "tu_password_de_gns3"
+
+
 Debes registrar el servidor MCP en el archivo de configuración de tu cliente compatible con Gemini (por ejemplo, en el archivo de ajustes del entorno o settings.json / mcp_config.json):  
 
 ```text
