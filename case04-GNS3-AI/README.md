@@ -57,6 +57,24 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
 ## 3. Implementacion:
 
+3.0) Script:
+
+```text
+# 1. Obtener la ruta de los scripts de usuario desde Python y registrarla en el PATH de usuario
+$PythonScriptsPath = [System.IO.Path]::Combine([Environment]::GetFolderPath('ApplicationData'), "Python", "Python312", "Scripts")
+
+# Validar y agregar si no existe en el PATH actual del usuario
+$UserPath = [Environment]::GetEnvironmentVariable("PATH", "User")
+if ($UserPath -notlike "*$PythonScriptsPath*") {
+    [Environment]::SetEnvironmentVariable("PATH", "$UserPath;$PythonScriptsPath", "User")
+    Write-Host "¡Ruta agregada con éxito al PATH de usuario: $PythonScriptsPath" -ForegroundColor Green
+} else {
+    Write-Host "La ruta ya se encontraba registrada en el PATH." -ForegroundColor Yellow
+}
+
+# 2. Refrescar el PATH para la sesión actual de PowerShell
+$env:PATH = [Environment]::GetEnvironmentVariable("PATH", "Machine") + ";" + [Environment]::GetEnvironmentVariable("PATH", "User")
+```
 
 3.1) Instalar el Servidor MCP de GNS3: mediante la instalacion del siguiente paquete
 
@@ -99,6 +117,17 @@ pip install gns3-mcp
 
 ![GNS3 MCP Install](images/11pipinstallgns3mcp.png)
 
+3.2) Probar la ejecución manual del servidor (Modo Stdio):
+
+**POWERSHELL**
+
+```text
+gns3-mcp
+```
+
+![GNS3 MCP Install](images/12pipinstallgns3mcp.png)
+
+Dado que el servidor se comunica típicamente por flujos estándar (`stdio`) con el cliente de IA, puedes invocarlo directamente en una terminal para ver si arranca sin arrojar errores de dependencias:
 
 3.3). Validación de la Conexión
 
