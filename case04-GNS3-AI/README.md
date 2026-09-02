@@ -231,7 +231,11 @@ def controlar_proyecto(project_id: str, accion: str) -> str:
 if __name__ == "__main__":
     mcp.run()
 ```
+### Paso 3: Configurar el Servidor MCP en Visual Studio Code
 
+Para que tu cliente de IA en VS Code (o la aplicación compatible con MCP que utilices) reconozca este servidor, debes declararlo en su archivo de configuración (generalmente llamado `mcp_config.json` o en la configuración de extensiones de MCP).
+
+La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a tu entorno de Python ejecutando tu script:
 
 
 
