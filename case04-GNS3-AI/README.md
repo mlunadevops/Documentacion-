@@ -294,6 +294,18 @@ Para lograrlo, por favor haz lo siguiente:
 Por favor, muéstrame el código actualizado de `server.py` con estas nuevas capacidades de despliegue y dime cómo proceder para ejecutarlo.
 ```
 
+### ⚙️ ¿Qué pasará al enviar este comando?
+
+* **Ampliación del Puente:** Copilot actualizará tu `server.py` añadiendo funciones que se conectan a los endpoints de creación de proyectos (`POST /projects`), nodos (`POST /projects/{id}/nodes`) y enlaces de GNS3 v2.
+* **Despliegue Autónomo:** La IA ejecutará las llamadas mediante el chat de VS Code.
+* **Magia en GNS3:** Verás aparecer en tu servidor GNS3 el proyecto nuevo con los routers interconectados y configurados exactamente como indica tu documento de ingeniería.
+
+¡Pega este prompt en el chat de VS Code y observa cómo la IA construye y configura tu red sola!
+
+
+
+
+
 ------------------------------------------------------------
 
 
