@@ -252,6 +252,14 @@ La ruta de ejecución que le darás a tu cliente de IA apuntará directamente a 
 
 (Asegúrate de cambiar la ruta por la ubicación real de tu archivo server.py).
 
+### Paso 4: Registrar tu puente GNS3 v2 en el archivo de configuración de VS Code
+
+En lugar de depender de herramientas externas complejas, puedes aprovechar el comando nativo de VS Code para registrar tu servidor local:
+
+* Abre la paleta de comandos en VS Code presionando `Ctrl + Shift + P` (en Windows).
+* Escribe y selecciona el comando: **MCP: Open User Configuration** (o **Open Remote User Configuration** si usas entornos remotos).
+* Esto abrirá un archivo `mcp.json` en tu perfil de usuario. Agrega la configuración apuntando al script que creaste previamente:
+
 
 ------------------------------------------------------------
 
