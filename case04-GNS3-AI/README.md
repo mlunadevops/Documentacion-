@@ -26,6 +26,13 @@ Es el formato estándar que se utiliza para empaquetar y transportar los datos e
 
 
  **¿Que es un API REST?**
+
+ El API REST es el sistema completo (el conjunto de reglas y la interfaz) que permite la comunicación.
+
+* El canal de transporte físico o la "autopista" por donde viaja todo es **HTTP** (con sus métodos como `GET` y `POST`).
+* El idioma o formato en el que va empaquetada la información que viaja por ese canal es **JSON**.
+
+Por lo tanto, se podría decir que el API REST utiliza **HTTP** como canal y **JSON** como lenguaje/formato para conectar al cliente con el servidor.
  
 ![GNS3 MCP Install](images/00APIrest.jpg)
 
