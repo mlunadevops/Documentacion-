@@ -322,6 +322,13 @@ Al hacer clic en **Keep**, VS Code sobrescribirá automáticamente tu `server.py
 
 ![GNS3 MCP Install](images/19MCPpersonalizado.png)
 
+¡Exactamente así es! Al hacer clic en Keep, lo que estás haciendo es fusionar y guardar todo el código que la IA programó directamente dentro de tu archivo físico server.py.
+
+Esto significa que:
+
+Tu servidor MCP ha evolucionado: Ya no sirve solo para listar proyectos o apagar cosas; ahora en su interior viven nuevas funciones (tools) como desplegar_bgp_backdoor_lab, creadores de enlaces, inyectores de comandos CLI y gestores de nodos.
+
+Nuevos superpoderes de automatización: De ahora en adelante, cada vez que levantes o recargues tu entorno de MCP en VS Code, GitHub Copilot sabrá que cuenta con esas nuevas herramientas. Si en el futuro le pides por chat "Añade un cuarto router llamado RTD al laboratorio y conéctalo a RTA", la IA sabrá exactamente qué función ejecutar en tu server.py para hacerlo realidad en GNS3.
 ------------------------------------------------------------
 
 
