@@ -83,6 +83,14 @@ El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen
 
 IMPORTANTE el servidor de Python no cambia: el mismo archivo `servidor_infra.py` que diseñamos funcionará exactamente igual sin importar si se conectas a Claude Desktop, Cursor,  Cherry Studio, Visual Studio Code. Es decir el siguiente script funcionara para cualquier AI.
 
+2.1) Abre Visual Studio Code New File.
+
+![Abrir archivo](images/02newfile.png)
+
+2.2) Archivo Pyhton:
+
+![Archivo Python](images/03newfile.png)
+
 
 ```text
 ! 
