@@ -223,3 +223,10 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
+Paso 3: Instalar la extensión Cline en VS Code
+
+- Abre Visual Studio Code.
+- Ve al panel de extensiones (`Ctrl + Shift + X`).
+- Busca e instala la extensión Cline.
+
