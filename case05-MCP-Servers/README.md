@@ -263,7 +263,7 @@ Importante en el siguiente script debes colocar la ruta completa a donde esta el
     "infra-automation": {
       "command": "python",
       "args": [
-        "C:\\ruta\\completa\\a\\tu\\servidor_infra.py"
+        "G:\\Mi unidad\\Publicaciones Linkedin\\MCP Servers\\MCPserverscript\\servidor_infra.py"
       ]
     }
   }
