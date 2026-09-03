@@ -305,7 +305,11 @@ Por favor, muéstrame el código actualizado de `server.py` con estas nuevas cap
 
 ![GNS3 MCP Install](images/18MCPpersonalizado.png)
 
+### Definición Conceptual: Capa de Traducción de Infraestructura
 
+Lo que estamos haciendo al ampliar las capacidades de `server.py` se conoce formalmente como **desarrollo de herramientas personalizadas** (*custom tool definition*) para servidores MCP, o aplicado a la arquitectura de sistemas, creación de un **puente de abstracción de API** (*API Abstraction Bridge / Middleware*).
+
+En términos conceptuales y de arquitectura de software, estás construyendo una **capa de traducción de infraestructura guiada por IA**. Esto significa que estás dotando a tu modelo de lenguaje de funciones especializadas (*Tools*) para que, en lugar de limitarse a responder texto, pueda ejecutar acciones del mundo real (como crear proyectos, desplegar nodos y configurar enrutamiento) traduciendo instrucciones en lenguaje natural a peticiones HTTP estructuradas que la API de GNS3 comprende.
 ------------------------------------------------------------
 
 
