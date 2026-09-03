@@ -71,7 +71,7 @@ Para que un Servidor MCP Básico en Python funcione correctamente, debe tener ob
 - **🚀 Canal de Comunicación / Transporte (`stdio_server`):**
   Configura el mecanismo de transporte (generalmente la entrada/salida estándar `stdio`) para que el cliente de IA (como Claude Desktop) y el script de Python puedan conversar de forma local y segura.
 
-**Router A (RTA - AS 100):**
+**El siguiente es un script de un servidor basico MCP**
 
 ```text
 ! 
