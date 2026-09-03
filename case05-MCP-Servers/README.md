@@ -275,3 +275,13 @@ Importante en el siguiente script debes colocar la ruta completa a donde esta el
 
 5.3) Vuelve a la pestaña o panel principal de chat de Cline.
 Haz clic en el botón azul "Done" (Listo) que aparece arriba en el panel de configuración de MCP a la izquierda de tu pantalla.
+
+### 6. CONEXION DEL AGENTE IA A LA RED REAL:
+
+Vamos a conectar el agente de IA a un router Cisco dentro de GNS3
+
+Pasos para lograrlo:
+1. **Habilitar el acceso remoto:** El router debe permitir conexiones de administración, típicamente mediante SSH, Telnet, o una API web si es un modelo avanzado.
+2. **Usar una librería de automatización en Python:** En tu servidor MCP (`servidor_infra.py`), puedes integrar librerías especializadas como `paramiko` (para conexiones SSH seguras) o `netmiko` (ideal para equipos de red como Cisco, MikroTik, Huawei, etc.).
+3. **Definir las credenciales y comandos:** El script debe conectarse usando la IP local del router (por ejemplo, `192.168.1.1`), autenticarse y ejecutar comandos de lectura como `show running-config` o equivalente.
+4. **Exponerlo como herramienta MCP:** Envuelves todo esto en una nueva `@app.list_tools()` para que Cline sepa que ahora tiene la capacidad de consultar el estado del hardware de red.
