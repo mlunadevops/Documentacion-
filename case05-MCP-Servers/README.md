@@ -248,3 +248,20 @@ Para que Cline funcione gratis usando la nube:
   - **Model:** Elige alguno de los modelos potentes marcados como gratuitos (por ejemplo, busca los que terminan en `:free` como `deepseek/deepseek-chat` o equivalentes disponibles en su catálogo).
 
 ![Instalacion Cline](images/06ClineOpenrouter.png)
+
+Paso 5: Registrar tu Servidor MCP en Cline.
+
+Dentro de la misma interfaz de configuración de Cline, busca la sección de MCP Servers y añade la configuración apuntando a tu script de Python:
+
+```text
+{
+  "mcpServers": {
+    "infra-automation": {
+      "command": "python",
+      "args": [
+        "C:\\ruta\\completa\\a\\tu\\servidor_infra.py"
+      ]
+    }
+  }
+}
+```
