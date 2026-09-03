@@ -64,12 +64,21 @@ Para que un Servidor MCP Básico en Python funcione correctamente, debe tener ob
 
 - **🔌 Inicialización del Servidor (Server):**
   Se crea la instancia principal del servidor asignándole un nombre identificador (ej. `app = Server("infra-automation-server")`).
+  
 - **📋 Exposición de Herramientas (`@app.list_tools`):**
   Es el decorador y función donde el servidor le "anuncia" al cliente de IA qué herramientas tiene disponibles, incluyendo su nombre, descripción y el esquema de entrada (`inputSchema`) obligatorio en formato JSON.
+
+El Proceso de Selección y Descubrimiento (list_tools) actúa como el Plano de Control.
+
 - **⚙️ Lógica de Ejecución (`@app.call_tool`):**
   Es el receptor central. Aquí es donde el servidor toma los parámetros enviados por la IA, ejecuta la lógica real de infraestructura (redes, bases de datos, etc.) y procesa el resultado.
+
+La Lógica de Ejecución (call_tool) es donde ocurre la acción real sobre la infraestructura.
+
 - **🚀 Canal de Comunicación / Transporte (`stdio_server`):**
   Configura el mecanismo de transporte (generalmente la entrada/salida estándar `stdio`) para que el cliente de IA (como Claude Desktop) y el script de Python puedan conversar de forma local y segura.
+
+El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen los datos (Data Plane).
 
 **El siguiente es un script de un servidor basico MCP**
 
@@ -134,11 +143,11 @@ if __name__ == "__main__":
 !
 ```
 
-El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen los datos (Data Plane).
 
-El Proceso de Selección y Descubrimiento (list_tools) actúa como el Plano de Control.
 
-La Lógica de Ejecución (call_tool) es donde ocurre la acción real sobre la infraestructura.
+
+
+
 
 
 ### 4. BGP Configuration:
