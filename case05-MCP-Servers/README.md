@@ -83,17 +83,6 @@ El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen
 
 IMPORTANTE el servidor de Python no cambia: el mismo archivo `servidor_infra.py` que diseñamos funcionará exactamente igual sin importar si se conectas a Claude Desktop, Cursor,  Cherry Studio, Visual Studio Code. Es decir el siguiente script funcionara para cualquier AI.
 
-2.1) Abre Visual Studio Code New File.
-
-![Abrir archivo](images/02newfile.png)
-
-2.2) Archivo Pyhton:
-
-![Archivo Python](images/03newfile.png)
-
-2.3) Copia el siguiente codigo y guarda el archivo como servidor_infra.py.
-
-
 ```text
 from mcp.server import Server
 import mcp.types as types
@@ -166,7 +155,16 @@ pip install mcp
 ![MCP instalacion dependencias](images/01pipinstall.png)
 
 Paso 2: Crear el archivo del servidor de Python
-Crea un archivo en tu computadora llamado `servidor_infra.py` y pega el siguiente código base:
+
+2.1) Abre Visual Studio Code New File.
+
+![Abrir archivo](images/02newfile.png)
+
+2.2) Escoge archivo Pyhton:
+
+![Archivo Python](images/03newfile.png)
+
+2.3) Copia el siguiente codigo y guarda el archivo como servidor_infra.py.
 
 ```text
 from mcp.server import Server
