@@ -238,6 +238,9 @@ Para que Cline funcione gratis usando la nube:
 
 - Entra a OpenRouter.ai y crea una cuenta gratuita (puedes registrarte con Google o GitHub).
 - Ve a la sección de API Keys y genera una clave nueva.
+
+![Instalacion Cline](images/05Openrouter.png)
+
 - Abre el panel de Cline en la barra lateral de VS Code y ve a sus Settings (Configuración).
 - Configura los datos del proveedor:
   - **API Provider:** Selecciona OpenRouter.
