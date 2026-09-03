@@ -33,6 +33,16 @@ Conceptos:
 
 En conclusion: "The AI model can only use the tools that are explicitly exposed by the MCP server." (El modelo de IA solo puede usar las herramientas que están explícitamente expuestas por el servidor MCP).
 
+¿Cómo se resuelve esto en la arquitectura real?
+Tienes dos opciones principales para escalar las capacidades de tu agente:
+
+- **🧩 Ampliar el servidor actual (To expand):** Añadir una nueva función al código del mismo servidor MCP (por ejemplo, una herramienta llamada `control_water_valve`).
+- **🔌 Conectar múltiples servidores MCP (## Multiplexing MCP servers):** Esta es la magia del protocolo. Un cliente de IA (como Claude Desktop) puede conectarse a varios servidores MCP al mismo tiempo.
+  - Un servidor maneja las luces 💡.
+  - Otro servidor maneja el sistema de riego 💧.
+
+Cuando le pides algo al agente, este analiza las herramientas de todos los servidores conectados y elige la correcta de forma automática.
+
 **Ampliacion (To expand)**:
 
 Arquitectura basica:
