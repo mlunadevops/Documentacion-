@@ -253,6 +253,10 @@ Paso 5: Registrar tu Servidor MCP en Cline.
 
 Dentro de la misma interfaz de configuración de Cline, busca la sección de MCP Servers y añade la configuración apuntando a tu script de Python:
 
+Importante en el siguiente script debes colocar la ruta completa a donde esta el archivo (servidor_infra.py):
+
+G:\\Mi unidad\\Publicaciones Linkedin\\MCP Servers\\MCPserverscript\\servidor_infra.py
+
 ```text
 {
   "mcpServers": {
