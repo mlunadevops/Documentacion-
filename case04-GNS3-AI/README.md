@@ -310,6 +310,18 @@ Por favor, muéstrame el código actualizado de `server.py` con estas nuevas cap
 Lo que estamos haciendo al ampliar las capacidades de `server.py` se conoce formalmente como **desarrollo de herramientas personalizadas** (*custom tool definition*) para servidores MCP, o aplicado a la arquitectura de sistemas, creación de un **puente de abstracción de API** (*API Abstraction Bridge / Middleware*).
 
 En términos conceptuales y de arquitectura de software, estás construyendo una **capa de traducción de infraestructura guiada por IA**. Esto significa que estás dotando a tu modelo de lenguaje de funciones especializadas (*Tools*) para que, en lugar de limitarse a responder texto, pueda ejecutar acciones del mundo real (como crear proyectos, desplegar nodos y configurar enrutamiento) traduciendo instrucciones en lenguaje natural a peticiones HTTP estructuradas que la API de GNS3 comprende.
+
+Todo ese código nuevo que Copilot generó (las más de 500 líneas con las nuevas funciones) se va a guardar directamente en el archivo `server.py` que ya tienes creado en tu computadora, además de hacer una pequeña actualización en tu archivo de configuración `mcp.json`.
+
+Para que se guarde de forma definitiva, solo tienes que hacer lo siguiente:
+
+* Dirígete a la parte inferior del chat donde dice **2 files changed +517 -18**.
+* Haz clic en el botón azul **Keep (Conservar)**.
+
+Al hacer clic en **Keep**, VS Code sobrescribirá automáticamente tu `server.py` local con todas estas nuevas herramientas de automatización (creación de nodos, enlaces, control de energía y comandos por Telnet). ¡Así de fácil integras el trabajo que hizo el asistente en tu entorno de desarrollo!
+
+![GNS3 MCP Install](images/19MCPpersonalizado.png)
+
 ------------------------------------------------------------
 
 
