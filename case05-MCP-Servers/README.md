@@ -251,7 +251,7 @@ Para que Cline funcione gratis usando la nube:
 
 Paso 5: Registrar tu Servidor MCP en Cline.
 
-Dentro de la misma interfaz de configuración de Cline, busca la sección de MCP Servers y añade la configuración apuntando a tu script de Python:
+5.1) Dentro de la misma interfaz de configuración de Cline, busca la sección de MCP Servers y añade la configuración apuntando a tu script de Python:
 
 Importante en el siguiente script debes colocar la ruta completa a donde esta el archivo (servidor_infra.py):
 
@@ -270,3 +270,8 @@ Importante en el siguiente script debes colocar la ruta completa a donde esta el
 }
 ```
 ![Archivo Python](images/07ClineOpenrouter.png)
+
+5.2) Click en guardar
+
+5.3) Vuelve a la pestaña o panel principal de chat de Cline.
+Haz clic en el botón azul "Done" (Listo) que aparece arriba en el panel de configuración de MCP a la izquierda de tu pantalla.
