@@ -31,7 +31,7 @@ Conceptos:
 
 **Herramienta (Tool)**: Es una función estructurada que un servidor MCP expone para permitir que el modelo ejecute acciones en el mundo real o interactúe con sistemas externos. Ejemplo, analogia, La Herramienta (Tool): Es como un botón programado en la pared de una casa que dice claramente: “Encender luces del jardín (requiere: color y brillo)” o “Ajustar aire (requiere: grados)”, si el MCP solo tiene la herramienta ( “Encender luces del jardín”) solo podras hacer esa accion, si le pides al MCP otra accion como cerrar la llave de agua del jardin, NO LO PODRA hacer ya que no tienes ese boton (Herramienta) en el MCP.
 
-En conclusion: "The AI model can only use the tools that are explicitly exposed by the MCP server." (El modelo de IA solo puede usar las herramientas que están explícitamente expuestas por el servidor MCP).
+En conclusion: "The AI model can only use the tools that are explicitly exposed by the MCP server." (El modelo de IA solo puede usar las herramientas o capacidades que están explícitamente expuestas por el servidor MCP).
 
 ¿Cómo se resuelve esto en la arquitectura real?
 Tienes dos opciones principales para escalar las capacidades de tu agente:
