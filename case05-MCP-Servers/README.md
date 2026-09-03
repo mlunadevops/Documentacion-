@@ -230,3 +230,6 @@ Paso 3: Instalar la extensión Cline en VS Code
 - Ve al panel de extensiones (`Ctrl + Shift + X`).
 - Busca e instala la extensión Cline.
 
+![Instalacion Cline](images/03installcline.png)
+
+
