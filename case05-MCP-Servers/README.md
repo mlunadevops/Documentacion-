@@ -233,3 +233,15 @@ Paso 3: Instalar la extensión Cline en VS Code
 ![Instalacion Cline](images/04installcline.png)
 
 
+Paso 4: Configurar IA Gratuita en la Nube (Sin costo y sin correr nada local)
+Para que Cline funcione gratis usando la nube:
+
+- Entra a OpenRouter.ai y crea una cuenta gratuita (puedes registrarte con Google o GitHub).
+- Ve a la sección de API Keys y genera una clave nueva.
+- Abre el panel de Cline en la barra lateral de VS Code y ve a sus Settings (Configuración).
+- Configura los datos del proveedor:
+  - **API Provider:** Selecciona OpenRouter.
+  - **API Key:** Pega la clave que generaste.
+  - **Model:** Elige alguno de los modelos potentes marcados como gratuitos (por ejemplo, busca los que terminan en `:free` como `deepseek/deepseek-chat` o equivalentes disponibles en su catálogo).
+
+
