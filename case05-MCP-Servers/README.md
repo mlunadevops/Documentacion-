@@ -269,3 +269,4 @@ Importante en el siguiente script debes colocar la ruta completa a donde esta el
   }
 }
 ```
+![Archivo Python](images/07ClineOpenrouter.png)
