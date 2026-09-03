@@ -36,15 +36,15 @@ En conclusion: "The AI model can only use the tools that are explicitly exposed 
 ¿Cómo se resuelve esto en la arquitectura real?
 Tienes dos opciones principales para escalar las capacidades de tu agente:
 
-1) 🧩 Ampliar el servidor actual (To expand):** Añadir una nueva función al código del mismo servidor MCP (por ejemplo, una herramienta llamada `control_water_valve`).
+1) 🧩 **Ampliar el servidor actual (To expand):** Añadir una nueva función al código del mismo servidor MCP (por ejemplo, una herramienta llamada `control_water_valve`).
    
-2)🔌 Conectar múltiples servidores MCP (## Multiplexing MCP servers):** Esta es la magia del protocolo. Un cliente de IA (como Claude Desktop) puede conectarse a varios servidores MCP al mismo tiempo.
+2)🔌 **Conectar múltiples servidores MCP (## Multiplexing MCP servers):** Esta es la magia del protocolo. Un cliente de IA (como Claude Desktop) puede conectarse a varios servidores MCP al mismo tiempo.
   - Un servidor maneja las luces 💡.
   - Otro servidor maneja el sistema de riego 💧.
 
 Cuando le pides algo al agente, este analiza las herramientas de todos los servidores conectados y elige la correcta de forma automática.
 
-**Ampliacion (To expand)**:
+**Ampliacion (To expand)**: Ampliar el servidor actual: Añadir una nueva función al código del mismo servidor MCP (por ejemplo, una herramienta llamada `control_water_valve`).
 
 Arquitectura basica:
 
