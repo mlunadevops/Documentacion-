@@ -39,7 +39,7 @@ El Servidor MCP ⚙️ devuelve una respuesta estructurada al Cliente (éxito/fa
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
-![BGP WEIGTH](images/01Topologia.jpg)
+![Arquitectura Basica](images/00Arquitecturabasica.jpg)
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
