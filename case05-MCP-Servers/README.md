@@ -134,5 +134,12 @@ if __name__ == "__main__":
 !
 ```
 
+El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen los datos (Data Plane).
+
+El Proceso de Selección y Descubrimiento (list_tools) actúa como el Plano de Control.
+
+La Lógica de Ejecución (call_tool) es donde ocurre la acción real sobre la infraestructura.
+
+
 ### 4. BGP Configuration:
 
