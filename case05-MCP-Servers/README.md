@@ -33,7 +33,7 @@ Conceptos:
 
 En conclusion: "The AI model can only use the tools that are explicitly exposed by the MCP server." (El modelo de IA solo puede usar las herramientas que están explícitamente expuestas por el servidor MCP).
 
-**Ampliacion (Tool)**:
+**Ampliacion (To expand)**:
 
 Arquitectura basica:
 
