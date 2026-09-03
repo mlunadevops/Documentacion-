@@ -91,9 +91,10 @@ IMPORTANTE el servidor de Python no cambia: el mismo archivo `servidor_infra.py`
 
 ![Archivo Python](images/03newfile.png)
 
+2.3) Copia el siguiente codigo y guarda el archivo como servidor_infra.py.
+
 
 ```text
-! 
 from mcp.server import Server
 import mcp.types as types
 from mcp.server.stdio import stdio_server
@@ -150,7 +151,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-!
 ```
 
 ### 4. IMPLEMENTACION DE MCP EN VISUAL STUDIO CODE:
