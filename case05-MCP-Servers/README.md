@@ -154,3 +154,6 @@ Abre tu terminal (en VS Code o en tu sistema operativo) y asegúrate de tener Py
 ```text
 pip install mcp
 ```
+
+![MCP instalacion dependencias](images/01pipinstall.png)
+
