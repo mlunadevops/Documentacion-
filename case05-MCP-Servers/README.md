@@ -247,4 +247,4 @@ Para que Cline funcione gratis usando la nube:
   - **API Key:** Pega la clave que generaste.
   - **Model:** Elige alguno de los modelos potentes marcados como gratuitos (por ejemplo, busca los que terminan en `:free` como `deepseek/deepseek-chat` o equivalentes disponibles en su catálogo).
 
-![Instalacion Cline](images/06Openrouter.png)
+![Instalacion Cline](images/06ClineOpenrouter.png)
