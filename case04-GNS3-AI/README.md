@@ -303,7 +303,7 @@ Por favor, muéstrame el código actualizado de `server.py` con estas nuevas cap
 ¡Pega este prompt en el chat de VS Code y observa cómo la IA construye y configura tu red sola!
 
 
-
+![GNS3 MCP Install](images/18MCPpersonalizado.png)
 
 
 ------------------------------------------------------------
