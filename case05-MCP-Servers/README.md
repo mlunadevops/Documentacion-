@@ -52,9 +52,11 @@ El Servidor MCP ⚙️ recibe la petición, valida parámetros y ejecuta la acci
 
 El Servidor MCP ⚙️ devuelve una respuesta estructurada al Cliente (éxito/fallo y detalles).
 
+![Arquitectura Basica](images/00Arquitecturabasica.jpg)
+
 ## 2. Topology and Arquitectura:
 
-![Arquitectura Basica](images/00Arquitecturabasica.jpg)
+
 
 ## 3. Creacion de servidor BASICO de MCP:
 
