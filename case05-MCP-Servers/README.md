@@ -82,6 +82,9 @@ El Canal de Transporte (stdio_server) es efectivamente el medio por donde fluyen
 
 **El siguiente es un script de un servidor basico MCP**
 
+IMPORTANTE el servidor de Python no cambia: el mismo archivo `servidor_infra.py` que diseñamos funcionará exactamente igual sin importar si se conectas a Claude Desktop, Cursor,  Cherry Studio, Visual Studio Code. Es decir el siguiente script funcionara para cualquier AI.
+
+
 ```text
 ! 
 from mcp.server import Server
