@@ -255,7 +255,7 @@ Dentro de la misma interfaz de configuración de Cline, busca la sección de MCP
 
 Importante en el siguiente script debes colocar la ruta completa a donde esta el archivo (servidor_infra.py):
 
-G:\\Mi unidad\\Publicaciones Linkedin\\MCP Servers\\MCPserverscript\\servidor_infra.py
+**G:\\Mi unidad\\Publicaciones Linkedin\\MCP Servers\\MCPserverscript\\servidor_infra.py**
 
 ```text
 {
