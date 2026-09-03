@@ -164,7 +164,7 @@ Paso 2: Crear el archivo del servidor de Python
 
 ![Archivo Python](images/03newfile.png)
 
-2.3) Copia el siguiente codigo y guarda el archivo como servidor_infra.py.
+2.3) Copia el siguiente codigo y guarda el archivo como **servidor_infra.py.**
 
 ```text
 from mcp.server import Server
