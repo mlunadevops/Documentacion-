@@ -60,6 +60,17 @@ El Servidor MCP ⚙️ devuelve una respuesta estructurada al Cliente (éxito/fa
 
 ## 3. Creacion de servidor BASICO de MCP:
 
+Para que un Servidor MCP Básico en Python funcione correctamente, debe tener obligatoriamente estos 4 componentes clave:
+
+- **🔌 Inicialización del Servidor (Server):**
+  Se crea la instancia principal del servidor asignándole un nombre identificador (ej. `app = Server("infra-automation-server")`).
+- **📋 Exposición de Herramientas (`@app.list_tools`):**
+  Es el decorador y función donde el servidor le "anuncia" al cliente de IA qué herramientas tiene disponibles, incluyendo su nombre, descripción y el esquema de entrada (`inputSchema`) obligatorio en formato JSON.
+- **⚙️ Lógica de Ejecución (`@app.call_tool`):**
+  Es el receptor central. Aquí es donde el servidor toma los parámetros enviados por la IA, ejecuta la lógica real de infraestructura (redes, bases de datos, etc.) y procesa el resultado.
+- **🚀 Canal de Comunicación / Transporte (`stdio_server`):**
+  Configura el mecanismo de transporte (generalmente la entrada/salida estándar `stdio`) para que el cliente de IA (como Claude Desktop) y el script de Python puedan conversar de forma local y segura.
+
 **Router A (RTA - AS 100):**
 
 ```text
