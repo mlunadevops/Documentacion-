@@ -27,7 +27,15 @@ Los tres componentes fundamentales son:
 
 Piensa en el servidor MCP como una interfaz adaptada específicamente para la IA: expone herramientas y recursos de forma estructurada para que el modelo no necesite conocer los detalles de bajo nivel de cada infraestructura.
 
-## 2. Topology and BGP Neighbor Establishment
+Arquitectura basica:
+
+El Cliente de IA 🤖 envía una intención (ej: reiniciar base de datos).
+
+El Servidor MCP ⚙️ recibe la petición, valida parámetros y ejecuta la acción real de forma segura.
+
+El Servidor MCP ⚙️ devuelve una respuesta estructurada al Cliente (éxito/fallo y detalles).
+
+## 2. Topology and Arquitectura:
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
