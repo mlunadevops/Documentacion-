@@ -29,7 +29,7 @@ Piensa en el servidor MCP como una interfaz adaptada específicamente para la IA
 
 Conceptos:
 
-Una Herramienta (Tool): Es una función estructurada que un servidor MCP expone para permitir que el modelo ejecute acciones en el mundo real o interactúe con sistemas externos.
+**Herramienta (Tool)**: Es una función estructurada que un servidor MCP expone para permitir que el modelo ejecute acciones en el mundo real o interactúe con sistemas externos.
 
 Arquitectura basica:
 
