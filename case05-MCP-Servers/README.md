@@ -44,7 +44,7 @@ Tienes dos opciones principales para escalar las capacidades de tu agente:
 
 Cuando le pides algo al agente, este analiza las herramientas de todos los servidores conectados y elige la correcta de forma automática.
 
-Arquitectura basica:
+**Arquitectura basica:**
 
 El Cliente de IA 🤖 envía una intención (ej: reiniciar base de datos).
 
