@@ -27,6 +27,10 @@ Los tres componentes fundamentales son:
 
 Piensa en el servidor MCP como una interfaz adaptada específicamente para la IA: expone herramientas y recursos de forma estructurada para que el modelo no necesite conocer los detalles de bajo nivel de cada infraestructura.
 
+Conceptos:
+
+Una Herramienta (Tool): Es una función estructurada que un servidor MCP expone para permitir que el modelo ejecute acciones en el mundo real o interactúe con sistemas externos.
+
 Arquitectura basica:
 
 El Cliente de IA 🤖 envía una intención (ej: reiniciar base de datos).
