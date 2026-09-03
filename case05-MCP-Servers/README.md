@@ -45,7 +45,62 @@ El Servidor MCP ⚙️ devuelve una respuesta estructurada al Cliente (éxito/fa
 
 ```text
 ! 
-router bgp 100
+from mcp.server import Server
+import mcp.types as types
+from mcp.server.stdio import stdio_server
+import asyncio
+
+# 1. Inicializamos el servidor MCP
+app = Server("infra-automation-server")
+
+# 2. Definimos una herramienta (Tool) para el agente
+@app.list_tools()
+async def handle_list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="check_server_status",
+            description="Verifica si un servidor o servicio de red está activo.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "server_ip": {
+                        "type": "string",
+                        "description": "La dirección IP o nombre del servidor a verificar."
+                    }
+                },
+                "required": ["server_ip"]
+            }
+        )
+    ]
+
+# 3. Lógica que se ejecuta cuando la IA usa la herramienta
+@app.call_tool()
+async def handle_call_tool(name: str, arguments: dict) -> list[types.TextContent]:
+    if name == "check_server_status":
+        ip = arguments.get("server_ip")
+        
+        # Simulación de verificación de infraestructura
+        # (Aquí iría la lógica real de red o ping)
+        estado_exitoso = True 
+        
+        if estado_exitoso:
+            return [types.TextContent(type="text", text=f"Servidor {ip} responde correctamente. Código: 1 (Éxito)")]
+        else:
+            return [types.TextContent(type="text", text=f"Error al conectar con {ip}. Código: 0 (Fallo)")]
+            
+    raise ValueError(f"Herramienta desconocida: {name}")
+
+# 4. Ejecución del servidor usando transporte estándar (stdio)
+async def main():
+    async with stdio_server() as (read_stream, write_stream):
+        await app.run(
+            read_stream,
+            write_stream,
+            app.create_initialization_options()
+        )
+
+if __name__ == "__main__":
+    asyncio.run(main())
 !
 ```
 
