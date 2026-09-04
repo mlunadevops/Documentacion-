@@ -408,3 +408,6 @@ services:
       - DB_PATH=data/audit.db
 "@ | Out-File -Encoding utf8 docker-compose.yml
 ```
+
+
+![Creacion docker-compose.yml](images/10Odocker-compose.yml.png)
