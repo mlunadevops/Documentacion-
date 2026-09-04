@@ -52,6 +52,13 @@ New-Item -ItemType Directory -Path "logs" -Force
  
 ![Creacion Carpetas](images/02Creacioncarpetas.png)
 
+### Paso 2: Creación del archivo de dependencias (requirements.txt)
+
+Ahora avanzamos al siguiente nivel. Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia.
+
+**Instrucciones para ti:**
+* Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell (`C:\Enterprise-MCP-Toolkit`).
+* Ejecuta el siguiente comando para crear y poblar el archivo `requirements.txt` con las librerías necesarias:
 
 ## 3. BGP Configuration:
 
