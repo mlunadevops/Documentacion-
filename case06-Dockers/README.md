@@ -525,4 +525,8 @@ Ahora solo te falta registrar tu servidor local para que la extensión pueda inv
 }
 ```
 
+4.Guarda el archivo (`Ctrl + S`).
 
+Al volver a esta pestaña de Cline, verás que **`enterprise-mcp-toolkit`** aparece listado y activo con tus herramientas (`listar_dispositivos` y `registrar_dispositivo`). 
+
+![Relacion edit configuratio](images/14Editconfiguration.png)
