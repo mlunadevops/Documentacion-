@@ -228,5 +228,5 @@ if __name__ == "__main__":
 
 **POWERSHELL**
 ```text
-cd C:\Enterprise-MCP-Toolkit
+python init_db.py
 ```
