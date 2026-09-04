@@ -238,20 +238,27 @@ python init_db.py
 
 #### Guía Paso a Paso para el Aprovisionamiento Visual:
 
-1. **Localiza el archivo de base de datos:**
-   Dirígete en tu explorador de archivos de Windows a la ruta: `C:\Enterprise-MCP-Toolkit\data\audit.db`
+Debes tener instalado previamente la aplicaion **DB Browser for SQLite Instalador**:
 
-2. **Abre la herramienta gráfica:**
-   Inicia **DB Browser for SQLite** (o cualquier cliente SQLite de tu preferencia). Arrastra o abre el archivo `audit.db` dentro de la aplicación.
+Link de descarga:
 
 [**DB Browser for SQLite Instalador**](https://github.com/sqlitebrowser/sqlitebrowser/releases)
 
-Instalador de DB Browser for Windows
+Escoge el siguiente instalador (Instalador de DB Browser for Windows):
 
 ![Instalador de DB Browser for WINDOWS](images/06InstaladorDBrowser.png)
 
+1. **Localiza el archivo de base de datos: (audit.db)**
+
+   Dirígete en tu explorador de archivos de Windows a la ruta: **`C:\Enterprise-MCP-Toolkit\data\audit.db`**
+
+3. **Abre la herramienta gráfica:**
+   Inicia **DB Browser for SQLite** (o cualquier cliente SQLite de tu preferencia). Arrastra o abre el archivo `audit.db` dentro de la aplicación.
+   
+![Eleccion de DB ](images/07Edicionauditdb.png)
 
 
+07Edicionauditdb.png
 4. **Inserta los dispositivos de red:**
    * Ve a la pestaña **Browse Data** (Explorar datos).
    * Selecciona la tabla `devices` en el menú desplegable.
