@@ -365,7 +365,7 @@ if __name__ == "__main__":
 
 Ahora que tenemos la base de datos y el servidor listos, necesitamos empaquetarlo todo dentro de un contenedor ligero de Python utilizando Docker.
 
-Copia y ejecuta este bloque en tu PowerShell para crear el archivo `Dockerfile`:
+**7.1) Copia y ejecuta este bloque en tu PowerShell para crear el archivo `Dockerfile`:**
 
 **POWERSHELL**
 ```text
@@ -386,3 +386,25 @@ CMD ["python", "servidor_infra.py"]
 
 ![Orquestacion Docker](images/09Orquestacion.png)
 
+** 7.1) Siguiente paso: Creación de `docker-compose.yml` **
+
+Ahora crearemos el archivo de orquestación que conectará el volumen local de tus datos (donde vive tu `audit.db` con las credenciales que aprovisionaste) hacia dentro del contenedor.
+
+Copia y ejecuta este bloque en tu PowerShell:
+
+**POWERSHELL**
+```text
+@"
+version: '3.8'
+
+services:
+  enterprise-mcp:
+    build: .
+    container_name: enterprise-mcp-server
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DB_PATH=data/audit.db
+"@ | Out-File -Encoding utf8 docker-compose.yml
+```
