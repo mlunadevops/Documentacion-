@@ -419,14 +419,19 @@ Ya tenemos todos los engranajes listos: la base de datos inicializada, las crede
 1. Ve al menú de inicio de Windows 10, busca **Docker Desktop** y ábrelo.
 2. Espera unos segundos o minutos hasta que el ícono de la ballena en la barra de tareas (esquina inferior derecha) se ponga en verde y diga **"Docker is running"**.
 
-### Limpia el atributo obsoleto en el compose (Opcional pero recomendado):
-
-Abre tu archivo `docker-compose.yml` y elimina la primera línea que dice `version: '3.8'`, ya que las versiones actuales de Docker Compose ya no la necesitan.
+### DESPLIEGUE DEL CONTENEDOR:
 
 Ejecuta el siguiente comando en tu PowerShell para construir y levantar tu toolkit en segundo plano:
+
+El comando `docker compose up --build -d` realiza una serie de acciones clave para poner en marcha tu aplicación mediante Docker:
+
+* **Lee la configuración:** Toma el archivo `docker-compose.yml` para saber cómo debe armar y conectar los servicios definidos.
+* **Construye la imagen (`--build`):** Toma las instrucciones del archivo `Dockerfile` (como instalar dependencias con `pip` y copiar los archivos necesarios) y genera una imagen fresca de tu contenedor con todos los cambios recientes.
+* **Ejecuta en segundo plano (`-d` o *detached mode*):** Levanta el contenedor y lo deja corriendo de forma independiente en segundo plano, liberando tu terminal de PowerShell para que puedas seguir ejecutando otros comandos.
 
 **POWERSHELL**
 ```text
 docker compose up --build -d
 ```
 
+![Creacin de la imagen](images/10Odocker-compose.yml.png)
