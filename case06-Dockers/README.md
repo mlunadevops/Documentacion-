@@ -246,6 +246,9 @@ python init_db.py
 
 [**DB Browser for SQLite Instalador**](https://github.com/sqlitebrowser/sqlitebrowser/releases)
 
+Instalador de DB Browser for Windows
+
+![Creacion Archivo env](images/06InstaladorDBrowser.png)
 
 
 
