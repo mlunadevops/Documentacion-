@@ -54,7 +54,8 @@ New-Item -ItemType Directory -Path "logs" -Force
 
 ### Paso 2: Creación del archivo de dependencias (requirements.txt)
 
-Ahora avanzamos al siguiente nivel. Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia.
+Ahora avanzamos al siguiente nivel. Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia. El archivo requirements.txt es la lista de ingredientes (las librerías de Python), y el Dockerfile que haremos a continuación será la receta de cocina completa que le dice a Docker cómo juntar esos ingredientes, el sistema operativo base y tu código para hornear el contenedor final.
+
 * **¿Qué hacemos?:** Creamos un archivo de texto plano llamado `requirements.txt` dentro de la carpeta del proyecto que lista las librerías externas de Python que nuestro software necesita para funcionar (como `mcp`, `netmiko` para red, etc.).
 
 * **¿Para qué sirve?:** Sirve como un manifiesto o lista de compras para Docker y Python. En lugar de instalar las herramientas una por una de forma manual, Docker lee este archivo durante la construcción del contenedor (`docker build`) y descarga automáticamente todas las librerías necesarias de golpe. Esto garantiza que tu kit sea portátil y funcione exactamente igual en cualquier computadora donde lo despliegues.
