@@ -269,5 +269,8 @@ Escoge el siguiente instalador (Instalador de DB Browser for Windows):
      * `password`: Tu contraseña real de acceso.
      * `protocol`: Protocolo de comunicación (`ssh`).
 
+![Insertar Dispositivos de Red Credenciales](images/08Edicionauditdb.png)
+       
+
 5. **Guarda los cambios:**
    Haz clic en el botón **Write Changes** (Guardar cambios / Disquete) en la barra superior de la herramienta para que los datos queden grabados permanentemente en el archivo SQLite.
