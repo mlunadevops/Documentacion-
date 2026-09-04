@@ -395,8 +395,6 @@ Copia y ejecuta este bloque en tu PowerShell:
 **POWERSHELL**
 ```text
 @"
-version: '3.8'
-
 services:
   enterprise-mcp:
     build: .
@@ -415,6 +413,15 @@ services:
 **7.3) Paso Final: Compilación y Despliegue del Contenedor:**
 
 Ya tenemos todos los engranajes listos: la base de datos inicializada, las credenciales cargadas vía DB Browser, el código del servidor MCP y la orquestación.
+
+### Inicia Docker Desktop:
+
+1. Ve al menú de inicio de Windows 10, busca **Docker Desktop** y ábrelo.
+2. Espera unos segundos o minutos hasta que el ícono de la ballena en la barra de tareas (esquina inferior derecha) se ponga en verde y diga **"Docker is running"**.
+
+### Limpia el atributo obsoleto en el compose (Opcional pero recomendado):
+
+Abre tu archivo `docker-compose.yml` y elimina la primera línea que dice `version: '3.8'`, ya que las versiones actuales de Docker Compose ya no la necesitan.
 
 Ejecuta el siguiente comando en tu PowerShell para construir y levantar tu toolkit en segundo plano:
 
