@@ -360,3 +360,9 @@ if __name__ == "__main__":
     asyncio.run(main())
 "@ | Out-File -Encoding utf8 servidor_infra.py
 ```
+
+### Siguiente fase: Paso 7 (Orquestación con Docker)
+
+Ahora que tenemos la base de datos y el servidor listos, necesitamos empaquetarlo todo dentro de un contenedor ligero de Python utilizando Docker.
+
+Copia y ejecuta este bloque en tu PowerShell para crear el archivo `Dockerfile`:
