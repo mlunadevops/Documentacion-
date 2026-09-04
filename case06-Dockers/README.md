@@ -167,12 +167,14 @@ NET_PASSWORD=cambia_esta_contrasena
 #### Instrucciones para el Paso 5:
 * Para mantener nuestro entorno limpio y modular, crearemos un script auxiliar llamado **`init_db.py`** que se encargará de levantar las tablas relacionales (`devices` y `audit_logs`) dentro de nuestra carpeta `data/audit.db`.
   
-* Asegúrate de estar posicionado en la ruta de tu proyecto en PowerShell:
+* 5.1) Asegúrate de estar posicionado en la ruta de tu proyecto en PowerShell:
 
 **POWERSHELL**
 ```text
 cd C:\Enterprise-MCP-Toolkit
 ```
+
+* 5.2) Ejecuta el siguiente bloque de comandos para crear el archivo **`init_db.py`** :
 
 **POWERSHELL**
 ```text
@@ -220,4 +222,11 @@ def init_database():
 if __name__ == "__main__":
     init_database()
 "@ | Out-File -Encoding utf8 init_db.py
+```
+
+5.3) Ejecuta el script para probar la creación de la base de datos localmente:
+
+**POWERSHELL**
+```text
+cd C:\Enterprise-MCP-Toolkit
 ```
