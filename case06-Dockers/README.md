@@ -501,7 +501,10 @@ if __name__ == "__main__":
 Ahora solo te falta registrar tu servidor local para que la extensión pueda invocarlo:
 
 1. Haz clic en el botón **"Edit Configuration"** (que se ve justo en el centro de la pantalla).
-2. Se abrirá un archivo JSON **(llamado `mcp_settings.json`)**. Pega dentro la siguiente configuración exacta:
+
+![Relacion edit configuratio](images/14Editconfiguration.png)
+
+3. Se abrirá un archivo JSON **(llamado `mcp_settings.json`)**. Pega dentro la siguiente configuración exacta:
 
 
 ```text
@@ -522,4 +525,4 @@ Ahora solo te falta registrar tu servidor local para que la extensión pueda inv
 }
 ```
 
-![Creacion Tabla auditoria](images/14Editconfiguration.png)
+
