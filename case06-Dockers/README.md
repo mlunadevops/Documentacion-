@@ -282,81 +282,45 @@ Copia y ejecuta este bloque en tu terminal PowerShell para crear el archivo que 
 @"
 import sqlite3
 import os
-import asyncio
-from mcp.server import Server
-from mcp.server.stdio import stdio_server
-from mcp.types import Tool, TextContent
+from mcp.server.fastmcp import FastMCP
 
-app = Server("enterprise-mcp-toolkit")
+# Inicializamos FastMCP con el nombre del servidor
+mcp = FastMCP("enterprise-mcp-toolkit")
 DB_PATH = os.getenv("DB_PATH", "data/audit.db")
 
-@app.list_tools()
-async def list_tools() -> list[Tool]:
-    return [
-        Tool(
-            name="listar_dispositivos",
-            description="Lista todos los dispositivos de red registrados en la base de datos SQLite.",
-            inputSchema={
-                "type": "object",
-                "properties": {},
-                "required": []
-            }
-        ),
-        Tool(
-            name="registrar_dispositivo",
-            description="Registra un nuevo dispositivo de red multivendor en la base de datos.",
-            inputSchema={
-                "type": "object",
-                "properties": {
-                    "hostname": {"type": "string"},
-                    "ip_address": {"type": "string"},
-                    "vendor": {"type": "string", "description": "cisco, huawei, fortinet, aruba"},
-                    "username": {"type": "string"},
-                    "password": {"type": "string"}
-                },
-                "required": ["hostname", "ip_address", "vendor", "username", "password"]
-            }
-        )
-    ]
-
-@app.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+@mcp.tool()
+def listar_dispositivos() -> str:
+    """Lista todos los dispositivos de red registrados en la base de datos SQLite."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
     try:
-        if name == "listar_dispositivos":
-            cursor.execute("SELECT hostname, ip_address, vendor, protocol FROM devices")
-            rows = cursor.fetchall()
-            conn.close()
-            return [TextContent(type="text", text=str(rows))]
-            
-        elif name == "registrar_dispositivo":
-            cursor.execute('''
-                INSERT OR REPLACE INTO devices (hostname, ip_address, vendor, username, password)
-                VALUES (?, ?, ?, ?, ?)
-            ''', (
-                arguments["hostname"],
-                arguments["ip_address"],
-                arguments["vendor"],
-                arguments["username"],
-                arguments["password"]
-            ))
-            conn.commit()
-            conn.close()
-            return [TextContent(type="text", text=f"Dispositivo {arguments['hostname']} registrado exitosamente.")]
-            
-        raise ValueError(f"Tool no encontrada: {name}")
+        cursor.execute("SELECT hostname, ip_address, vendor, protocol FROM devices")
+        rows = cursor.fetchall()
+        return str(rows)
     except Exception as e:
+        return f"Error: {str(e)}"
+    finally:
         conn.close()
-        return [TextContent(type="text", text=f"Error: {str(e)}")]
 
-async def main():
-    async with stdio_server() as (read_stream, write_stream):
-        await app.run(read_stream, write_stream, app.create_initialization_options())
+@mcp.tool()
+def registrar_dispositivo(hostname: str, ip_address: str, vendor: str, username: str, password: str) -> str:
+    """Registra un nuevo dispositivo de red multivendor en la base de datos (vendor: cisco, huawei, fortinet, aruba)."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute('''
+            INSERT OR REPLACE INTO devices (hostname, ip_address, vendor, username, password)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (hostname, ip_address, vendor, username, password))
+        conn.commit()
+        return f"Dispositivo {hostname} registrado exitosamente."
+    except Exception as e:
+        return f"Error: {str(e)}"
+    finally:
+        conn.close()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    mcp.run()
 "@ | Out-File -Encoding utf8 servidor_infra.py
 ```
 
