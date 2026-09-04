@@ -117,5 +117,8 @@ CMD ["python", "servidor_infra.py"]
 
 Verifica en tu explorador de archivos o mediante un `dir` en PowerShell que el archivo **`Dockerfile` (exactamente así, sin extensión `.txt`) aparezca junto al `requirements.txt`.**
 
+![Creacion Carpetas](images/04Creaciondockerfile.png)
+
+
 
 ### 4. BGP Configuration:
