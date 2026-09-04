@@ -120,5 +120,10 @@ Verifica en tu explorador de archivos o mediante un `dir` en PowerShell que el a
 ![Creacion Carpetas](images/04Creaciondockerfile.png)
 
 
+### Paso 4: Crear el archivo de variables de entorno (`.env`): Configuración y Persistencia
 
-### 4. BGP Configuration:
+* **¿Qué hacemos?:** Crearemos un archivo llamado `.env` en la raíz del proyecto para almacenar de forma segura las credenciales de red y parámetros de configuración.
+* **¿Para qué sirve?:** Sirve para aplicar la mejor práctica de **Gestión Segura de Credenciales.** Evita que las contraseñas de tus routers, switches o servidores queden "quemadas" o expuestas dentro del código fuente de Python o el `Dockerfile`, permitiendo que el contenedor las lea de forma aislada e inyectada.
+
+
+
