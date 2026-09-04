@@ -21,8 +21,6 @@ jajaja
 
 ![Creacion Carpetas](images/00InfografiaBlueprint.jpg)
 
-
-
 ## 2. Implementation
 
 ### Paso 1: Creación de la Estructura Base de Directorios
@@ -111,7 +109,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY servidor_infra.py .
 ENV DB_PATH=data/audit.db
-CMD ["python", "servidor_infra.py"]
+CMD ["python", "-u", "servidor_infra.py"]
 "@ | Out-File -Encoding utf8 Dockerfile
 ```
 
