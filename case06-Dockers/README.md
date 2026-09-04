@@ -521,3 +521,5 @@ Ahora solo te falta registrar tu servidor local para que la extensión pueda inv
   }
 }
 ```
+
+![Creacion Tabla auditoria](images/14Editconfiguration.png)
