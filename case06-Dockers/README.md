@@ -75,6 +75,10 @@ requests
 "@ | Out-File -Encoding utf8 requirements.txt
 ```
 
+![Creacion Carpetas](images/03Creacionrequirrements.png)
+
+
+
 ### 1. Crear el archivo `requirements.txt`: Gestión de Dependencias
 
 
