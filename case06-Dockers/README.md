@@ -410,7 +410,7 @@ services:
 
 ![Creacion docker-compose.yml](images/10Odocker-compose.yml.png)
 
-**7.3) Paso Final: Compilación y Despliegue del Contenedor:**
+**7.3) Paso Final: Compilación y Despliegue del Contenedor (Orquestacion y construccion del entorno):**
 
 Ya tenemos todos los engranajes listos: la base de datos inicializada, las credenciales cargadas vía DB Browser, el código del servidor MCP y la orquestación.
 
@@ -426,7 +426,9 @@ Ejecuta el siguiente comando en tu PowerShell para construir y levantar tu toolk
 El comando `docker compose up --build -d` realiza una serie de acciones clave para poner en marcha tu aplicación mediante Docker:
 
 * **Lee la configuración:** Toma el archivo `docker-compose.yml` para saber cómo debe armar y conectar los servicios definidos.
+  
 * **Construye la imagen (`--build`):** Toma las instrucciones del archivo `Dockerfile` (como instalar dependencias con `pip` y copiar los archivos necesarios) y genera una imagen fresca de tu contenedor con todos los cambios recientes.
+  
 * **Ejecuta en segundo plano (`-d` o *detached mode*):** Levanta el contenedor y lo deja corriendo de forma independiente en segundo plano, liberando tu terminal de PowerShell para que puedas seguir ejecutando otros comandos.
 
 **POWERSHELL**
@@ -435,3 +437,10 @@ docker compose up --build -d
 ```
 
 ![Creacin de la imagen](images/11Odocker-compose.UP.png)
+
+**POWERSHELL**
+```text
+docker ps
+```
+
+![Docker ps](images/12Odockerps.png)
