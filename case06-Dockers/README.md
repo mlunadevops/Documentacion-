@@ -110,6 +110,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY servidor_infra.py .
+ENV DB_PATH=data/audit.db
 CMD ["python", "servidor_infra.py"]
 "@ | Out-File -Encoding utf8 Dockerfile
 ```
