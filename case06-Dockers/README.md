@@ -409,7 +409,26 @@ docker ps
 ![Docker ps](images/12Odockerps.png)
 
 
-### Siguiente fase: Paso 8 (Orquestación con Docker)
+### Siguiente fase: CONEXION DEL AGENTE IA CON EL SERVIDOR MCP
+
+¡Excelente! Vamos a añadir la tabla de auditoría de comandos a tu base de datos SQLite y a actualizar tu script para que tu asistente pueda registrar cada acción.
+
+1. Actualiza tu base de datos SQLite
+Si usas DB Browser for SQLite, puedes ejecutar esta sentencia SQL en la pestaña Execute SQL para crear la tabla de auditoría:
+
+```text
+CREATE TABLE IF NOT EXISTS command_audits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    device_hostname TEXT NOT NULL,
+    command TEXT NOT NULL,
+    output_result TEXT,
+    status TEXT NOT NULL,
+    executed_by TEXT DEFAULT 'mcp-agent',
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+![Creacion Tabla auditoria](images/13Creaciontablauditoria.png)
+
 
 
 
