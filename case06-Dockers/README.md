@@ -386,7 +386,7 @@ CMD ["python", "servidor_infra.py"]
 
 ![Orquestacion Docker](images/09Orquestacion.png)
 
-** 7.1) Siguiente paso: Creación de `docker-compose.yml` **
+**7.2) Siguiente paso: Creación de `docker-compose.yml`**
 
 Ahora crearemos el archivo de orquestación que conectará el volumen local de tus datos (donde vive tu `audit.db` con las credenciales que aprovisionaste) hacia dentro del contenedor.
 
@@ -411,3 +411,15 @@ services:
 
 
 ![Creacion docker-compose.yml](images/10Odocker-compose.yml.png)
+
+**7.3) Paso Final: Compilación y Despliegue del Contenedor:**
+
+Ya tenemos todos los engranajes listos: la base de datos inicializada, las credenciales cargadas vía DB Browser, el código del servidor MCP y la orquestación.
+
+Ejecuta el siguiente comando en tu PowerShell para construir y levantar tu toolkit en segundo plano:
+
+**POWERSHELL**
+```text
+docker compose up --build -d
+```
+
