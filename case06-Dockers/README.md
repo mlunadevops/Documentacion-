@@ -128,9 +128,10 @@ Verifica en tu explorador de archivos o mediante un `dir` en PowerShell que el a
 
 Importante en este archivo vamos a gestionar las credenciales:
 
-# Credenciales de Red por Defecto (Ejemplo)
-** NET_USER=admin** 
-** NET_PASSWORD=cambia_esta_contrasena** 
+### Credenciales de Red por Defecto (Ejemplo)
+
+* **`NET_USER=admin`**
+* **`NET_PASSWORD=cambia_esta_contrasena`**
 
 **Instrucciones para ti:**
 * Asegúrate de estar posicionado en **`C:\Enterprise-MCP-Toolkit`.**
