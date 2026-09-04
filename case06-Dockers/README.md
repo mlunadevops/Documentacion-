@@ -411,9 +411,10 @@ docker ps
 
 ### fase 8: CREACION DE TABLA DE AUDITORIA
 
-¡Excelente! Vamos a añadir la tabla de auditoría de comandos a tu base de datos SQLite y a actualizar tu script para que tu asistente pueda registrar cada acción.
+Vamos a añadir la tabla de auditoría de comandos a tu base de datos SQLite, para lo cual debemos correr dentro de SQLite el siguiente script:
 
-1. Actualiza tu base de datos SQLite
+1. Añadir tabla de auditoria SQLite añadiendo el siguiente script
+
 Si usas DB Browser for SQLite, puedes ejecutar esta sentencia SQL en la pestaña Execute SQL para crear la tabla de auditoría:
 
 ```text
@@ -429,6 +430,70 @@ CREATE TABLE IF NOT EXISTS command_audits (
 ```
 ![Creacion Tabla auditoria](images/13Creaciontablauditoria.png)
 
+2. Actualiza tu servidor_infra.py para que tenga el nuevo tool (herramieta)
+   
+Agregaremos una nueva herramienta llamada **registrar_auditoria** para que la IA guarde los registros automáticamente cada vez que interactúe con los equipos. Reemplaza tu archivo **servidor_infra.py** con este código actualizado, donde incluiremos el nuevo Tool:
+
+```text
+import sqlite3
+import os
+from mcp.server.fastmcp import FastMCP
+
+# Inicializamos FastMCP con el nombre del servidor
+mcp = FastMCP("enterprise-mcp-toolkit")
+DB_PATH = os.getenv("DB_PATH", "data/audit.db")
+
+@mcp.tool()
+def listar_dispositivos() -> str:
+    """Lista todos los dispositivos de red registrados en la base de datos SQLite."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT hostname, ip_address, vendor, protocol FROM devices")
+        rows = cursor.fetchall()
+        return str(rows)
+    except Exception as e:
+        return f"Error: {str(e)}"
+    finally:
+        conn.close()
+
+@mcp.tool()
+def registrar_dispositivo(hostname: str, ip_address: str, vendor: str, username: str, password: str) -> str:
+    """Registra un nuevo dispositivo de red multivendor en la base de datos (vendor: cisco, huawei, fortinet, aruba)."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute('''
+            INSERT OR REPLACE INTO devices (hostname, ip_address, vendor, username, password)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (hostname, ip_address, vendor, username, password))
+        conn.commit()
+        return f"Dispositivo {hostname} registrado exitosamente."
+    except Exception as e:
+        return f"Error: {str(e)}"
+    finally:
+        conn.close()
+
+@mcp.tool()
+def registrar_auditoria(device_hostname: str, command: str, output_result: str, status: str) -> str:
+    """Registra una traza de auditoría de comandos ejecutados en un dispositivo de red."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    try:
+        cursor.execute('''
+            INSERT INTO command_audits (device_hostname, command, output_result, status)
+            VALUES (?, ?, ?, ?)
+        ''', (device_hostname, command, output_result, status))
+        conn.commit()
+        return f"Auditoría guardada correctamente para {device_hostname}."
+    except Exception as e:
+        return f"Error al guardar auditoría: {str(e)}"
+    finally:
+        conn.close()
+
+if __name__ == "__main__":
+    mcp.run()
+```
 
 
 ### fase 9: CONEXION DEL AGENTE IA CON EL SERVIDOR MCP
