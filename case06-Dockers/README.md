@@ -434,4 +434,4 @@ El comando `docker compose up --build -d` realiza una serie de acciones clave pa
 docker compose up --build -d
 ```
 
-![Creacin de la imagen](images/10Odocker-compose.yml.png)
+![Creacin de la imagen](images/11Odocker-compose.UP.png)
