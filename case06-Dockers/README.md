@@ -51,7 +51,9 @@ New-Item -ItemType Directory -Path "logs" -Force
  
 ![Creacion Carpetas](images/02Creacioncarpetas.png)
 
-### Paso 2: Creación del archivo de dependencias (requirements.txt) este archivo es tambien llamado (MANIFIESTO de dependencias)
+### Paso 2: Creación del archivo de dependencias (requirements.txt) este archivo es tambien llamado (MANIFIESTO de dependencias):
+
+### 2.1 Crear el archivo `requirements.txt`: Gestión de Dependencias
 
 Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia. El archivo **requirements.txt** es la lista de ingredientes (las librerías de Python) a este archivo se le llama **manifiesto**, y el Dockerfile que haremos a continuación será la receta de cocina completa que le dice a Docker cómo juntar esos ingredientes, el sistema operativo base y tu código para hornear el contenedor final.
 
@@ -66,8 +68,6 @@ Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructu
 * **¿Cómo lo mitigamos a nivel empresarial?:**
   * **Uso de versiones fijas (Pinning):** En entornos de producción críticos, en lugar de poner solo `netmiko`, se especifican versiones exactas (ej. `netmiko==4.3.0`) para garantizar consistencia.
   * **Caché local o espejos privados:** Al empaquetar todo dentro de Docker y mantenerlo en tu kit portátil, una vez que la imagen se construye exitosamente por primera vez, **la imagen compilada ya lleva las librerías dentro. No necesita volver a descargarlas de internet cada vez que la ejecutes, lo que te independiza de futuras caídas de internet o cambios en la web.**
-
-### 2.1 Crear el archivo `requirements.txt`: Gestión de Dependencias
 
 Instrucciones para ti:
 Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell **(C:\Enterprise-MCP-Toolkit)** .
