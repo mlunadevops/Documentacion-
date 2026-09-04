@@ -409,7 +409,7 @@ docker ps
 ![Docker ps](images/12Odockerps.png)
 
 
-### Siguiente fase: CONEXION DEL AGENTE IA CON EL SERVIDOR MCP
+### fase 8: CREACION DE TABLA DE AUDITORIA
 
 ¡Excelente! Vamos a añadir la tabla de auditoría de comandos a tu base de datos SQLite y a actualizar tu script para que tu asistente pueda registrar cada acción.
 
@@ -431,4 +431,4 @@ CREATE TABLE IF NOT EXISTS command_audits (
 
 
 
-
+### fase 9: CONEXION DEL AGENTE IA CON EL SERVIDOR MCP
