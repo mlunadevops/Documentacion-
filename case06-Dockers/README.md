@@ -67,11 +67,12 @@ Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructu
   * **Uso de versiones fijas (Pinning):** En entornos de producción críticos, en lugar de poner solo `netmiko`, se especifican versiones exactas (ej. `netmiko==4.3.0`) para garantizar consistencia.
   * **Caché local o espejos privados:** Al empaquetar todo dentro de Docker y mantenerlo en tu kit portátil, una vez que la imagen se construye exitosamente por primera vez, **la imagen compilada ya lleva las librerías dentro. No necesita volver a descargarlas de internet cada vez que la ejecutes, lo que te independiza de futuras caídas de internet o cambios en la web.**
 
+### 2.1 Crear el archivo `requirements.txt`: Gestión de Dependencias
+
 Instrucciones para ti:
 Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell **(C:\Enterprise-MCP-Toolkit)** .
 
 Ejecuta el siguiente comando para crear y poblar el archivo **requirements.txt**  con las librerías necesarias:
-
 
 **POWERSHELL**
 ```text
@@ -86,14 +87,6 @@ requests
 ![Creacion Carpetas](images/03Creacionrequirrements.png)
 
 
-
-### 1. Crear el archivo `requirements.txt`: Gestión de Dependencias
-
-
-
-**Instrucciones para ti:**
-* Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell (`C:\Enterprise-MCP-Toolkit`).
-* Ejecuta el siguiente comando para crear y poblar el archivo `requirements.txt` con las librerías necesarias:
 
 ## 3. BGP Configuration:
 
