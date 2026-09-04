@@ -248,7 +248,7 @@ python init_db.py
 
 Instalador de DB Browser for Windows
 
-![Creacion Archivo env](images/06InstaladorDBrowser.png)
+![Instalador de DB Browser for WINDOWS](images/06InstaladorDBrowser.png)
 
 
 
