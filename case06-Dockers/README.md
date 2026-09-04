@@ -257,8 +257,6 @@ Escoge el siguiente instalador (Instalador de DB Browser for Windows):
    
 ![Eleccion de DB ](images/07Edicionauditdb.png)
 
-
-07Edicionauditdb.png
 4. **Inserta los dispositivos de red:**
    * Ve a la pestaña **Browse Data** (Explorar datos).
    * Selecciona la tabla `devices` en el menú desplegable.
