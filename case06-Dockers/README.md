@@ -87,15 +87,35 @@ requests
 ![Creacion Carpetas](images/03Creacionrequirrements.png)
 
 
+### Paso 3: Creación del Dockerfile: Construcción de la Receta Docker
 
-## 3. BGP Configuration:
+* **¿Qué hacemos?:** Crearemos el archivo **`Dockerfile` (sin extensión)** en la carpeta raíz `C:\Enterprise-MCP-Toolkit`.
+* **¿Para qué sirve?:** Es el plano maestro que Docker leerá para ensamblar nuestra imagen. Le indica que utilizaremos una versión ligera de Python 3.11, copiará nuestro manifiesto **(`requirements.txt`)**, instalará las librerías necesarias de forma limpia y dejará preparado el script de nuestro servidor MCP para ejecutarse automáticamente.
 
-**Router A (RTA - AS 100):**
+### 3.1 Crear el archivo `requirements.txt`: Gestión de Dependencias
 
+**Instrucciones para ti:**
+* Asegúrate de estar ubicado en la ruta del proyecto en tu PowerShell:
+
+**POWERSHELL**
 ```text
-! 
-router bgp 100
-!
+cd C:\Enterprise-MCP-Toolkit
 ```
+Creacion del Dockerfile:
+
+**POWERSHELL**
+```text
+@"
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY servidor_infra.py .
+CMD ["python", "servidor_infra.py"]
+"@ | Out-File -Encoding utf8 Dockerfile
+```
+
+Verifica en tu explorador de archivos o mediante un `dir` en PowerShell que el archivo **`Dockerfile` (exactamente así, sin extensión `.txt`) aparezca junto al `requirements.txt`.**
+
 
 ### 4. BGP Configuration:
