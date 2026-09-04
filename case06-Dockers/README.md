@@ -158,3 +158,66 @@ NET_PASSWORD=cambia_esta_contrasena
 
 ![Creacion Archivo env](images/05Creacionarchivoenv.png)
 
+### Paso 5: Inicialización del motor SQLite para Inventario y Auditoría Multivendor: Arquitectura de Base de Datos
+
+* **¿Qué hacemos?:** Crearemos el script o módulo de inicialización de la base de datos (**`init_db.py`** o integrado en nuestro servidor) que establecerá la estructura relacional para almacenar tanto el inventario de dispositivos multivendor (Cisco, Huawei, Fortinet, etc.) con sus respectivas credenciales, como el registro histórico de auditorías.
+ 
+* **¿Para qué sirve?:** Sirve para dotar al kit de una "memoria estructurada". En lugar de depender de credenciales estáticas globales, cada dispositivo de red tendrá su propia entrada segura con su IP, marca, protocolo y credenciales dedicadas, cumpliendo con los estándares de robustez de nivel empresarial.
+
+#### Instrucciones para el Paso 5:
+* Para mantener nuestro entorno limpio y modular, crearemos un script auxiliar llamado **`init_db.py`** que se encargará de levantar las tablas relacionales (`devices` y `audit_logs`) dentro de nuestra carpeta `data/audit.db`.
+  
+* Asegúrate de estar posicionado en la ruta de tu proyecto en PowerShell:
+
+**POWERSHELL**
+```text
+cd C:\Enterprise-MCP-Toolkit
+```
+
+**POWERSHELL**
+```text
+@"
+import sqlite3
+import os
+
+DB_PATH = "data/audit.db"
+
+def init_database():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    # Tabla de Inventario y Credenciales Multivendor
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS devices (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            hostname TEXT UNIQUE NOT NULL,
+            ip_address TEXT NOT NULL,
+            vendor TEXT NOT NULL,          -- cisco, huawei, fortinet, aruba, etc.
+            port INTEGER DEFAULT 22,
+            username TEXT NOT NULL,
+            password TEXT NOT NULL,
+            protocol TEXT DEFAULT 'ssh'
+        )
+    ''')
+
+    # Tabla de Historial de Auditoría y Cambios
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS audit_logs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+            hostname TEXT NOT NULL,
+            action TEXT NOT NULL,
+            status TEXT NOT NULL,
+            details TEXT
+        )
+    ''')
+
+    conn.commit()
+    conn.close()
+    print("[INFO] Base de datos SQLite inicializada correctamente en:", DB_PATH)
+
+if __name__ == "__main__":
+    init_database()
+"@ | Out-File -Encoding utf8 init_db.py
+```
