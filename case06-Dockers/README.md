@@ -21,6 +21,8 @@ jajaja
 
 ![Creacion Carpetas](images/00InfografiaBlueprint.jpg)
 
+![Proceso Docker](images/000info.jpg)
+
 ## 2. Implementation
 
 ### Paso 1: Creación de la Estructura Base de Directorios
