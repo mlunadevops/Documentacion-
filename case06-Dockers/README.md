@@ -76,7 +76,7 @@ Ejecuta el siguiente comando para crear y poblar el archivo **requirements.txt**
 **POWERSHELL**
 ```text
 @"
-mcp
+mcp<2.0
 pydantic
 netmiko
 requests
