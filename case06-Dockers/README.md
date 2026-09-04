@@ -383,3 +383,6 @@ ENV DB_PATH=data/audit.db
 CMD ["python", "servidor_infra.py"]
 "@ | Out-File -Encoding utf8 Dockerfile
 ```
+
+![Orquestacion Docker](images/09Orquestacion.png)
+
