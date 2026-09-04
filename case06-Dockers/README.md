@@ -133,6 +133,12 @@ Importante en este archivo vamos a gestionar las credenciales:
 * **`NET_USER=admin`**
 * **`NET_PASSWORD=cambia_esta_contrasena`**
 
+### 1. ¿A qué pertenecen `NET_USER` y `NET_PASSWORD`?: Análisis de Seguridad
+
+* **¿Qué son?:** Son variables de entorno genéricas configuradas como plantilla o credenciales por defecto (*fallback*) dentro del kit.
+* **¿A qué acceso pertenecen?:** Pertenecen al acceso de administración por red (SSH / Telnet / API) hacia los dispositivos de infraestructura de red que tu kit va a administrar y auditar (es decir, los routers, switches y firewalls de marcas como Cisco, Huawei, Aruba o Fortinet que tu script consultará mediante librerías como `netmiko`).
+* **¿Cómo se usan en el entorno empresarial?:** Sirven para que el servidor MCP tenga un usuario y contraseña base al intentar conectarse a los equipos de red en caso de que no se le especifique una credencial individual por dispositivo. Al estar en el archivo `.env`, puedes cambiarlas fácilmente por las credenciales reales de tu entorno de producción sin tocar ni modificar el código de la aplicación.
+
 **Instrucciones para ti:**
 * Asegúrate de estar posicionado en **`C:\Enterprise-MCP-Toolkit`.**
 * Ejecuta el siguiente comando en tu PowerShell para crear la plantilla inicial del archivo `.env`:
