@@ -52,9 +52,14 @@ New-Item -ItemType Directory -Path "logs" -Force
  
 ![Creacion Carpetas](images/02Creacioncarpetas.png)
 
-### Paso 2: Creación del archivo de dependencias (requirements.txt)
+### Paso 2: Creación del archivo de dependencias (requirements.txt) este archivo es tambien llamado (MANIFIESTO de dependencias)
 
-Ahora avanzamos al siguiente nivel. Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia. El archivo requirements.txt es la lista de ingredientes (las librerías de Python), y el Dockerfile que haremos a continuación será la receta de cocina completa que le dice a Docker cómo juntar esos ingredientes, el sistema operativo base y tu código para hornear el contenedor final.
+Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia. El archivo **requirements.txt** es la lista de ingredientes (las librerías de Python) a este archivo se le llama **manifiesto**, y el Dockerfile que haremos a continuación será la receta de cocina completa que le dice a Docker cómo juntar esos ingredientes, el sistema operativo base y tu código para hornear el contenedor final.
+
+### ¿Para qué sirve este término?
+
+Sí, es totalmente correcto llamarlo (o manifiesto de dependencias). En el ecosistema de Docker y desarrollo moderno, un "manifiesto" es cualquier archivo de configuración declarativo que describe de forma estática lo que un sistema o contenedor necesita para existir y funcionar (como el `requirements.txt` para Python, el `package.json` en Node.js, o el propio `Dockerfile`). Es la "declaración de intenciones" de la aplicación.
+
 
 * **¿Qué hacemos?:** Creamos un archivo de texto plano llamado `requirements.txt` dentro de la carpeta del proyecto que lista las librerías externas de Python que nuestro software necesita para funcionar (como `mcp`, `netmiko` para red, etc.).
 
