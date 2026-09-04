@@ -230,3 +230,36 @@ if __name__ == "__main__":
 ```text
 python init_db.py
 ```
+
+### Paso 5.4: Aprovisionamiento de Credenciales en la Base de Datos (Pre-Despliegue)
+
+* **¿Cuándo se ejecuta?:** Estrictamente después de haber inicializado la base de datos (Paso 5) y antes de desplegar el contenedor o conectar n8n.
+* **¿Por qué es necesario?:** Es el puente donde el conocimiento humano (tus contraseñas y accesos reales) se registra de forma segura en el archivo físico local para que la aplicación no intente operar a ciegas.
+
+#### Guía Paso a Paso para el Aprovisionamiento Visual:
+
+1. **Localiza el archivo de base de datos:**
+   Dirígete en tu explorador de archivos de Windows a la ruta: `C:\Enterprise-MCP-Toolkit\data\audit.db`
+
+2. **Abre la herramienta gráfica:**
+   Inicia **DB Browser for SQLite** (o cualquier cliente SQLite de tu preferencia). Arrastra o abre el archivo `audit.db` dentro de la aplicación.
+
+[**DB Browser for SQLite Instalador**](https://github.com/sqlitebrowser/sqlitebrowser/releases)
+
+
+
+
+4. **Inserta los dispositivos de red:**
+   * Ve a la pestaña **Browse Data** (Explorar datos).
+   * Selecciona la tabla `devices` en el menú desplegable.
+   * Haz clic en el botón de **New Record** (Nueva fila) e ingresa los datos reales de tus equipos de infraestructura:
+     * `hostname`: Identificador único del equipo (ej. `core-sw-01`, `edge-router-02`).
+     * `ip_address`: Dirección IP de gestión (ej. `192.168.10.2`).
+     * `vendor`: Marca del equipo en minúsculas (`cisco`, `huawei`, `fortinet`, `aruba`).
+     * `port`: Puerto de acceso SSH (por defecto `22`).
+     * `username`: Tu usuario administrador de red.
+     * `password`: Tu contraseña real de acceso.
+     * `protocol`: Protocolo de comunicación (`ssh`).
+
+5. **Guarda los cambios:**
+   Haz clic en el botón **Write Changes** (Guardar cambios / Disquete) en la barra superior de la herramienta para que los datos queden grabados permanentemente en el archivo SQLite.
