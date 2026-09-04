@@ -25,11 +25,32 @@ The Weight attribute is a Cisco proprietary parameter used in BGP (Border Gatewa
 * **Default Values:** Routes originated locally by the router receive a weight of 32,768 by default; routes learned from external or internal neighbors receive a weight of 0 by default.
 * **Precedence:** It is evaluated in the absolute first place within BGP's decision algorithm (above Local Preference, AS_PATH, MED, etc.). Routes with a higher Weight value have absolute preference.
 
-## 2. Topology and BGP Neighbor Establishment
+## 2. Implementation
 
-The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
+### Paso 1: Creación de la Estructura Base de Directorios
 
-![BGP WEIGTH](images/01Topologia.jpg)
+Para mantener un orden de nivel empresarial, lo primero que haremos es crear la carpeta principal del proyecto y sus subdirectorios para persistencia (como SQLite y logs) directamente desde tu terminal de PowerShell o comandos en Windows 10.
+
+**Instrucciones para ti:**
+* Abre tu terminal de PowerShell en Windows 10.
+* Ejecuta los siguientes comandos uno por uno para crear la estructura limpia del proyecto:
+
+![BGP WEIGTH](images/01Creacioncarpetas.jpg)
+
+```text
+# 1. Nos aseguramos de ir a la raíz del disco C:
+cd C:\
+
+# 2. Creamos la carpeta principal del proyecto
+mkdir C:\Enterprise-MCP-Toolkit
+
+# 3. Entramos inmediatamente a la carpeta recién creada
+cd C:\Enterprise-MCP-Toolkit
+
+# 4. Creamos los subdirectorios esenciales dentro del proyecto
+mkdir data
+mkdir logs
+```
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
