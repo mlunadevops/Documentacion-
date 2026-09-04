@@ -35,7 +35,7 @@ Para mantener un orden de nivel empresarial, lo primero que haremos es crear la 
 * Abre tu terminal de PowerShell en Windows 10.
 * Ejecuta los siguientes comandos uno por uno para crear la estructura limpia del proyecto:
 
-
+**POWERSHELL**
 ```text
 cd C:\
 New-Item -ItemType Directory -Path "C:\Enterprise-MCP-Toolkit" -Force
@@ -43,8 +43,13 @@ New-Item -ItemType Directory -Path "C:\Enterprise-MCP-Toolkit" -Force
 
 ![Creacion Carpetas](images/01Creacioncarpetas.jpg)
 
-
- four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
+**POWERSHELL**
+```text
+cd C:\Enterprise-MCP-Toolkit
+New-Item -ItemType Directory -Path "data" -Force
+New-Item -ItemType Directory -Path "logs" -Force
+```
+ 
 
 ## 3. BGP Configuration:
 
