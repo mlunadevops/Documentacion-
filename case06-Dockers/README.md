@@ -2,7 +2,6 @@
 
 ## Traffic Manipulation via the Weight Attribute
 **CCNP Miguelangel Luna**
-
 ---
 
 ## CONTENIDOS:
@@ -274,3 +273,90 @@ Escoge el siguiente instalador (Instalador de DB Browser for Windows):
 
 5. **Guarda los cambios:**
    Haz clic en el botón **Write Changes** (Guardar cambios / Disquete) en la barra superior de la herramienta para que los datos queden grabados permanentemente en el archivo SQLite.
+
+   ### Paso 6: Creación del Servidor MCP (`servidor_infra.py`)
+
+Copia y ejecuta este bloque en tu terminal PowerShell para crear el archivo que se encargará de consultar la base de datos que acabas de configurar:
+
+**POWERSHELL**
+```text
+@"
+import sqlite3
+import os
+import asyncio
+from mcp.server import Server
+from mcp.server.stdio import stdio_server
+from mcp.types import Tool, TextContent
+
+app = Server("enterprise-mcp-toolkit")
+DB_PATH = os.getenv("DB_PATH", "data/audit.db")
+
+@app.list_tools()
+async def list_tools() -> list[Tool]:
+    return [
+        Tool(
+            name="listar_dispositivos",
+            description="Lista todos los dispositivos de red registrados en la base de datos SQLite.",
+            inputSchema={
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        ),
+        Tool(
+            name="registrar_dispositivo",
+            description="Registra un nuevo dispositivo de red multivendor en la base de datos.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "hostname": {"type": "string"},
+                    "ip_address": {"type": "string"},
+                    "vendor": {"type": "string", "description": "cisco, huawei, fortinet, aruba"},
+                    "username": {"type": "string"},
+                    "password": {"type": "string"}
+                },
+                "required": ["hostname", "ip_address", "vendor", "username", "password"]
+            }
+        )
+    ]
+
+@app.call_tool()
+async def call_tool(name: str, arguments: dict) -> list[TextContent]:
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    try:
+        if name == "listar_dispositivos":
+            cursor.execute("SELECT hostname, ip_address, vendor, protocol FROM devices")
+            rows = cursor.fetchall()
+            conn.close()
+            return [TextContent(type="text", text=str(rows))]
+            
+        elif name == "registrar_dispositivo":
+            cursor.execute('''
+                INSERT OR REPLACE INTO devices (hostname, ip_address, vendor, username, password)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (
+                arguments["hostname"],
+                arguments["ip_address"],
+                arguments["vendor"],
+                arguments["username"],
+                arguments["password"]
+            ))
+            conn.commit()
+            conn.close()
+            return [TextContent(type="text", text=f"Dispositivo {arguments['hostname']} registrado exitosamente.")]
+            
+        raise ValueError(f"Tool no encontrada: {name}")
+    except Exception as e:
+        conn.close()
+        return [TextContent(type="text", text=f"Error: {str(e)}")]
+
+async def main():
+    async with stdio_server() as (read_stream, write_stream):
+        await app.run(read_stream, write_stream, app.create_initialization_options())
+
+if __name__ == "__main__":
+    asyncio.run(main())
+"@ | Out-File -Encoding utf8 servidor_infra.py
+```
