@@ -60,13 +60,13 @@ Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructu
 
 * **¿Para qué sirve?:** Sirve como un manifiesto o lista de compras para Docker y Python. En lugar de instalar las herramientas una por una de forma manual, Docker lee este archivo durante la construcción del contenedor **(`docker build`)** y descarga automáticamente todas las librerías necesarias de golpe. **Esto garantiza que tu kit sea portátil y funcione exactamente igual en cualquier computadora donde lo despliegues.**
 
-###¿Qué pasa si una dependencia ya no existe o cambia de versión?: Gestión de Riesgos y Dependencias
+###**¿Qué pasa si una dependencia ya no existe o cambia de versión?: Gestión de Riesgos y Dependencias**
 
 * **¿Qué analizamos?:** El riesgo de obsolescencia de paquetes o cambios drásticos en los repositorios públicos (como PyPI).
 * **¿Qué sucede técnicamente?:** Si una versión exacta declarada desaparece o el repositorio oficial la elimina, el comando de instalación (`pip install`) dentro de Docker fallará al momento de construir la imagen, deteniendo el proceso de despliegue.
 * **¿Cómo lo mitigamos a nivel empresarial?:**
   * **Uso de versiones fijas (Pinning):** En entornos de producción críticos, en lugar de poner solo `netmiko`, se especifican versiones exactas (ej. `netmiko==4.3.0`) para garantizar consistencia.
-  * **Caché local o espejos privados:** Al empaquetar todo dentro de Docker y mantenerlo en tu kit portátil, una vez que la imagen se construye exitosamente por primera vez, la imagen compilada ya lleva las librerías dentro. No necesita volver a descargarlas de internet cada vez que la ejecutes, lo que te independiza de futuras caídas de internet o cambios en la web.
+  * **Caché local o espejos privados:** Al empaquetar todo dentro de Docker y mantenerlo en tu kit portátil, una vez que la imagen se construye exitosamente por primera vez, **la imagen compilada ya lleva las librerías dentro. No necesita volver a descargarlas de internet cada vez que la ejecutes, lo que te independiza de futuras caídas de internet o cambios en la web.**
 
 Instrucciones para ti:
 Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell **(C:\Enterprise-MCP-Toolkit)** .
