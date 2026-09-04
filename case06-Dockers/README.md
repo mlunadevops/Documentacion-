@@ -142,4 +142,5 @@ NET_PASSWORD=cambia_esta_contrasena
 "@ | Out-File -Encoding utf8 .env
 ```
 
+![Creacion Archivo env](images/05Creacionarchivoenv.png
 
