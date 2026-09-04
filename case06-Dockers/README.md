@@ -366,3 +366,20 @@ if __name__ == "__main__":
 Ahora que tenemos la base de datos y el servidor listos, necesitamos empaquetarlo todo dentro de un contenedor ligero de Python utilizando Docker.
 
 Copia y ejecuta este bloque en tu PowerShell para crear el archivo `Dockerfile`:
+
+**POWERSHELL**
+```text
+@"
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir mcp
+
+COPY servidor_infra.py .
+
+ENV DB_PATH=data/audit.db
+
+CMD ["python", "servidor_infra.py"]
+"@ | Out-File -Encoding utf8 Dockerfile
+```
