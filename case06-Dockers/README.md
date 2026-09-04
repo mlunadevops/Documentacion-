@@ -56,6 +56,18 @@ New-Item -ItemType Directory -Path "logs" -Force
 
 Ahora avanzamos al siguiente nivel. Como necesitamos que nuestro servidor MCP maneje protocolos de red y la estructura del protocolo MCP en Python, vamos a declarar las dependencias técnicas de forma limpia.
 
+**POWERSHELL**
+```text
+@"
+mcp
+pydantic
+netmiko
+requests
+"@ | Out-File -Encoding utf8 requirements.txt
+```
+
+
+
 **Instrucciones para ti:**
 * Asegúrate de seguir ubicado en la ruta del proyecto en tu PowerShell (`C:\Enterprise-MCP-Toolkit`).
 * Ejecuta el siguiente comando para crear y poblar el archivo `requirements.txt` con las librerías necesarias:
