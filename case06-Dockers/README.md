@@ -41,7 +41,7 @@ cd C:\
 New-Item -ItemType Directory -Path "C:\Enterprise-MCP-Toolkit" -Force
 ```
 
-![Creacion Carpetas](images/01Creacioncarpetas.jpg)
+![Creacion Carpetas](images/01Creacioncarpetas.png)
 
 **POWERSHELL**
 ```text
@@ -50,6 +50,8 @@ New-Item -ItemType Directory -Path "data" -Force
 New-Item -ItemType Directory -Path "logs" -Force
 ```
  
+![Creacion Carpetas](images/02Creacioncarpetas.png)
+
 
 ## 3. BGP Configuration:
 
