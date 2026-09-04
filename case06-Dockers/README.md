@@ -407,3 +407,9 @@ docker ps
 ```
 
 ![Docker ps](images/12Odockerps.png)
+
+
+### Siguiente fase: Paso 8 (Orquestación con Docker)
+
+
+
