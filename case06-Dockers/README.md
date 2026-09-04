@@ -497,3 +497,27 @@ if __name__ == "__main__":
 
 
 ### fase 9: CONEXION DEL AGENTE IA CON EL SERVIDOR MCP
+
+Ahora solo te falta registrar tu servidor local para que la extensión pueda invocarlo:
+
+1. Haz clic en el botón **"Edit Configuration"** (que se ve justo en el centro de la pantalla).
+2. Se abrirá un archivo JSON **(llamado `mcp_settings.json`)**. Pega dentro la siguiente configuración exacta:
+
+
+```text
+{
+  "mcpServers": {
+    "enterprise-mcp-toolkit": {
+      "command": "python",
+      "args": [
+        "C:\\Enterprise-MCP-Toolkit\\servidor_infra.py"
+      ],
+      "env": {
+        "DB_PATH": "C:\\Enterprise-MCP-Toolkit\\data\\audit.db"
+      },
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}
+```
