@@ -48,7 +48,7 @@ Hay 2 tipos de clientes LLM:
 1) Descargar Chatbox for windows [Chatbox Download]([https://www.google.com](https://chatboxai.app/en/guide/getting-started/download))
 2) Una vez descargado 
 
-![BGP WEIGTH](images/01Topologia.jpg)
+![GUI Chatbox](images/00interfacechatbox.png)
 
  
 
