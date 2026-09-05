@@ -13,7 +13,6 @@
 | **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
 
 
-[Google](https://www.google.com)
 
 ## 1. Introduction and Theoretical Framework
 
@@ -47,6 +46,7 @@ Hay 2 tipos de clientes LLM:
 ## 2. Implementacion de CHATBOX
 
 1) Descargar Chatbox for windows [Chatbox Download]([https://www.google.com](https://chatboxai.app/en/guide/getting-started/download))
+2) Una vez descargado 
 
 ![BGP WEIGTH](images/01Topologia.jpg)
 
