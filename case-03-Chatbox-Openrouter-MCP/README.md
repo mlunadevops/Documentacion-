@@ -50,9 +50,7 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 1) **El transporte por defecto (`stdio`);** Utiliza la entrada y salida estándar (`stdin`/`stdout`) para conversar directamente con un cliente instalado en tu máquina (como Claude Desktop, Cline en VS CODE o Chatbox), el cual abre el script como un proceso hijo interactivo.
 
-2) **El uso de transporte HTTP con Server-Sent Events (SSE):** permite que el servidor MCP actúe como un servicio web tradicional. Este mecanismo mantiene una conexión unidireccional persistente abierta para enviar actualizaciones al cliente, mientras utiliza peticiones HTTP independientes para recibir los comandos de las herramientas.
-
-Al usar  Server-Sent Events, FastMCP cambia su comportamiento y se apoya en un servidor web subyacente (Uvicorn) para abrir un puerto de red permanente. Esto transforma el script en un servicio de escucha continua (mediante eventos enviados por el servidor), manteniendo el proceso bloqueado y vivo esperando conexiones HTTP, que es exactamente lo que Docker requiere para mantener un contenedor en estado *Up*.
+2) **El uso de transporte HTTP con Server-Sent Events (SSE):** permite que el servidor MCP actúe como un servicio web tradicional. Este mecanismo mantiene una conexión unidireccional persistente abierta para enviar actualizaciones al cliente, mientras utiliza peticiones HTTP independientes para recibir los comandos de las herramientas. Al usar  Server-Sent Events, FastMCP cambia su comportamiento y se apoya en un servidor web subyacente (Uvicorn) para abrir un puerto de red permanente. Esto transforma el script en un servicio de escucha continua (mediante eventos enviados por el servidor), manteniendo el proceso bloqueado y vivo esperando conexiones HTTP, que es exactamente lo que Docker requiere para mantener un contenedor en estado *Up*.
 
 Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al contenedor, apunta directamente a la dirección y puerto configurados, utilizando una ruta específica como **`http://localhost:8000/sse`**
 
