@@ -65,7 +65,13 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
 
 ## Pasos generales para enlazarlo
 
-* **Abre la configuración:** En la interfaz, salta la guía haciendo clic en **"Omitir guía"** e ingresa al menú de Configuración en la esquina inferior izquierda.
+3.1) Abre Chatbox
+
+3.2) 
+
+![GUI Chatbox](images/02Configuracion.png)
+
+
 * **Busca la pestaña MCP:** Ve al apartado específico de MCP (o herramientas/plugins) en el panel lateral.
 * **Añade tu servidor:**
   * Si es por `stdio`, debes proveer el comando para ejecutar tu script y la ruta absoluta del archivo en tu PC (Ejemplo: `C:\Proyectos\mcp-server\main.py`).
