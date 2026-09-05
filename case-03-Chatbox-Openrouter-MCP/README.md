@@ -94,7 +94,6 @@ if __name__ == "__main__":
     mcp.run(transport="sse")
 ```
 
-
 **El cliente de Modelo Fundacional (Cliente LLM) (como Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP de 2 maneras distintas:**
 
 1) **El transporte por defecto (`stdio`);** Utiliza la entrada y salida estándar (`stdin`/`stdout`) para conversar directamente con un cliente instalado en tu máquina (como Claude Desktop, Cline en VS CODE o Chatbox), el cual abre el script como un proceso hijo interactivo.
@@ -107,13 +106,11 @@ Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al c
 
 Esto se define, en el archivo de 
 
-
 ## 2. Implementacion de CHATBOX (Cliente Universal/Agnostico) en tu PC
 
 Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
 
 ![GUI Chatbox](images/01CrearopenrouterAPI.png)
-
 
 1) Descargar Chatbox for windows.
 
@@ -154,12 +151,6 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
   * Si es por HTTP, simplemente ingresas la URL local donde está escuchando tu script.
 * **Uso:** Una vez hecho esto, los modelos que ejecutes heredarán inmediatamente las funciones, herramientas o bases de datos locales que hayas programado en tu script.
 
-**Router A (RTA - AS 100):**
+![GUI Chatbox](images/06ConexionMCPManual.png)
 
-```text
-! 
-router bgp 100
-!
-```
 
-### 4. BGP Configuration:
