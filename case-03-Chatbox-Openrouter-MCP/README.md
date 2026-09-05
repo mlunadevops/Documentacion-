@@ -54,7 +54,9 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al contenedor, apunta directamente a la dirección y puerto configurados, utilizando una ruta específica como **`http://localhost:8000/sse`**
 
+**Donde se define la manera que El cliente de Modelo Fundacional (Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP**
 
+Esto se define, en el archivo de 
 
 
 ## 2. Implementacion de CHATBOX (Cliente Universal/Agnostico) en tu PC
