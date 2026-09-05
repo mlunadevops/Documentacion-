@@ -44,7 +44,7 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 **MCP de IA (*Model Context Protocol*) :** es un estándar abierto que permite conectar de forma sencilla y segura los modelos de inteligencia artificial a bases de datos, archivos locales y herramientas externas.
 
-**FastMCP:** es un marco de trabajo de alto nivel y alto rendimiento —principalmente en Python, inspirado en FastAPI— diseñado para simplificar de forma radical la creación de servidores del Protocolo de Contexto de Modelo (MCP).
+**FastMCP:** es un marco de trabajo de alto nivel y alto rendimiento —principalmente en Python, inspirado en FastAPI— diseñado para simplificar de forma radical la creación de servidores del Protocolo de Contexto de Modelo (MCP). FastMCP está optimizado originalmente para herramientas locales. 
 
 **El cliente de Modelo Fundacional (Cliente LLM) se puede conectar a un MCP de 2 maneras distintas:**
 
@@ -55,7 +55,7 @@ Hay dos tipos de clientes Fundacionales LLM:
 Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al contenedor, apunta directamente a la dirección y puerto configurados, utilizando una ruta específica como **`http://localhost:8000/sse`**
 
 ### 
-FastMCP está optimizado originalmente para herramientas locales. 
+
 
 ### El transporte por red (`SSE`)
 Al cambiar a Server-Sent Events, FastMCP cambia su comportamiento y se apoya en un servidor web subyacente (Uvicorn) para abrir un puerto de red permanente. Esto transforma el script en un servicio de escucha continua (mediante eventos enviados por el servidor), manteniendo el proceso bloqueado y vivo esperando conexiones HTTP, que es exactamente lo que Docker requiere para mantener un contenedor en estado *Up*.
