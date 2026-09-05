@@ -77,7 +77,7 @@ Aunque en tu código actual te has enfocado fuertemente en herramientas (*Tools*
 
 Es el bloque final que enciende el servidor y define el canal de comunicación (`stdio` para entornos locales integrados en VS Code o `sse` para arquitecturas HTTP/remotas).
 
-Para definirlo como stdin usar el siguiente codigo al final del MCP Server Implementation file:
+5.1) Para definirlo como stdin usar el siguiente codigo al final del MCP Server Implementation file:
 
 ```text
 if __name__ == "__main__":
@@ -86,7 +86,13 @@ if __name__ == "__main__":
     # O simplemente: mcp.run() 
 ```
 
-Para definirlo como sse usar el siguiente codigo al final del MCP Server Implementation file:
+5.2) Para definirlo como sse usar el siguiente codigo al final del MCP Server Implementation file:
+
+```text
+if __name__ == "__main__":
+    # Inicia el servidor MCP escuchando mediante SSE (por defecto levanta en el puerto 8000 o el configurado)
+    mcp.run(transport="sse")
+```
 
 
 **El cliente de Modelo Fundacional (Cliente LLM) (como Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP de 2 maneras distintas:**
