@@ -29,7 +29,9 @@ Hay 2 tipos de clientes LLM:
 1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA. Ejemplos:
 
 1.1) GitHub Copilot
+
 1.2) Claude Desktop
+
 1.3) ChatGPT Desktop App
    
 3) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras (Claude, GPT, DeepSeek, Llama).
