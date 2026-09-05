@@ -42,20 +42,26 @@ Hay 2 tipos de clientes LLM:
 
 2.4) LibreChat: Un cliente web que clona exactamente la interfaz de ChatGPT, pero te permite conectar las API de Anthropic, OpenAI y otros proveedores en un solo lugar.
 
-
 ## 2. Implementacion de CHATBOX
+
+Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
+
+![GUI Chatbox](images/01CrearopenrouterAPI.png)
+
+
 
 1) Descargar Chatbox for windows
 
 [Enlace de descarga](https://chatboxai.app/en/guide/getting-started/download)
 
 
-3) Una vez descargado 
+2) Instalar
 
 ![GUI Chatbox](images/00interfacechatbox.png)
 
- 
+ 3) Instalar
 
+ 3) 
 ## 3. BGP Configuration:
 
 **Router A (RTA - AS 100):**
