@@ -67,11 +67,11 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
 
 3.1) Abre Chatbox
 
-3.2) 
+3.2) Click en configuracion (settings)
 
 ![GUI Chatbox](images/02Configuracion.png)
 
-3.3) Click en configuracion (settings):
+3.3) Añadir servidor manual:
 
 ![GUI Chatbox](images/03Configuracion.png)
 
