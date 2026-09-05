@@ -18,6 +18,8 @@
 
 El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
 
+**Modelo fundacional (foundation model):** es un gran modelo de IA entrenado con una cantidad masiva de datosque sirve como una base sólida y general para múltiples aplicaciones. Se llaman "fundacionales" porque funcionan como los cimientos de un edificio: en lugar de crear una IA desde cero para cada tarea específica, los desarrolladores toman este modelo base y lo adaptan o especializan para miles de usos diferentes.
+
 - **🤖 Cliente de IA (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
 
 Hay dos tipos de clientes LLM:
