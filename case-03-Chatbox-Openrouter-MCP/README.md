@@ -26,7 +26,6 @@ Hay 2 tipos de modelos fundacionales:
 
 2. **Modelos de Pesos Abiertos (Open Weights):** Son modelos cuyos archivos de entrenamiento se publican abiertamente para que la comunidad o las empresas puedan descargarlos, modificarlos y ejecutarlos por su cuenta. Ejemplos, Llama (Meta), Nemotron (NVIDIA), Mistral (Mistral AI).
 
-
 **Cliente de Modelo Fundacional (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
 
 Hay dos tipos de clientes Fundacionales LLM:
@@ -47,7 +46,7 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 **FastMCP:** es un marco de trabajo de alto nivel y alto rendimiento —principalmente en Python, inspirado en FastAPI— diseñado para simplificar de forma radical la creación de servidores del Protocolo de Contexto de Modelo (MCP).
 
-El cliente de Modelo Fundacional (Cliente LLM) se puede conectar a un MCP de 2 maneras distintas:
+**El cliente de Modelo Fundacional (Cliente LLM) se puede conectar a un MCP de 2 maneras distintas:**
 
 1) **El transporte por defecto (`stdio`);** Utiliza la entrada y salida estándar (`stdin`/`stdout`) para conversar directamente con un cliente instalado en tu máquina (como Claude Desktop, Cline en VS CODE o Chatbox), el cual abre el script como un proceso hijo interactivo.
 
