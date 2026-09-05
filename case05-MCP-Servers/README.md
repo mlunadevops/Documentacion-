@@ -34,13 +34,15 @@ Hay 2 tipos de clientes LLM:
 
 1.3) ChatGPT Desktop App
    
-3) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras (Claude, GPT, DeepSeek, Llama).
+2) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras, ejemplos (Claude, GPT, DeepSeek, Llama).
 
-Ejemplos de clientes LLM: 
+2.1) Chatbox: Uno de los clientes de escritorio más populares y limpios. Es multiplataforma (Windows, Mac, Linux, móviles) y te permite cambiar de proveedor de IA con un solo clic.
+   
+2.2) Cline en VS CODE.
+   
+2.3) Jan: Un cliente de escritorio excelente porque funciona de dos formas: puede conectarse a IA en la nube mediante API, o puede descargar modelos de código abierto para correr 100% en local en tu computadora (sin internet).
 
-1) Github Copilot.
-2) La extension de Cline en VS CODE.
-3) 
+2.4) LibreChat: Un cliente web que clona exactamente la interfaz de ChatGPT, pero te permite conectar las API de Anthropic, OpenAI y otros proveedores en un solo lugar.
 
 En el caso de las practicas, vamos a usar el VS CODE con una extension 
 
