@@ -17,7 +17,27 @@
 
 ## 1. Introduction and Theoretical Framework
 
-jajaja
+# Fundamentos técnicos del Model Context Protocol (MCP) y Docker
+
+Es necesario analizar los fundamentos técnicos de cómo operan el **Model Context Protocol (MCP)** y los **contenedores Docker**. En esencia, **un script de Python se ejecuta de forma secuencial y termina cuando llega a su última instrucción**, a menos que un mecanismo externo lo mantenga escuchando.
+
+## 1. El transporte por defecto (`stdio`) 🖥️
+
+FastMCP está optimizado originalmente para herramientas locales, es decir, que un cliente instalado en la PC como Claude Desktop o VS CODE corriendo Cline, actuen como trigger del  Servidor MCP (`servidor_infra.py`) utilizando la entrada y salida estándar (`stdin`/`stdout`) para conversar directamente con un cliente instalado en tu máquina (como Claude Desktop), el cual abre el script como un proceso hijo interactivo. Cuando Docker ejecuta el script del MCP (servidor_infra.py) forma aislada, sin existir una terminal interactiva conectada a un proceso cliente local (Claude Desktop o VS CODE corriendo Cline) el script  de python lee el final del archivo y se apaga de inmediato.
+
+FastMCP está optimizado originalmente para herramientas locales. Esto significa que un cliente instalado en tu máquina (como Claude Desktop o VS Code con Cline) actúa como trigger del servidor MCP (servidor_infra.py) utilizando la entrada y salida estándar (stdin/stdout) para conversar directamente con él, abriendo el script como un proceso hijo interactivo. Cuando Docker ejecuta ese mismo script de forma aislada —al no existir una terminal interactiva conectada—, el código se lee hasta el final y se apaga de inmediato.
+
+# El problema en Docker 🐳
+
+Cuando pones ese mismo script en un contenedor aislado, no hay un proceso cliente local conectado a esas tuberías de la terminal. El script de Python se ejecuta de manera secuencial, llega al final del código, finaliza y se apaga (código de salida `0`). 
+
+Como el proceso principal de Docker muere, el contenedor se detiene o entra en un bucle de reinicio constante.
+
+
+
+## 2. El transporte por red (SSE) 🌐
+
+Al cambiar a *Server-Sent Events* (SSE), FastMCP cambia su comportamiento y se apoya en un servidor web subyacente (**Uvicorn**) para abrir un puerto de red permanente. Esto transforma el script en un servicio de escucha continua (mediante eventos enviados por el servidor), manteniendo el proceso bloqueado y vivo esperando conexiones HTTP, que es exactamente lo que Docker requiere para mantener un contenedor en estado `Up`. Es decir, funcion
 
 ![Creacion Carpetas](images/00InfografiaBlueprint.jpg)
 
