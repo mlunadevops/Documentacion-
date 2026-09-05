@@ -58,7 +58,9 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("enterprise-mcp-toolkit")
 ```
 
+## 2. Capa de lógica de negocio, bases de datos o servicios auxiliares
 
+Son las funciones de apoyo (normalmente privadas o internas, antepuestas con guion bajo como `_get_device_credentials` o `_execute_ssh_command`) que manejan la persistencia (SQLite, archivos), conexiones a APIs, bases de datos o lógica pesada que las herramientas van a consumir.
 
 
 
