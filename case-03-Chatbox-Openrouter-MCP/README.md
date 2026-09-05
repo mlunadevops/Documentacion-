@@ -61,7 +61,16 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
  3) Instalar
 
  3) 
-## 3. BGP Configuration:
+## 3. ENLAZAR CHATBOX CON TU MCP LOCAL
+
+## Pasos generales para enlazarlo
+
+* **Abre la configuración:** En la interfaz, salta la guía haciendo clic en **"Omitir guía"** e ingresa al menú de Configuración en la esquina inferior izquierda.
+* **Busca la pestaña MCP:** Ve al apartado específico de MCP (o herramientas/plugins) en el panel lateral.
+* **Añade tu servidor:**
+  * Si es por `stdio`, debes proveer el comando para ejecutar tu script y la ruta absoluta del archivo en tu PC (Ejemplo: `C:\Proyectos\mcp-server\main.py`).
+  * Si es por HTTP, simplemente ingresas la URL local donde está escuchando tu script.
+* **Uso:** Una vez hecho esto, los modelos que ejecutes heredarán inmediatamente las funciones, herramientas o bases de datos locales que hayas programado en tu script.
 
 **Router A (RTA - AS 100):**
 
