@@ -16,7 +16,7 @@
 
 ## 1. Introduction and Theoretical Framework (MODEL CONTEXT PROTOCOL)
 
-Modelos Fundacionales Gratis potentes: 
+Modelos Fundacionales Gratis potentes: Gemini, Llama o Nemotron.
 
 El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor 🔌 diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
 
