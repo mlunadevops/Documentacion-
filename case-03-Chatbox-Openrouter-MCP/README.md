@@ -60,6 +60,18 @@ mcp = FastMCP("enterprise-mcp-toolkit")
 
 2. Capa de lógica de negocio, bases de datos o servicios auxiliares: Son las funciones de apoyo (normalmente privadas o internas, antepuestas con guion bajo como `_get_device_credentials` o `_execute_ssh_command`) que manejan la persistencia (SQLite, archivos), conexiones a APIs, bases de datos o lógica pesada que las herramientas van a consumir.
 
+3. Definición de herramientas (*Tools*) mediante decoradores:
+
+```text
+@mcp.tool()
+def listar_dispositivos():
+    """Documentación o docstring opcional que describe lo que hace la tool."""
+    # Lógica de la herramienta
+    return resultado
+```
+
+Esta es la esencia del protocolo MCP. Utilizando el decorador `@mcp.tool()`, expones funciones de Python limpias y tipadas para que el Agente de IA (como Cline) sepa qué herramientas tiene disponibles, qué parámetros esperan y qué devuelven.
+
 ```text
 import os
 from mcp.server.fastmcp import FastMCP
@@ -67,9 +79,6 @@ from mcp.server.fastmcp import FastMCP
 # Instancia fundamental del servidor MCP
 mcp = FastMCP("enterprise-mcp-toolkit")
 ```
-
-
-2. 
 
 
 **El cliente de Modelo Fundacional (Cliente LLM) (como Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP de 2 maneras distintas:**
