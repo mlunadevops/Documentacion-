@@ -17,9 +17,7 @@
 
 ## 1. Introduction and Theoretical Framework
 
-El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor 🔌 diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
-
-(Claude Desktop, VS CODE con Github Copilot, etc), TA
+El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
 
 Los tres componentes fundamentales son:
 
@@ -55,13 +53,13 @@ The Weight attribute is a Cisco proprietary parameter used in BGP (Border Gatewa
 * **Default Values:** Routes originated locally by the router receive a weight of 32,768 by default; routes learned from external or internal neighbors receive a weight of 0 by default.
 * **Precedence:** It is evaluated in the absolute first place within BGP's decision algorithm (above Local Preference, AS_PATH, MED, etc.). Routes with a higher Weight value have absolute preference.
 
-## 2. Topology and BGP Neighbor Establishment
+## 2. Implementacion
 
-The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
+four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
 ![BGP WEIGTH](images/01Topologia.jpg)
 
- four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
+ 
 
 ## 3. BGP Configuration:
 
