@@ -56,7 +56,6 @@ Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al c
 
 
 
-2) 
 
 ## 2. Implementacion de CHATBOX (Cliente Universal/Agnostico) en tu PC
 
