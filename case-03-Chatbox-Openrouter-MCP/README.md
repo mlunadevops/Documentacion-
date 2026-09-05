@@ -22,9 +22,9 @@ El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñ
 
 Hay 2 tipos de modelos fundacionales:
 
-1. Modelos Propietarios (Cerrados / Comerciales): Claude (Anthropic),  Gemini (Google), GPT (OpenAI).
+1. **Modelos Propietarios (Cerrados / Comerciales):** Son desarrollados por grandes tecnológicas. Su código o pesos internos no se hacen públicos, pero se pueden usar mediante la web o sus API, ejemplos, Claude (Anthropic),  Gemini (Google), GPT (OpenAI).
 
- ## 2. Modelos de Pesos Abiertos (Open Weights)
+2. **Modelos de Pesos Abiertos (Open Weights):** Son modelos cuyos archivos de entrenamiento se publican abiertamente para que la comunidad o las empresas puedan descargarlos, modificarlos y ejecutarlos por su cuenta. Ejemplos, Llama (Meta), Nemotron (NVIDIA), Mistral (Mistral AI).
 
 
 **Cliente de Modelo Fundacional (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
