@@ -50,6 +50,20 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 1. Importación de dependencias e inicialización del servidor: Se importan las librerías necesarias (como `FastMCP` de la librería oficial `mcp`) y se crea la instancia principal del servidor asignándole un nombre identificativo.
 
+```text
+import os
+from mcp.server.fastmcp import FastMCP
+
+# Instancia fundamental del servidor MCP
+mcp = FastMCP("enterprise-mcp-toolkit")
+```
+
+
+
+
+
+2. 
+
 
 **El cliente de Modelo Fundacional (Cliente LLM) (como Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP de 2 maneras distintas:**
 
