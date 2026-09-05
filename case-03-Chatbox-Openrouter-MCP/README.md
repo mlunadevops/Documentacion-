@@ -45,8 +45,9 @@ Hay 2 tipos de clientes LLM:
 
 ## 2. Implementacion de CHATBOX
 
-1) Descargar Chatbox for windows [Chatbox Download]([https://www.google.com](https://chatboxai.app/en/guide/getting-started/download))
-2) Una vez descargado 
+1) Descargar Chatbox for windows
+   [Chatbox Download]([https://www.google.com](https://chatboxai.app/en/guide/getting-started/download))
+3) Una vez descargado 
 
 ![GUI Chatbox](images/00interfacechatbox.png)
 
