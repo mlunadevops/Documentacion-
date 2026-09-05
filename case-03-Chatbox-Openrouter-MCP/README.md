@@ -20,6 +20,13 @@ El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñ
 
 **Modelo fundacional (foundation model):** es un gran modelo de IA entrenado con una cantidad masiva de datosque sirve como una base sólida y general para múltiples aplicaciones. Se llaman "fundacionales" porque funcionan como los cimientos de un edificio: en lugar de crear una IA desde cero para cada tarea específica, los desarrolladores toman este modelo base y lo adaptan o especializan para miles de usos diferentes. Ejemplos de modelos fundacionales Claude (Anthropic),  Gemini (Google), GPT (OpenAI), Deepseek, Kimi AI.
 
+Hay 2 tipos de modelos fundacionales:
+
+1. Modelos Propietarios (Cerrados / Comerciales): Claude (Anthropic),  Gemini (Google), GPT (OpenAI).
+
+ ## 2. Modelos de Pesos Abiertos (Open Weights)
+
+
 **Cliente de Modelo Fundacional (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
 
 Hay dos tipos de clientes Fundacionales LLM:
