@@ -2,7 +2,6 @@
 
 ## MCP Server Foundations
 **CCNP Miguelangel Luna**
-
 ---
 
 ## CONTENIDOS:
@@ -18,9 +17,14 @@
 ## 1. Introduction and Theoretical Framework (MODEL CONTEXT PROTOCOL)
 
 El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor 🔌 diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
+
+(Claude Desktop, VS CODE con Github Copilot, etc), TA
+
 Los tres componentes fundamentales son:
 
-- **🤖 Cliente de IA:** La aplicación o interfaz que ejecuta el modelo y formula las peticiones.
+- **🤖 Cliente de IA (Cliente LLM):** Aplicación (*frontend*) instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc, que te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores (*backend*).
+
+  
 - **⚙️ Servidor MCP:** Un programa intermediario y seguro que traduce las intenciones del modelo en acciones concretas sobre el sistema.
 - **🗄️ Recursos del Sistema:** Las fuentes de datos, servidores, bases de datos o APIs de red que el agente necesita consultar o modificar.
 
