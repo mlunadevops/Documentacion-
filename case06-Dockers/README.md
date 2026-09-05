@@ -10,8 +10,7 @@
 | :--- | :--- | :--- |
 | **01** | [Claude & n8n AI Agents](./case-01-Google-Auth/) | Agentes Claude . |
 | **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
-| **03** | [Generar un Archivo Word desde Markdown usando Phyton](./case-03-Markdown-Word-Using-Phyton/) | Convierte un MD a Word usando Phyton |
-| **04** | [GNS3 AI](./case04-GNS3-AI/) | Conexion GNS3 MCP. |
+
 
 [Google](https://www.google.com)
 
@@ -19,7 +18,11 @@
 
 # Fundamentos técnicos del Model Context Protocol (MCP) y Docker
 
+Un servidor MCP corre basicamente a traves de un script de python, en esta implementacion lo vamos a llamar (servidor_infra.py)
+
 Es necesario analizar los fundamentos técnicos de cómo operan el **Model Context Protocol (MCP)** y los **contenedores Docker**. En esencia, **un script de Python se ejecuta de forma secuencial y termina cuando llega a su última instrucción**, a menos que un mecanismo externo lo mantenga escuchando.
+
+
 
 ## 1. El transporte por defecto (`stdio`) 🖥️
 
