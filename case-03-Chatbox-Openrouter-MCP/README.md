@@ -58,9 +58,9 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("enterprise-mcp-toolkit")
 ```
 
-2. Capa de lógica de negocio, bases de datos o servicios auxiliares: Son las funciones de apoyo (normalmente privadas o internas, antepuestas con guion bajo como `_get_device_credentials` o `_execute_ssh_command`) que manejan la persistencia (SQLite, archivos), conexiones a APIs, bases de datos o lógica pesada que las herramientas van a consumir.
+2. Capa de lógica de negocio, bases de datos o servicios auxiliares: Son las funciones de apoyo (normalmente privadas o internas, antepuestas con guion bajo como `_get_device_credentials` o `_execute_ssh_command`) que manejan la persistencia (SQLite, archivos), conexiones a APIs, bases de datos o lógica pesada que las herramientas van a consumir. En esta capa se asigna por ejemplo la lectura de una base de datos SQL por ejemplo para leer las credenciales de los dispositivos a conectarse.
 
-3. Definición de herramientas (*Tools*) mediante decoradores:
+3. Definición de herramientas (*Tools*) mediante decoradores: Esta es la esencia del protocolo MCP. Utilizando el decorador `@mcp.tool()`, expones funciones de Python limpias y tipadas para que el Agente de IA (como Cline) sepa qué herramientas tiene disponibles, qué parámetros esperan y qué devuelven.
 
 ```text
 @mcp.tool()
@@ -73,7 +73,7 @@ def listar_dispositivos():
 
 Aunque en tu código actual te has enfocado fuertemente en herramientas (*Tools* —acciones que ejecuta el LLM), la estructura fundamental de un servidor MCP también permite definir recursos estáticos o dinámicos (`@mcp.resource()`) o plantillas de *prompts* (`@mcp.prompt()`) para enriquecer el contexto que lee el modelo.
 
-Esta es la esencia del protocolo MCP. Utilizando el decorador `@mcp.tool()`, expones funciones de Python limpias y tipadas para que el Agente de IA (como Cline) sepa qué herramientas tiene disponibles, qué parámetros esperan y qué devuelven.
+
 
 ```text
 import os
