@@ -73,14 +73,13 @@ def listar_dispositivos():
 
 Aunque en tu código actual te has enfocado fuertemente en herramientas (*Tools* —acciones que ejecuta el LLM), la estructura fundamental de un servidor MCP también permite definir recursos estáticos o dinámicos (`@mcp.resource()`) o plantillas de *prompts* (`@mcp.prompt()`) para enriquecer el contexto que lee el modelo.
 
+5. El punto de ejecución y transporte (*Entrypoint & Transport*)
 
+Es el bloque final que enciende el servidor y define el canal de comunicación (`stdio` para entornos locales integrados en VS Code o `sse` para arquitecturas HTTP/remotas).
 
 ```text
-import os
-from mcp.server.fastmcp import FastMCP
-
-# Instancia fundamental del servidor MCP
-mcp = FastMCP("enterprise-mcp-toolkit")
+if __name__ == "__main__":
+    mcp.run(transport="sse") # o mcp.run() para stdio
 ```
 
 
