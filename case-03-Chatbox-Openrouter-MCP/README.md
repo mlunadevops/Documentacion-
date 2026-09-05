@@ -18,11 +18,9 @@
 
 El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
 
-Los tres componentes fundamentales son:
-
 - **🤖 Cliente de IA (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
 
-Hay 2 tipos de clientes LLM:
+Hay dos tipos de clientes LLM:
 
 1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA. Ejemplos:
 
@@ -34,7 +32,7 @@ Hay 2 tipos de clientes LLM:
    
 2) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras, ejemplos (Claude, GPT, DeepSeek, Llama).
 
-2.1) Chatbox: Uno de los clientes de escritorio más populares y limpios. Es multiplataforma (Windows, Mac, Linux, móviles) y te permite cambiar de proveedor de IA con un solo clic.
+2.1) **Chatbox:** Uno de los clientes de escritorio más populares y limpios. Es multiplataforma (Windows, Mac, Linux, móviles) y te permite cambiar de proveedor de IA con un solo clic.
    
 2.2) Cline en VS CODE.
    
