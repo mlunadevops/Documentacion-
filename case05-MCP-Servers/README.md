@@ -26,8 +26,12 @@ Los tres componentes fundamentales son:
 
 Hay 2 tipos de clientes LLM:
 
-1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA.
-2) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras (Claude, GPT, DeepSeek, Llama)
+1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA. Ejemplos:
+
+1.1) Github Copilot.
+1.2) La extension de Cline en VS CODE.
+   
+3) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras (Claude, GPT, DeepSeek, Llama).
 
 Ejemplos de clientes LLM: 
 
