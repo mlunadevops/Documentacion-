@@ -50,11 +50,11 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
 ![GUI Chatbox](images/01CrearopenrouterAPI.png)
 
 
-1) Descargar Chatbox for windows
+1) Descargar Chatbox for windows.
 
 [Enlace de descarga](https://chatboxai.app/en/guide/getting-started/download)
 
-2) Instalar
+2) Instalar Chatbox for windows.
 
 ![GUI Chatbox](images/00interfacechatbox.png)
 
