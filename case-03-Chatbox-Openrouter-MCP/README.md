@@ -69,6 +69,9 @@ def listar_dispositivos():
     # Lógica de la herramienta
     return resultado
 ```
+4. Recursos (*Resources*) o *Prompts* (Opcional)
+
+Aunque en tu código actual te has enfocado fuertemente en herramientas (*Tools* —acciones que ejecuta el LLM), la estructura fundamental de un servidor MCP también permite definir recursos estáticos o dinámicos (`@mcp.resource()`) o plantillas de *prompts* (`@mcp.prompt()`) para enriquecer el contexto que lee el modelo.
 
 Esta es la esencia del protocolo MCP. Utilizando el decorador `@mcp.tool()`, expones funciones de Python limpias y tipadas para que el Agente de IA (como Cline) sepa qué herramientas tiene disponibles, qué parámetros esperan y qué devuelven.
 
