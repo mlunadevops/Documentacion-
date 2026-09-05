@@ -18,19 +18,13 @@
 
 El Model Context Protocol (MCP) utiliza una arquitectura cliente-servidor diseñada para estandarizar cómo los modelos de IA interactúan con entornos locales y remotos.
 
-**Modelo fundacional (foundation model):** es un gran modelo de IA entrenado con una cantidad masiva de datosque sirve como una base sólida y general para múltiples aplicaciones. Se llaman "fundacionales" porque funcionan como los cimientos de un edificio: en lugar de crear una IA desde cero para cada tarea específica, los desarrolladores toman este modelo base y lo adaptan o especializan para miles de usos diferentes. Ejemplos de modelos fundacionales Claude (Anthropic),  Gemini (Google), GPT (OpenAI).
+**Modelo fundacional (foundation model):** es un gran modelo de IA entrenado con una cantidad masiva de datosque sirve como una base sólida y general para múltiples aplicaciones. Se llaman "fundacionales" porque funcionan como los cimientos de un edificio: en lugar de crear una IA desde cero para cada tarea específica, los desarrolladores toman este modelo base y lo adaptan o especializan para miles de usos diferentes. Ejemplos de modelos fundacionales Claude (Anthropic),  Gemini (Google), GPT (OpenAI), Deepseek, Kimi AI.
 
-**🤖 Cliente de Modelo Fundacional (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
+**Cliente de Modelo Fundacional (Cliente LLM):** Aplicación (*frontend*)** instalada en PC que se comunica con el modelo fundacional, es decir, es la interfaz gráfica  instalada en la PC, Smartphone, etc. Como ejemplo el claude desktop se instala en tu PC y te permite comunicarte con el modelo de lenguaje de Anthropic (Claude) que corre en sus servidores **(*backend*)**.
 
-Hay dos tipos de clientes LLM:
+Hay dos tipos de clientes Fundacionales LLM:
 
-1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA. Ejemplos:
-
-1.1) GitHub Copilot
-
-1.2) Claude Desktop
-
-1.3) ChatGPT Desktop App
+1) **Clientes oficiales de Grandes Modelos:**  Son aplicaciones creadas por las mismas empresas dueñas de la IA. Ejemplos, GitHub Copilot, Claude Desktop, ChatGPT Desktop App
    
 2) **Clientes Universales / Agnósticos:**  Estos programas no tienen una IA propia. Son interfaces vacías que te permiten ingresar tus propias API Keys para conectarte al modelo que tú quieras, ejemplos (Claude, GPT, DeepSeek, Llama).
 
