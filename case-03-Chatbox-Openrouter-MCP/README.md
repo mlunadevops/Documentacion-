@@ -44,7 +44,12 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 **MCP de IA (*Model Context Protocol*) :** es un estándar abierto que permite conectar de forma sencilla y segura los modelos de inteligencia artificial a bases de datos, archivos locales y herramientas externas.
 
-**FastMCP:** es un marco de trabajo de alto nivel y alto rendimiento —principalmente en Python, inspirado en FastAPI— diseñado para simplificar de forma radical la creación de servidores del Protocolo de Contexto de Modelo (MCP). FastMCP está optimizado originalmente para herramientas locales. 
+**FastMCP:** es un marco de trabajo de alto nivel y alto rendimiento —principalmente en Python, inspirado en FastAPI— diseñado para simplificar de forma radical la creación de servidores del Protocolo de Contexto de Modelo (MCP). FastMCP está optimizado originalmente para herramientas locales.
+
+**MCP Server Implementation file**: Es el archivo servidor MCP como tal tambien llamado (servidor MCP). El cual esta estructurado por:
+
+1. Importación de dependencias e inicialización del servidor: Se importan las librerías necesarias (como `FastMCP` de la librería oficial `mcp`) y se crea la instancia principal del servidor asignándole un nombre identificativo.
+
 
 **El cliente de Modelo Fundacional (Cliente LLM) (como Claude Desktop, Cline en VS CODE o Chatbox) se puede conectar a un MCP de 2 maneras distintas:**
 
