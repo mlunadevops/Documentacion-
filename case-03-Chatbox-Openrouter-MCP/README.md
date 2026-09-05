@@ -71,11 +71,14 @@ Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
 
 ![GUI Chatbox](images/02Configuracion.png)
 
-3.3) Click en configuracion (settings):
+3.3) Click en configuracion (settings), añadir servidor manual:
 
 ![GUI Chatbox](images/03Configuracion.png)
 
-3.4) Añadir servidor manual:
+3.4) Escoger la forma de conexion al MCP Server:
+
+![GUI Chatbox](images/04Configuracion.png)
+
 
 * **Busca la pestaña MCP:** Ve al apartado específico de MCP (o herramientas/plugins) en el panel lateral.
 * **Añade tu servidor:**
