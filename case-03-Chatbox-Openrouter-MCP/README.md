@@ -43,6 +43,16 @@ Hay dos tipos de clientes Fundacionales LLM:
 
 2.4) LibreChat: Un cliente web que clona exactamente la interfaz de ChatGPT, pero te permite conectar las API de Anthropic, OpenAI y otros proveedores en un solo lugar.
 
+MCP:
+
+El cliente de Modelo Fundacional (Cliente LLM) se puede conectar a un MCP de 2 maneras distintas:
+
+1) **El uso de transporte HTTP con Server-Sent Events (SSE):** permite que el servidor MCP actúe como un servicio web tradicional. Este mecanismo mantiene una conexión unidireccional persistente abierta para enviar actualizaciones al cliente, mientras utiliza peticiones HTTP independientes para recibir los comandos de las herramientas.
+
+Cuando un cliente de Modelo Fundacional (Cliente LLM) compatible se conecta al contenedor, apunta directamente a la dirección y puerto configurados, utilizando una ruta específica como **`http://localhost:8000/sse`**
+
+2) 
+
 ## 2. Implementacion de CHATBOX (Cliente Universal/Agnostico) en tu PC
 
 Como requisito se debe tener una cuenta en OPENROUTER para generar las APIs:
