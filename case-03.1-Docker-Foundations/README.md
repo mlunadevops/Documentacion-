@@ -6,7 +6,7 @@
 Credenciales Portainer:
 
 Usuario:   admin
-Password:  Samsung2026 
+Password:  Samsung2026x
 
 ## CONTENIDOS:
 
