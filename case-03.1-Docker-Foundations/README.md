@@ -39,6 +39,19 @@ apk update
 apk add docker
 ```
 
+3.2) Habilitar y arrancar el servicio de Docker
+
+**Paso 2:** Una vez que termine, ejecuta los siguientes comandos para activar el demonio y dejarlo listo:
+
+```text
+rc-update add docker boot
+service docker start
+```
+
+
+
+
+
 **Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
 
 ## 3. BGP Configuration:
