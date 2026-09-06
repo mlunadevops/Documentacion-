@@ -83,6 +83,14 @@ Una vez que ejecutes estos comandos, abre tu navegador web y entra a la siguient
 
 ![Docker Verify](images/05Ejecucionportainer.png)
 
+ 4.3) Ejecuta el siguiente comando para descargar y arrancar el servidor de Portainer conectándolo al socket de Docker de tu sistema:
+ 
+```text
+docker restart portainer
+```
+
+
+
 
 **Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
 
