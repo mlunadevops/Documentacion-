@@ -3,6 +3,10 @@
 ## FUNDAMENTOS DE DOCKER LAB INSTALACION EN LINUX
 **CCNP Miguelangel Luna**
 ---
+Credenciales Portainer:
+
+Usuario:   admin
+Password:  Samsung2026 
 
 ## CONTENIDOS:
 
