@@ -20,15 +20,16 @@
 
 ![Docker Foundations](images/01Alpinedownload.png)
 
-2.2) Instalar Alpine:
+2.2) Instalar Alpine, practicamente se instala solo:
 
 ![Docker Foundations](images/02Alpineinstall.png)
 
+2.2) Ejecutar el asistente:
 
 Actualiza los repositorios:
 
 ```text
-sudo apt update
+setup-alpine
 ```
 
 
