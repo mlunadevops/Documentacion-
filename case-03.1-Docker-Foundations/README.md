@@ -20,13 +20,6 @@
 
 ![Docker Foundations](images/01Alpinedownload.png)
 
-2.2) Instalar Alpine
-
-```text
-wsl --install
-```
-![Docker Foundations](images/01Wslinstall.png)
-
 2.2) Instalar Alpine:
 
 ![Docker Foundations](images/02Alpineinstall.png)
