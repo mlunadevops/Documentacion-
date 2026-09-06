@@ -24,9 +24,7 @@
 
 ![Docker Foundations](images/02Alpineinstall.png)
 
-2.2) Ejecutar el asistente:
-
-Actualiza los repositorios:
+2.2) Ejecutar el siguiente comando,Se abrirá el asistente interactivo de configuración de Alpine para guiarte paso a paso con el teclado, la red, el disco y la contraseña. Escribe el siguiente comando y presiona Enter:
 
 ```text
 setup-alpine
