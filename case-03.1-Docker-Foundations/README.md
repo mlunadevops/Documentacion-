@@ -56,7 +56,7 @@ docker run hello-world
 
 ![Docker Verify](images/03Dockerinstall.png)
 
-## 3. Instalacion de Docker:
+## 3. Instalacion de Portainer para Gestionar el motor de Docker en Alpine:
 
 
 
