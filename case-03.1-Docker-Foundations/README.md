@@ -12,12 +12,16 @@
 | **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
 
 
-[Google](https://www.google.com)
+[Alpine Linux X86_64](https://alpinelinux.org/downloads/?utm_source=gemini)
 
 ## 1. Introduction and Theoretical Framework
 
 
-## 2. Requisitos para instalacion en Windows:
+## 2. Requisitos para instalacion en Linux:
+
+2.1) Descargar una versio lite de Linux, en este caso vamos a instalar Alpine X86_64:
+
+
 
 2.1) Habilitar WSL2 en Windows 10, abre PowerShell como Administrador.
 Ejecuta este comando y reinicia tu PC si te lo pide:
