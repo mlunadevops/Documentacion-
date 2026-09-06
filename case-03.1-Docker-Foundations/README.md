@@ -30,21 +30,16 @@
 setup-alpine
 ```
 
-
-
-
-
-
-
 ## 3. Implementacion de LAB de Docker:
 
+3.1) Actualizar los repositorios e instalar Docker:
 
+```text
+apk update
+apk add docker
+```
 
-
-
-
-
- four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
+**Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
 
 ## 3. BGP Configuration:
 
