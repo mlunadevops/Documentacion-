@@ -23,11 +23,23 @@
 2.1) Habilitar WSL2 en Windows 10, abre PowerShell como Administrador.
 Ejecuta este comando y reinicia tu PC si te lo pide:
 
-
 ```text
 wsl --install
 ```
 ![Docker Foundations](images/01Wslinstall.png)
+
+2.2) Instalar Docker Engine dentro de WSL (Ubuntu):
+
+Una vez dentro de tu terminal Linux (Ubuntu), ejecuta los siguientes comandos para instalar Docker de forma oficial:
+
+Actualiza los repositorios:
+
+```text
+sudo apt update
+```
+
+
+
 
 
 
