@@ -30,7 +30,7 @@
 setup-alpine
 ```
 
-## 3. Implementacion de LAB de Docker:
+## 3. Instalacion de Docker:
 
 3.1) Actualizar los repositorios e instalar el motor de Docker:
 
@@ -48,6 +48,7 @@ rc-update add docker boot
 service docker start
 ```
 
+## 3. Instalacion de Docker:
 
 
 
