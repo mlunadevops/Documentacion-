@@ -54,6 +54,8 @@ service docker start
 docker run hello-world
 ```
 
+![Docker Verify](images/03Dockerinstall.png)
+
 ## 3. Instalacion de Docker:
 
 
