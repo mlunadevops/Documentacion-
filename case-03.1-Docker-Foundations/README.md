@@ -96,9 +96,6 @@ docker logs portainer
 ```
 ![Docker Verify](images/06Ejecuciontoken.png)
 
-
-**Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
-
 ## 3. BGP Configuration:
 
 **Router A (RTA - AS 100):**
