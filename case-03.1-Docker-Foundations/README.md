@@ -73,6 +73,12 @@ docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.
 
 ![Docker Verify](images/04Instalacionportainer.png)
 
+Una vez que ejecutes estos comandos, abre tu navegador web y entra a la siguiente dirección:
+
+👉 `http://<IP-DE-TU-VM-ALFINE>:9000`
+
+![Docker Verify](images/05Ejecucionportainer.png)
+
 
 **Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
 
