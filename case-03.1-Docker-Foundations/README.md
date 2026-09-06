@@ -27,9 +27,10 @@ wsl --install
 ```
 ![Docker Foundations](images/01Wslinstall.png)
 
-2.2) Instalar Docker Engine dentro de WSL (Ubuntu):
+2.2) Instalar Alpine:
 
-Una vez dentro de tu terminal Linux (Ubuntu), ejecuta los siguientes comandos para instalar Docker de forma oficial:
+![Docker Foundations](images/02Alpineinstall.png)
+
 
 Actualiza los repositorios:
 
