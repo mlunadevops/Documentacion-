@@ -32,7 +32,7 @@ setup-alpine
 
 ## 3. Implementacion de LAB de Docker:
 
-3.1) Actualizar los repositorios e instalar Docker:
+3.1) Actualizar los repositorios e instalar el motor de Docker:
 
 ```text
 apk update
