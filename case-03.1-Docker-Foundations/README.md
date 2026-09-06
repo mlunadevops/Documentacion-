@@ -18,6 +18,7 @@
 
 2.1) Descargar una version lite de Linux, en este caso vamos a instalar [Alpine Linux X86_64](https://alpinelinux.org/downloads/?utm_source=gemini).
 
+![Docker Foundations](images/01Alpinedownload.png)
 
 2.2) Instalar Alpine
 
