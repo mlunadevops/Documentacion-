@@ -56,9 +56,22 @@ docker run hello-world
 
 ![Docker Verify](images/03Dockerinstall.png)
 
-## 3. Instalacion de Portainer para Gestionar el motor de Docker en Alpine:
+## 4. Instalacion de Portainer para Gestionar el motor de Docker en Alpine:
 
+Como Portainer se ejecuta a su vez dentro de un contenedor de Docker, el despliegue es sumamente rápido y limpio.
 
+ 4.1) Ejecuta el siguiente comando para que Portainer guarde su configuración y datos de forma persistente:
+
+```text
+docker volume create portainer_data
+```
+ 4.2) Ejecuta el siguiente comando para descargar y arrancar el servidor de Portainer conectándolo al socket de Docker de tu sistema:
+
+```text
+docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+![Docker Verify](images/04Instalacionportainer.png)
 
 
 **Paso 2:** Ejecuta los siguientes comandos uno por uno para instalar el motor de contenedores:
