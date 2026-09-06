@@ -48,6 +48,12 @@ rc-update add docker boot
 service docker start
 ```
 
+3.3) Verificacion que Docker esta instalado:
+
+```text
+docker run hello-world
+```
+
 ## 3. Instalacion de Docker:
 
 
