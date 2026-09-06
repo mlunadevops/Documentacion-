@@ -16,12 +16,10 @@
 
 ## 2. Requisitos para instalacion en Linux:
 
-2.1) Descargar una versio lite de Linux, en este caso vamos a instalar [Alpine Linux X86_64](https://alpinelinux.org/downloads/?utm_source=gemini).
+2.1) Descargar una version lite de Linux, en este caso vamos a instalar [Alpine Linux X86_64](https://alpinelinux.org/downloads/?utm_source=gemini).
 
 
-
-2.1) Habilitar WSL2 en Windows 10, abre PowerShell como Administrador.
-Ejecuta este comando y reinicia tu PC si te lo pide:
+2.2) Instalar Alpine
 
 ```text
 wsl --install
