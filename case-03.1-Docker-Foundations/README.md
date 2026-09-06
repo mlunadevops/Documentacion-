@@ -18,13 +18,27 @@
 ## 1. Introduction and Theoretical Framework
 
 
+## 2. Requisitos para instalacion en Windows:
 
-## 2. Implementacion de LAB de Docker:
+2.1) Habilitar WSL2 en Windows 10, abre PowerShell como Administrador.
+Ejecuta este comando y reinicia tu PC si te lo pide:
+
+
+```text
+wsl --install
+```
+![Docker Foundations](images/01Wslinstall.png)
 
 
 
 
-![BGP WEIGTH](images/01Topologia.jpg)
+## 3. Implementacion de LAB de Docker:
+
+
+
+
+
+
 
  four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
