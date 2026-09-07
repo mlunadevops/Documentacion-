@@ -159,7 +159,7 @@ docker logs portainer
 
 ## 5. Implementacion del primer container Paso a Paso desde cero:
 
-## Paso 1: Crear la estructura de carpetas y archivos
+## Paso 5.1: Crear la estructura de carpetas y archivos
 
 5.1) Abre tu terminal en tu Alpine y crea un directorio dedicado para tu proyecto. Dentro de él, crearemos un archivo de configuración de dependencias y el código de la aplicación.
 
@@ -169,7 +169,7 @@ docker logs portainer
 
 A continuación, se presenta la estructura y el contenido para automatizar los pasos iniciales del proyecto mediante un script:
 
-A) Creación de la Carpeta Se genera y se accede al directorio de trabajo dedicado para la aplicación:
+A) Creación de la Carpeta **(mi-app-docker)** Se genera y se accede al directorio de trabajo dedicado para la aplicación:
 
 ```bash
 mkdir mi-app-docker
@@ -224,5 +224,38 @@ EOF
 Imagen de ejecucion de Script
 
 ![Docker Verify](images/10Creaciondocker.png)
+
+
+
+### Paso 5.2: Crear el `Dockerfile`
+
+El **`Dockerfile`** es la "receta" que le dice a Docker cómo construir tu imagen paso a paso. Crea el archivo en la misma carpeta **(mi-app-docker)** creada anteriormente:
+
+```bash
+cat << 'EOF' > Dockerfile
+# Usamos una imagen base oficial y ligera de Python basada en Alpine
+FROM python:3.11-alpine
+
+# Definimos el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copiamos primero el archivo de dependencias para aprovechar la caché de Docker
+COPY requirements.txt .
+
+# Instalamos las dependencias necesarias (actualizamos pip e instalamos Flask)
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiamos el resto del código de nuestra aplicación al contenedor
+COPY . .
+
+# Exponemos el puerto 8080 donde correrá nuestra app
+EXPOSE 8080
+
+# Comando por defecto que se ejecutará al arrancar el contenedor
+CMD ["python", "app.py"]
+EOF
+```
+
+
 
 
