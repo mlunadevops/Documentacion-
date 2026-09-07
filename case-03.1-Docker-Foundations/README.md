@@ -197,6 +197,7 @@ if __name__ == "__main__":
 EOF
 ```
 
+Script completo:
 
 ```text
 # 1. Crear y entrar a la carpeta del proyecto
