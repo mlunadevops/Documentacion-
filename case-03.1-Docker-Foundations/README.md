@@ -74,7 +74,7 @@ setup-alpine
 ```
 ## 3. Instalacion de Docker:
 
-3.1) Actualizar los repositorios e instalar el motor de Docker **(Docker Engine)**:
+3.1) Actualizar los repositorios e instalar el motor de Docker con el comando **(apk add docker)** el cual es toda la infraesctrucuta Docker:
 
 **Docker Engine:** Es la aplicación central de arquitectura cliente-servidor encargada de crear, empaquetar, distribuir y ejecutar contenedores de manera aislada y consistente en cualquier entorno, es decir, es ecosistema completo necesario para ejecutar la infraestructura de Docker en esa máquina.
 
@@ -93,9 +93,7 @@ apk update
 apk add docker
 ```
 
-## Despliegue del Ecosistema Docker
-
-Has instalado 
+Con el comando **(apk add docker)** Has instalado el ecosismte completo de Docker Infraestructura.
 
 > **Technical Note:** You have installed the complete ecosystem required to run the Docker infrastructure on that machine.
 
