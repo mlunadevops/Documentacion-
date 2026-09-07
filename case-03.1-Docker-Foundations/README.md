@@ -159,11 +159,37 @@ docker logs portainer
 
 ## 5. Implementacion del primer container Paso a Paso desde cero:
 
-**Router A (RTA - AS 100):**
+## Paso 1: Crear la estructura de carpetas y archivos
+
+5.1) Abre tu terminal en tu Alpine y crea un directorio dedicado para tu proyecto. Dentro de él, crearemos un archivo de configuración de dependencias y el código de la aplicación.
+
+**Script creacion  :**
+
+Contenido del script:
+
+A) Creacion de la carpeta.
+B) Crear achivo de dependencias **(requirements.txt)**.
+C) Creacion de aplicion python **(app.py)**.
 
 ```text
-! 
-router bgp 100
-!
+# 1. Crear y entrar a la carpeta del proyecto
+mkdir mi-app-docker
+cd mi-app-docker
+
+# 2. Crear un archivo con las dependencias de Python (Flask)
+echo "Flask==3.1.0" > requirements.txt
+
+# 3. Crear una aplicación web simple (app.py)
+cat << 'EOF' > app.py
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "¡Hola desde mi contenedor personalizado y portable en Alpine Linux!"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+EOF
 ```
 
