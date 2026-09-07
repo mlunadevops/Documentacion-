@@ -64,6 +64,11 @@ docker run hello-world
 
 **Portainer** es una interfaz gráfica de usuario (GUI) basada en web que permite administrar de forma sencilla entornos de **Docker** (contenedores, imágenes, volúmenes y redes) sin necesidad de usar la terminal o la línea de comandos.
 
+- **Gestión visual de contenedores:** Permite iniciar, detener, reiniciar, pausar y eliminar contenedores, además de inspeccionar sus registros (*logs*) en tiempo real.
+- **Administración de recursos:** Facilita la creación y control de redes, volúmenes de almacenamiento e imágenes de Docker desde un solo panel.
+- **Monitoreo del sistema:** Muestra métricas sobre el uso de CPU y memoria de los contenedores.
+- **Consola integrada:** Permite abrir una terminal directamente desde el navegador web hacia el interior de cualquier contenedor.
+
 Como Portainer se ejecuta a su vez dentro de un contenedor de Docker, el despliegue es sumamente rápido y limpio. El Portainer es el equivalente al Docker Desktop de Windows
 
  4.1) Ejecuta el siguiente comando para que Portainer guarde su configuración y datos de forma persistente:
