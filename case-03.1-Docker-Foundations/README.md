@@ -172,7 +172,8 @@ A continuación, se presenta la estructura y el contenido para automatizar los p
 A) Creación de la Carpeta Se genera y se accede al directorio de trabajo dedicado para la aplicación:
 
 ```bash
-mkdir -p ~/my-python-app && cd ~/my-python-app
+mkdir mi-app-docker
+cd mi-app-docker
 ```
 
 B) Crear un archivo **requirements.txt**con las dependencias de Python (Flask):
