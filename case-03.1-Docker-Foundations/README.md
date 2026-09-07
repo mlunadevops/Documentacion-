@@ -23,7 +23,7 @@ Password:  Samsung2026x
 - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
 - **Portabilidad:** Puede ejecutarse de manera idéntica en cualquier computadora, servidor o entorno en la nube que tenga Docker instalado.
 
-**Imagen en Docker** es una plantilla o un molde estático de solo lectura que contiene todo lo necesario para ejecutar una aplicación: el código fuente, las bibliotecas, las dependencias, las herramientas y las configuraciones.
+**Imagen en Docker:** Es una plantilla o un molde estático de solo lectura que contiene todo lo necesario para ejecutar una aplicación: el código fuente, las bibliotecas, las dependencias, las herramientas y las configuraciones.
 
 Para entenderlo mejor con una analogía:
 
