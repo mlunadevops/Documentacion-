@@ -93,7 +93,7 @@ apk update
 apk add docker
 ```
 
-Con el comando **(apk add docker)** Has instalado el ecosismte completo de Docker Infraestructura.
+Con el comando **(apk add docker)** Has instalado el ecosistema completo de Docker Infraestructura.
 
 > **Technical Note:** You have installed the complete ecosystem required to run the Docker infrastructure on that machine.
 
