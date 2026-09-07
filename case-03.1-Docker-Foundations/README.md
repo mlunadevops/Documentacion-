@@ -17,10 +17,9 @@ Password:  Samsung2026x
 
 ## 1. Introduction and Theoretical Framework
 
-
-
-
 ![Docker Foundations](images/000Componentesdocker.jpg)
+
+**Dockerfile**: El archivo docker es un documento de texto plano que contiene todas las instrucciones y comandos necesarios para ensamblar y construir una imagen de Docker de forma automática.
 
 **Contenedor:** Es un paquete de software ligero, autónomo y ejecutable que incluye todo lo necesario para que una aplicación funcione: código, tiempo de ejecución, herramientas del sistema, bibliotecas y configuraciones. Cada contenedor se aloja en su propia carpeta de forma indenpendiente. Un contenedor en Docker, importante, Los contenedores son entornos de ejecución en tiempo real y no carpetas estáticas.
 
