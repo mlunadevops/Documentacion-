@@ -267,5 +267,12 @@ docker build -t mi-app-web:v1 .
 
 **Verificación:** Ejecuta `docker images` y verás tu nueva imagen creada localmente con su tamaño en megabytes.
 
-### Paso 5.4: Construir la imagen de Docker
+### Paso 5.4: Construir la imagen de Docker:
+
+```bash
+docker run -d --name mi-contenedor-web -p 8080:8080 mi-app-web:v1
+```
+
+
+![Docker Verify](images/11Creaciondocker.png)
 
