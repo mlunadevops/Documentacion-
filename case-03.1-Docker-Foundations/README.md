@@ -99,7 +99,7 @@ Con el comando **(apk add docker)** Has instalado el ecosismte completo de Docke
 
 3.2) Habilitar y arrancar el servicio de Docker
 
-**Paso 2:** Una vez que termine, ejecuta los siguientes comandos para activar el servicio y dejarlo listo:
+**Paso 2:** EjecutaR los siguientes comandos para activar el servicio de Docker y dejarlo listo:
 
 ```text
 rc-update add docker boot
