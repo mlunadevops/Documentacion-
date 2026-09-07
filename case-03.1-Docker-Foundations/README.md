@@ -23,12 +23,18 @@ Password:  Samsung2026x
 - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
 - **Portabilidad:** Puede ejecutarse de manera idéntica en cualquier computadora, servidor o entorno en la nube que tenga Docker instalado.
 
-**Volumen:** 
+**volumen en Docker:** es el mecanismo gestionado íntegramente por Docker para almacenar y persistir datos fuera del sistema de archivos efímero de los contenedores. Se guarda en una zona dedicada del sistema anfitrión (*host*) y permite que la información sobreviva aunque el contenedor sea apagado, borrado o recreado, facilitando además que varios contenedores puedan compartir la misma información de forma segura y portable.
 
 
 ![Docker Foundations](images/OOVolumenesendocker.jpg)
 
+**Implementacion de Portabilidad:**
 
+### Cómo funciona en la práctica:
+
+- **La Imagen (El molde):** La aplicación y sus dependencias se empaquetan en una imagen de Docker. Esa imagen la puedes subir a un repositorio (como Docker Hub) o guardarla en un archivo (`.tar`).
+- **El traslado:** Te llevas esa imagen (o el archivo de texto `docker-compose.yml`) a otra PC con Windows y Docker Desktop.
+- **La ejecución:** Al correr el comando de arranque, Docker en esa nueva PC reconstruye el contenedor usando esa misma imagen, garantizando que funcione exactamente igual que en la computadora original.
 
 ## 2. Requisitos para instalacion en Linux:
 
