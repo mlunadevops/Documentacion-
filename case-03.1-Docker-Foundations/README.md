@@ -77,6 +77,14 @@ setup-alpine
 
 3.1) Actualizar los repositorios e instalar el motor de Docker:
 
+**Docker Engine** es la aplicación central de arquitectura cliente-servidor encargada de crear, empaquetar, distribuir y ejecutar contenedores de manera aislada y consistente en cualquier entorno.
+
+### Componentes Principales
+* **Daemon (`dockerd`):** El servicio en segundo plano que gestiona las imágenes, contenedores, redes y volúmenes.
+* **API REST:** La interfaz que permite a las aplicaciones comunicarse con el Daemon.
+* **Cliente (`docker`):** La interfaz de línea de comandos (CLI) que utilizas para enviar comandos al Daemon.
+
+
 ```text
 apk update
 apk add docker
