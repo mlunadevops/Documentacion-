@@ -283,8 +283,21 @@ docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 
 ### Paso 5.5: Verificacion de funcionamiento de la aplicacion:
 
+```bash
 curl http://localhost:8080
+```
 
+# Paso 6: Hacerlo Portable
 
+Para que tu contenedor sea 100% portable y puedas llevarlo a otro servidor (incluso uno que no tenga conexión a internet), tienes dos opciones principales:
 
+## Opción A: Guardar la imagen en un archivo comprimido (Tarball)
+
+Puedes empaquetar tu imagen compilada en un archivo `.tar`, copiarlo mediante SCP/USB a otra máquina y cargarlo allí:
+
+- Exportar la imagen a un archivo:
+
+```bash
+docker save -o mi-app-web-v1.tar mi-app-web:v1
+```
 
