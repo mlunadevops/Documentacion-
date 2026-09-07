@@ -83,16 +83,18 @@ setup-alpine
 * **API REST:** La interfaz que permite a las aplicaciones comunicarse con el Daemon.
 * **Cliente (`docker`):** La interfaz de línea de comandos (CLI) que utilizas para enviar comandos al Daemon.
 
+### Componentes Clave del Ecosistema
+* **Docker Engine:** Motor central para construir y ejecutar contenedores.
+* **Docker CLI:** Interfaz de línea de comandos.
+* **Docker Compose:** Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
+
+
 ## Despliegue del Ecosistema Docker
 
 Estás instalando 
 
 > **Technical Note:** You are installing the complete ecosystem required to run the Docker infrastructure on that machine.
 
-### Componentes Clave del Ecosistema
-* **Docker Engine:** Motor central para construir y ejecutar contenedores.
-* **Docker CLI:** Interfaz de línea de comandos.
-* **Docker Compose:** Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
 
 
 ```text
