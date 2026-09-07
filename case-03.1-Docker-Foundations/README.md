@@ -72,17 +72,27 @@ Todo eso queda consolidado y congelado dentro de esa imagen resultante, lista pa
 ```text
 setup-alpine
 ```
-
 ## 3. Instalacion de Docker:
 
-3.1) Actualizar los repositorios e instalar el motor de Docker:
+3.1) Actualizar los repositorios e instalar el motor de Docker **(Docker Engine)**:
 
-**Docker Engine** es la aplicación central de arquitectura cliente-servidor encargada de crear, empaquetar, distribuir y ejecutar contenedores de manera aislada y consistente en cualquier entorno.
+**Docker Engine:** Es la aplicación central de arquitectura cliente-servidor encargada de crear, empaquetar, distribuir y ejecutar contenedores de manera aislada y consistente en cualquier entorno, es decir, es ecosistema completo necesario para ejecutar la infraestructura de Docker en esa máquina.
 
 ### Componentes Principales
 * **Daemon (`dockerd`):** El servicio en segundo plano que gestiona las imágenes, contenedores, redes y volúmenes.
 * **API REST:** La interfaz que permite a las aplicaciones comunicarse con el Daemon.
 * **Cliente (`docker`):** La interfaz de línea de comandos (CLI) que utilizas para enviar comandos al Daemon.
+
+## Despliegue del Ecosistema Docker
+
+Estás instalando 
+
+> **Technical Note:** You are installing the complete ecosystem required to run the Docker infrastructure on that machine.
+
+### Componentes Clave del Ecosistema
+* **Docker Engine:** Motor central para construir y ejecutar contenedores.
+* **Docker CLI:** Interfaz de línea de comandos.
+* **Docker Compose:** Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
 
 
 ```text
