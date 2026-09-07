@@ -269,10 +269,21 @@ docker build -t mi-app-web:v1 .
 
 ### Paso 5.4: Construir la imagen de Docker:
 
+Con la imagen lista, ya podemos levantar un contenedor basado en ella:
+
 ```bash
-docker run -d --name mi-contenedor-web -p 8080:8080 mi-app-web:v1
+docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 ```
+* `-d`: Ejecuta el contenedor en segundo plano (*detached*).
+* `--name mi-contenedor-web`: Le asigna un nombre amigable.
+* `-p 8080:8080`: Mapea el puerto 8080 de tu servidor anfitrión al puerto 8080 del contenedor.
 
 
 ![Docker Verify](images/11Creaciondocker.png)
+
+### Paso 5.5: Construir la imagen de Docker:
+
+
+
+![Docker Verify](images/12Creaciondocker.png)
 
