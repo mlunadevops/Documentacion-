@@ -17,9 +17,11 @@ Password:  Samsung2026x
 
 ## 1. Introduction and Theoretical Framework
 
-Contenedor: Cada contenedor se aloja en su propia carpeta. 
+**Contenedor:** Cada contenedor se aloja en su propia carpeta. 
 
 - **Cada contenedor corre en su propia estructura:** A nivel interno, cada contenedor tiene su propio sistema de archivos aislado (su propia "carpeta" o entorno virtual donde opera su sistema operativo y su aplicación).
+
+**Volumen:** 
 
 OOVolumenesendocker.jpg
 
