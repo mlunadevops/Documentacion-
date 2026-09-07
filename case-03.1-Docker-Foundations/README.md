@@ -256,6 +256,16 @@ CMD ["python", "app.py"]
 EOF
 ```
 
+### Paso 5.3: Construir la imagen de Docker
 
+Ahora que tenemos la receta **(`Dockerfile`)** y los archivos, vamos a construir nuestra imagen personalizada. Ejecuta el siguiente comando (el punto `.` al final indica que busque el Dockerfile en la carpeta actual):
 
+```bash
+docker build -t mi-app-web:v1 .
+```
+**Qué hace:** Docker lee el archivo línea por línea, descarga Python sobre Alpine, instala Flask, copia tus archivos y etiqueta el resultado final con el nombre `mi-app-web:v1`.
+
+**Verificación:** Ejecuta `docker images` y verás tu nueva imagen creada localmente con su tamaño en megabytes.
+
+### Paso 5.4: Construir la imagen de Docker
 
