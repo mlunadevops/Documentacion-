@@ -20,6 +20,7 @@ Password:  Samsung2026x
 **Contenedor:** Cada contenedor se aloja en su propia carpeta. 
 
 - **Cada contenedor corre en su propia estructura:** A nivel interno, cada contenedor tiene su propio sistema de archivos aislado (su propia "carpeta" o entorno virtual donde opera su sistema operativo y su aplicación).
+- - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
 
 **Volumen:** 
 
