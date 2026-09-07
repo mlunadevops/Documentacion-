@@ -165,11 +165,18 @@ docker logs portainer
 
 **Script creacion  :**
 
-Contenido del script:
+## Contenido del Script
 
-A) Creacion de la carpeta.
-B) Crear achivo de dependencias **(requirements.txt)**.
-C) Creacion de aplicion python **(app.py)**.
+A continuación, se presenta la estructura y el contenido para automatizar los pasos iniciales del proyecto mediante un script:
+
+### A) Creación de la Carpeta Se genera y se accede al directorio de trabajo dedicado para la aplicación:
+
+```bash
+mkdir -p ~/my-python-app && cd ~/my-python-app
+```
+
+
+
 
 ```text
 # 1. Crear y entrar a la carpeta del proyecto
