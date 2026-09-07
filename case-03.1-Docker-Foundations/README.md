@@ -23,6 +23,13 @@ Password:  Samsung2026x
 - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
 - **Portabilidad:** Puede ejecutarse de manera idéntica en cualquier computadora, servidor o entorno en la nube que tenga Docker instalado.
 
+**Imagen en Docker** es una plantilla o un molde estático de solo lectura que contiene todo lo necesario para ejecutar una aplicación: el código fuente, las bibliotecas, las dependencias, las herramientas y las configuraciones.
+
+Para entenderlo mejor con una analogía:
+
+- **La imagen** es como el plano arquitectónico o la receta de un pastel (estática, no cambia y sirve como base).
+- **El contenedor** es la casa ya construida o el pastel horneado en ese preciso momento (la instancia en ejecución que puedes usar, apagar o destruir).
+
 **Volumen en Docker:** es el mecanismo gestionado íntegramente por Docker para almacenar y persistir datos fuera del sistema de archivos efímero de los contenedores. Se guarda en una zona dedicada del sistema anfitrión (*host*) y permite que la información sobreviva aunque el contenedor sea apagado, borrado o recreado, facilitando además que varios contenedores puedan compartir la misma información de forma segura y portable.
 
 
