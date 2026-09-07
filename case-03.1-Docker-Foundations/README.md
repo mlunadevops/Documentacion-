@@ -17,7 +17,7 @@ Password:  Samsung2026x
 
 ## 1. Introduction and Theoretical Framework
 
-**Contenedor:** Es un paquete de software ligero, autónomo y ejecutable que incluye todo lo necesario para que una aplicación funcione: código, tiempo de ejecución, herramientas del sistema, bibliotecas y configuraciones. Cada contenedor se aloja en su propia carpeta de forma indenpendiente. Un contenedor en Docker 
+**Contenedor:** Es un paquete de software ligero, autónomo y ejecutable que incluye todo lo necesario para que una aplicación funcione: código, tiempo de ejecución, herramientas del sistema, bibliotecas y configuraciones. Cada contenedor se aloja en su propia carpeta de forma indenpendiente. Un contenedor en Docker, importante, Los contenedores son entornos de ejecución en tiempo real y no carpetas estáticas.
 
 - **Cada contenedor corre en su propia estructura:** A nivel interno, cada contenedor tiene su propio sistema de archivos aislado (su propia "carpeta" o entorno virtual donde opera su sistema operativo y su aplicación).
 - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
