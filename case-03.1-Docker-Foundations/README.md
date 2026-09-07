@@ -23,7 +23,10 @@ Password:  Samsung2026x
 
 **Volumen:** 
 
-OOVolumenesendocker.jpg
+
+![Docker Foundations](images/OOVolumenesendocker.jpg)
+
+
 
 ## 2. Requisitos para instalacion en Linux:
 
