@@ -163,19 +163,39 @@ docker logs portainer
 
 5.1) Abre tu terminal en tu Alpine y crea un directorio dedicado para tu proyecto. Dentro de él, crearemos un archivo de configuración de dependencias y el código de la aplicación.
 
-**Script creacion  :**
+**Script creacion:**
 
 ## Contenido del Script
 
 A continuación, se presenta la estructura y el contenido para automatizar los pasos iniciales del proyecto mediante un script:
 
-### A) Creación de la Carpeta Se genera y se accede al directorio de trabajo dedicado para la aplicación:
+A) Creación de la Carpeta Se genera y se accede al directorio de trabajo dedicado para la aplicación:
 
 ```bash
 mkdir -p ~/my-python-app && cd ~/my-python-app
 ```
 
+B) Crear un archivo **requirements.txt**con las dependencias de Python (Flask):
 
+```bash
+echo "Flask==3.1.0" > requirements.txt
+```
+
+C) Crear una aplicación web simple **(app.py)**:
+
+```bash
+cat << 'EOF' > app.py
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "¡Hola desde mi contenedor personalizado y portable en Alpine Linux!"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+EOF
+```
 
 
 ```text
