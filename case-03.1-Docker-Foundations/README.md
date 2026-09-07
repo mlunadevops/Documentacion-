@@ -40,14 +40,16 @@ Para entenderlo mejor con una analogía:
 - **Efimeridad de un contenedor:** Toda la data o información que se genere durante su ciclo de vida se destruye una vez que el contenedor se apaga o termina su ciclo de vida.
 - **Portabilidad:** Puede ejecutarse de manera idéntica en cualquier computadora, servidor o entorno en la nube que tenga Docker instalado.
 
-
-
 **Volumen en Docker:** es el mecanismo gestionado íntegramente por Docker para almacenar y persistir datos fuera del sistema de archivos efímero de los contenedores. Se guarda en una zona dedicada del sistema anfitrión (*host*) y permite que la información sobreviva aunque el contenedor sea apagado, borrado o recreado, facilitando además que varios contenedores puedan compartir la misma información de forma segura y portable.
 
 
 ![Docker Foundations](images/OOVolumenesendocker.jpg)
 
 **Implementacion de Portabilidad:**
+
+En el preciso momento en que ejecutas el comando de construcción (`docker build`), Docker lee el **`Dockerfile`** y descarga, compila y empaqueta todo lo necesario: la imagen base (con su sistema operativo ligero), las herramientas del sistema, las librerías o dependencias de tu aplicación, y tu propio código fuente.
+
+Todo eso queda consolidado y congelado dentro de esa imagen resultante, lista para funcionar de manera idéntica en cualquier lugar donde la lleves.
 
 ### Cómo funciona en la práctica:
 
