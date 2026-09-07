@@ -62,7 +62,7 @@ docker run hello-world
 
 ## 4. Instalacion de Portainer para Gestionar el motor de Docker en Alpine:
 
-**Portainer** es una interfaz gráfica de usuario (GUI) basada en web que permite administrar de forma sencilla entornos de **Docker** (contenedores, imágenes, volúmenes y redes) sin necesidad de usar la terminal o la línea de comandos.
+**Portainer** es una interfaz gráfica de usuario (GUI) basada en web que permite administrar de forma sencilla entornos de **Docker** (contenedores, imágenes, volúmenes y redes) sin necesidad de usar la terminal o la línea de comandos. Funciones Principales de Portainer:
 
 - **Gestión visual de contenedores:** Permite iniciar, detener, reiniciar, pausar y eliminar contenedores, además de inspeccionar sus registros (*logs*) en tiempo real.
 - **Administración de recursos:** Facilita la creación y control de redes, volúmenes de almacenamiento e imágenes de Docker desde un solo panel.
