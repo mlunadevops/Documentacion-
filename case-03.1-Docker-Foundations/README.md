@@ -266,6 +266,8 @@ docker build -t mi-app-web:v1 .
 
 **Verificación:** Ejecuta `docker images` y verás tu nueva imagen creada localmente con su tamaño en megabytes.
 
+![Docker Verify](images/12Creaciondocker.png)
+
 ![Docker Verify](images/13Creaciondocker.png)
 
 ### Paso 5.4: Crear y ejecutar el contenedor:
@@ -282,5 +284,5 @@ docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 ### Paso 5.5: Verificacion de funcionamiento de la aplicacion:
 
 
-![Docker Verify](images/12Creaciondocker.png)
+
 
