@@ -157,7 +157,7 @@ docker logs portainer
 ```
 ![Docker Verify](images/06Ejecuciontoken.png)
 
-## 5. Implementacion del primer container:
+## 5. Implementacion del primer container Paso a Paso desde cero:
 
 **Router A (RTA - AS 100):**
 
