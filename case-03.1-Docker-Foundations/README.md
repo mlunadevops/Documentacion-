@@ -72,7 +72,7 @@ Todo eso queda consolidado y congelado dentro de esa imagen resultante, lista pa
 ```text
 setup-alpine
 ```
-## 3. Instalacion de Docker:
+## 3. Instalacion de Infraesctrucuta Docker con el comando **(apk add docker)**:
 
 3.1) Actualizar los repositorios e instalar el motor de Docker con el comando **(apk add docker)** el cual es toda la infraesctrucuta Docker:
 
