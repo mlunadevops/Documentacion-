@@ -157,7 +157,7 @@ docker logs portainer
 ```
 ![Docker Verify](images/06Ejecuciontoken.png)
 
-## 3. BGP Configuration:
+## 5. Implementacion del primer container:
 
 **Router A (RTA - AS 100):**
 
