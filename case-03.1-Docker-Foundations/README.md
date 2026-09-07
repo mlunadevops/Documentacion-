@@ -225,8 +225,6 @@ Imagen de ejecucion de Script
 
 ![Docker Verify](images/10Creaciondocker.png)
 
-
-
 ### Paso 5.2: Crear el `Dockerfile`
 
 El **`Dockerfile`** es la "receta" que le dice a Docker cómo construir tu imagen paso a paso. Crea el archivo en la misma carpeta **(mi-app-docker)** creada anteriormente:
@@ -270,7 +268,7 @@ docker build -t mi-app-web:v1 .
 
 ![Docker Verify](images/13Creaciondocker.png)
 
-### Paso 5.4: Construir la imagen de Docker:
+### Paso 5.4: Crear y ejecutar el contenedor:
 
 Con la imagen lista, ya podemos levantar un contenedor basado en ella:
 
@@ -281,8 +279,7 @@ docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 * `--name mi-contenedor-web`: Le asigna un nombre amigable.
 * `-p 8080:8080`: Mapea el puerto 8080 de tu servidor anfitrión al puerto 8080 del contenedor.
 
-### Paso 5.5: Construir la imagen de Docker:
-
+### Paso 5.5: Verificacion de funcionamiento de la aplicacion:
 
 
 ![Docker Verify](images/12Creaciondocker.png)
