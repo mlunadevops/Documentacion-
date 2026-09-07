@@ -283,6 +283,8 @@ docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 
 ### Paso 5.5: Verificacion de funcionamiento de la aplicacion:
 
+curl http://localhost:8080
+
 
 
 
