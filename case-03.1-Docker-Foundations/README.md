@@ -264,9 +264,9 @@ docker build -t mi-app-web:v1 .
 ```
 **Qué hace:** Docker lee el archivo **(`Dockerfile`)**  línea por línea, descarga Python sobre Alpine, instala Flask, copia tus archivos y etiqueta el resultado final con el nombre `mi-app-web:v1`.
 
-**Verificación:** Ejecuta `docker images` y verás tu nueva imagen creada localmente con su tamaño en megabytes.
-
 ![Docker Verify](images/12Creaciondocker.png)
+
+**Verificación:** Ejecuta `docker images` y verás tu nueva imagen creada localmente con su tamaño en megabytes.
 
 ![Docker Verify](images/13Creaciondocker.png)
 
