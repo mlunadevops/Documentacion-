@@ -255,6 +255,7 @@ EXPOSE 8080
 CMD ["python", "app.py"]
 EOF
 ```
+![Docker Verify](images/11Creaciondocker.png)
 
 ### Paso 5.3: Construir la imagen de Docker
 
@@ -279,9 +280,6 @@ docker run -d -p 8000:8000 --name mi-contenedor-web mi-app-web:v1
 * `-d`: Ejecuta el contenedor en segundo plano (*detached*).
 * `--name mi-contenedor-web`: Le asigna un nombre amigable.
 * `-p 8080:8080`: Mapea el puerto 8080 de tu servidor anfitrión al puerto 8080 del contenedor.
-
-
-![Docker Verify](images/11Creaciondocker.png)
 
 ### Paso 5.5: Construir la imagen de Docker:
 
