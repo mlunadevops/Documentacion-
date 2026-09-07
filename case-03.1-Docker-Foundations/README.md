@@ -221,4 +221,8 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 EOF
 ```
+Imagen de ejecucion de Script
+
+![Docker Verify](images/10Creaciondocker.png)
+
 
