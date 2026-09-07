@@ -62,7 +62,9 @@ docker run hello-world
 
 ## 4. Instalacion de Portainer para Gestionar el motor de Docker en Alpine:
 
-Como Portainer se ejecuta a su vez dentro de un contenedor de Docker, el despliegue es sumamente rápido y limpio.
+**Portainer** es una interfaz gráfica de usuario (GUI) basada en web que permite administrar de forma sencilla entornos de **Docker** (contenedores, imágenes, volúmenes y redes) sin necesidad de usar la terminal o la línea de comandos.
+
+Como Portainer se ejecuta a su vez dentro de un contenedor de Docker, el despliegue es sumamente rápido y limpio. El Portainer es el equivalente al Docker Desktop de Windows
 
  4.1) Ejecuta el siguiente comando para que Portainer guarde su configuración y datos de forma persistente:
 
