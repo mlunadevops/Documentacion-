@@ -88,19 +88,16 @@ setup-alpine
 * **Docker CLI:** Interfaz de línea de comandos.
 * **Docker Compose:** Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
 
-
-## Despliegue del Ecosistema Docker
-
-Estás instalando 
-
-> **Technical Note:** You are installing the complete ecosystem required to run the Docker infrastructure on that machine.
-
-
-
 ```text
 apk update
 apk add docker
 ```
+
+## Despliegue del Ecosistema Docker
+
+Has instalado 
+
+> **Technical Note:** You have installed the complete ecosystem required to run the Docker infrastructure on that machine.
 
 3.2) Habilitar y arrancar el servicio de Docker
 
