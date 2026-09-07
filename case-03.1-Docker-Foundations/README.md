@@ -21,6 +21,12 @@ Password:  Samsung2026x
 
 **Dockerfile**: El archivo docker es un documento de texto plano que contiene todas las instrucciones y comandos necesarios para ensamblar y construir una imagen de Docker de forma automática.
 
+- **La imagen base:** El punto de partida (por ejemplo, usar un sistema operativo ligero como Alpine o instalar Python/Node.js).
+- **Directorio de trabajo:** La carpeta interna donde se ubicará el proyecto dentro del contenedor.
+- **Copia de archivos:** La orden para pasar tu código fuente desde tu computadora hacia el interior de la futura imagen.
+- **Instalación de dependencias:** Los comandos para descargar librerías o herramientas necesarias.
+- **Comando de inicio:** La instrucción final que le indica a Docker qué comando debe ejecutar cuando el contenedor cobre vida.
+
 **Imagen en Docker:** Es una plantilla o un molde estático de solo lectura que contiene todo lo necesario para ejecutar una aplicación: el código fuente, las bibliotecas, las dependencias, las herramientas y las configuraciones.
 
 Para entenderlo mejor con una analogía:
