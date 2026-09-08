@@ -117,7 +117,7 @@ Puntos clave del resultado de la instalación:
 4.4)Descarga de los Modelos Optimizados para correr local:
 
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
-* **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código, configuraciones de redes y scripts de auditoría.
+* **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
 
 Ejecuta el siguiente comando en la terminal de tu VM para descargar el modelo de forma segura:
 
