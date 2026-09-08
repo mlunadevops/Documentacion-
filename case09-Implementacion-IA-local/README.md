@@ -105,6 +105,8 @@ Ollama es como el motor de inferencia local (el "cerebro" que ejecuta los modelo
 * **Descarga el binario oficial seguro:** Se conecta directamente a los servidores oficiales de Ollama para descargar la versión binaria compilada y lista para ejecutarse en tu arquitectura de procesador.
 * **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si la máquina virtual se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python que analizan los logs de Rsyslog o las configuraciones de Fortinet.
 
+![IA Instalacion Ollama](images/15Instalacionollama.png)
+
 
 4.4)Descarga de los Modelos Optimizados para correr local:
 
