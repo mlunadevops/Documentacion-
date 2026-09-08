@@ -107,6 +107,12 @@ Ollama es como el motor de inferencia local (el "cerebro" que ejecuta los modelo
 
 ![IA Instalacion Ollama](images/15Instalacionollama.png)
 
+¡Instalación completada con éxito! El script finalizó correctamente y ya tienes Ollama operando como servicio de fondo en tu máquina virtual.
+
+Puntos clave del resultado de la instalación:
+
+* **Servicio activo:** Ollama ya está corriendo  en `127.0.0.1:11434`, listo para recibir peticiones locales.
+* **Modo CPU:** `WARNING: No NVIDIA/AMD GPU detected. Ollama will run in CPU-only mode.`, es normal ya usaremos CPU la memoria RAM del host (sin tarjeta gráfica dedicada).
 
 4.4)Descarga de los Modelos Optimizados para correr local:
 
