@@ -1,7 +1,7 @@
 # TECHNICAL LOG & IMPLEMENTACION IA LOCAL
 
 ## Traffic Manipulation via the Weight Attribute
-**CCNP Miguelangel Luna**
+**CCNP Miguelangel Luna** .
 
 ---
 
