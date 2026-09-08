@@ -18,6 +18,12 @@
 
 **Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
 
+**Modelo Fundacional** Es una IA a gran escala entrenada con volúmenes masivos de datos. Sirve como una base flexible y multipropósito que se puede adaptar fácilmente mediante instrucciones o ajustes para realizar miles de tareas diferentes (como escribir, programar o analizar datos), en lugar de estar limitada a una sola función específica.
+
+**Modelo Fundacional Pequeño (*Small Language Model*)**: es un modelo de IA entrenado a gran escala —igual que los modelos gigantes—, pero diseñado con una cantidad reducida de parámetros (por lo general, menos de 10 mil millones). Ejemplos:
+
+* **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
+* **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
 
 
 
