@@ -16,12 +16,8 @@
 
 ## 1. Introduction and Theoretical Framework
 
-The Weight attribute is a Cisco proprietary parameter used in BGP (Border Gateway Protocol) for best path selection. Its main characteristics are:
+**Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
 
-* **Local Scope:** It has meaning exclusively within the local router where it is configured and is not propagated via BGP routing updates to neighbors.
-* **Value Range:** An integer number between 0 and 65,535.
-* **Default Values:** Routes originated locally by the router receive a weight of 32,768 by default; routes learned from external or internal neighbors receive a weight of 0 by default.
-* **Precedence:** It is evaluated in the absolute first place within BGP's decision algorithm (above Local Preference, AS_PATH, MED, etc.). Routes with a higher Weight value have absolute preference.
 
 ## 2. Topology and BGP Neighbor Establishment
 
@@ -67,15 +63,28 @@ router bgp 100
    * **Red:** VirtIO (paravirtualizado).
    * **Disco:** 60 GB (SCSI/NVMe).
 
+Implementacion minima de CPU:
+
+![IA Local CPU](images/10requerimientosCPU.png)
+
 Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
      
 4.3) Instalación oficial y limpia de Ollama:
+
+Ollama es como el motor de inferencia local.
 
 **Instalacion de OLLAMA:**
 
 ```text
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+
+Ollama es como el motor de inferencia local (el "cerebro" que ejecuta los modelos de lenguaje sin salir de tu red). Este comando cumple funciones críticas:
+
+* **Automatiza la detección de hardware:** El script analiza automáticamente si tu máquina virtual cuenta con CPU compatible o si detecta una tarjeta gráfica (como una GPU NVIDIA mediante *passthrough*) para configurar los controladores necesarios (CUDA, ROCm, etc.).
+* **Descarga el binario oficial seguro:** Se conecta directamente a los servidores oficiales de Ollama para descargar la versión binaria compilada y lista para ejecutarse en tu arquitectura de procesador.
+* **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si la máquina virtual se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python que analizan los logs de Rsyslog o las configuraciones de Fortinet.
+
 
 4.4)Descarga de los Modelos Optimizados para correr local:
 
