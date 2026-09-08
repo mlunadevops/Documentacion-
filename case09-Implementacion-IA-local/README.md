@@ -101,9 +101,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 Ollama es como el motor de inferencia local (el "cerebro" que ejecuta los modelos de lenguaje sin salir de tu red). Este comando cumple funciones críticas:
 
-* **Automatiza la detección de hardware:** El script analiza automáticamente si tu máquina virtual cuenta con CPU compatible o si detecta una tarjeta gráfica (como una GPU NVIDIA mediante *passthrough*) para configurar los controladores necesarios (CUDA, ROCm, etc.).
-* **Descarga el binario oficial seguro:** Se conecta directamente a los servidores oficiales de Ollama para descargar la versión binaria compilada y lista para ejecutarse en tu arquitectura de procesador.
-* **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si la máquina virtual se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python que analizan los logs de Rsyslog o las configuraciones de Fortinet.
+* **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (como GPU NVIDIA mediante) para configurar los drivers (CUDA, ROCm, etc.).
+* **Descarga el binario oficial seguro:**  Descarga Ollama la versión binaria compilada.
+* **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si vm se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python.
 
 ![IA Instalacion Ollama](images/15Instalacionollama.png)
 
