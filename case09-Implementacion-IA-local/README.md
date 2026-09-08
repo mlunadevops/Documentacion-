@@ -19,6 +19,8 @@
 **Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
 
 
+
+
 ## 2. Topology and BGP Neighbor Establishment
 
 The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
@@ -88,7 +90,7 @@ Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
      
 4.3) Instalación oficial y limpia de Ollama:
 
-Ollama es como el motor de inferencia local.
+Ollama es el motor de inferencia local.
 
 **Instalacion de OLLAMA:**
 
