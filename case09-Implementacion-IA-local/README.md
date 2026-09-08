@@ -105,7 +105,7 @@ Ollama es el motor de inferencia local.
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Ollama es como el motor de inferencia local (el "cerebro" que ejecuta los modelos de lenguaje sin salir de tu red). Este comando cumple funciones críticas:
+Ollama es el motor de inferencia local (el "cerebro" que ejecuta los modelos de lenguaje sin salir de tu red). Este comando cumple funciones críticas:
 
 * **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (como GPU NVIDIA mediante) para configurar los drivers (CUDA, ROCm, etc.).
 * **Descarga el binario oficial seguro:**  Descarga Ollama la versión binaria compilada.
@@ -130,6 +130,8 @@ ollama run phi3.5
 
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
+
+![IA Instalacion Ollama](images/16Instalacionfmphi35.png)
 
 Ejecuta el siguiente comando en la terminal de tu VM para descargar el modelo de forma segura:
 
