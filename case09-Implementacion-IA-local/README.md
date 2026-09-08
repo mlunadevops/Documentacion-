@@ -61,17 +61,25 @@ router bgp 100
 
    * **Cores:** 4 vCPUs (con tipo de CPU `host`).
  Implementacion minima CPU: La opción `host` le permite a la VM "heredar"  las instrucciones avanzadas del CPU físico (como AVX2 o instrucciones vectoriales).
+
 ![IA Local CPU](images/10requerimientosCPU.png)
+
    * **Memoria:** 12288 MB (12 GB).
+   * 
+![IA Local CPU](images/13requerimientosRAM.png)
+ 
    * **Red:** VirtIO (paravirtualizado).
+     
    * **Disco:** 60 GB (SCSI/NVMe).
+     
 Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no la habilitamos por ser un disco mecanico.
 
 ![IA Local CPU](images/11requerimientosDisco.png)
 
 
   * **Systema (Proxmox):**
-Marca la casilla Qemu Agent:** Habilítala. Es fundamental para que Proxmox comunicaque con la VM, permitiendo apagarla/reiniciarla desde el panel y monitorear el de RAM y disco.
+Marca la casilla Qemu Agent:** Habilítala, para que Proxmox se comunique con la VM, permita apagarla/reiniciarla desde el panel, monitorear RAM y disco.
+
 ![IA Local Sistema](images/12requerimientosSystem.png)
 
 Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
