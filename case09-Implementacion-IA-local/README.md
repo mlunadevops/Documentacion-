@@ -61,6 +61,11 @@ router bgp 100
    * **Cores:** 4 vCPUs (con tipo de CPU `host`).
  Implementacion minima de CPU: La opción `host` le permite a la VM "heredar" todas las instrucciones avanzadas de tu procesador físico real (como AVX2 o instrucciones vectoriales).
 ![IA Local CPU](images/10requerimientosCPU.png)
+
+   * **Systema (Proxmox):**
+Marca la casilla Qemu Agent:** Habilítala. Es fundamental para que Proxmox comunicaque con la VM, permitiendo apagarla/reiniciarla desde el panel y monitorear el de RAM y disco.
+![IA Local Sistema](images/12requerimientosSystem.png)
+
    * **Memoria:** 12288 MB (12 GB).
    * **Red:** VirtIO (paravirtualizado).
    * **Disco:** 60 GB (SCSI/NVMe).
