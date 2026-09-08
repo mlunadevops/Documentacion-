@@ -65,7 +65,7 @@ router bgp 100
    * **Memoria:** 12288 MB (12 GB).
    * **Red:** VirtIO (paravirtualizado).
    * **Disco:** 60 GB (SCSI/NVMe).
-Ideal disco SSDs/NVMe y habilitar **Discard** (habilita el soporte TRIM/UNMAP), sin embargo, no la habilitamos por ser un disco mecanico.
+Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no la habilitamos por ser un disco mecanico.
 ![IA Local CPU](images/11requerimientosDisco.png)
 
 
