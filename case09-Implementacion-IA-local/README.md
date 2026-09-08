@@ -59,4 +59,5 @@ router bgp 100
 
 ### 4. IMPLEMENTACION IA LOCAL:
 
-4.1) Descargar Ubuntu Server 24.04 LTS
+4.1) [Descargar Ubuntu Server 24.04 LTS](https://ubuntu.com/download/server?utm_source=gemini)
+
