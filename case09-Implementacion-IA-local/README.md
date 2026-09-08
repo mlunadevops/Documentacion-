@@ -67,5 +67,17 @@ router bgp 100
    * **Red:** VirtIO (paravirtualizado).
    * **Disco:** 60 GB (SCSI/NVMe).
 
-4.3)
+Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
+     
+4.3) Instalación oficial y limpia de Ollama:
 
+**Instalacion de OLLAMA:**
+
+```text
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+4.4)Descarga de los Modelos Optimizados para correr local:
+
+* **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
+* **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código, configuraciones de redes y scripts de auditoría.
