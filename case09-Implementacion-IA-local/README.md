@@ -59,13 +59,13 @@ router bgp 100
 
 4.2) Crear la Máquina Virtual en Proxmox, con los siguientes parámetros:  
    * **Cores:** 4 vCPUs (con tipo de CPU `host`).
+ Implementacion minima de CPU: La opción `host` le permite a la VM "heredar" todas las instrucciones avanzadas de tu procesador físico real (como AVX2 o instrucciones vectoriales).
+![IA Local CPU](images/10requerimientosCPU.png)
    * **Memoria:** 12288 MB (12 GB).
    * **Red:** VirtIO (paravirtualizado).
    * **Disco:** 60 GB (SCSI/NVMe).
 
-Implementacion minima de CPU:
 
-![IA Local CPU](images/10requerimientosCPU.png)
 
 Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
      
