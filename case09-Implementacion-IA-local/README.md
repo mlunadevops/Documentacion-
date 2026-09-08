@@ -122,6 +122,12 @@ Puntos clave del resultado de la instalación:
 
 4.4)Descarga de los Modelos Optimizados para correr local:
 
+Descargar el primer modelo de lenguaje **(Phi-3.5)**, ejecuta el siguiente comando en tu terminal:
+
+```bash
+ollama run phi3.5
+```
+
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
 
