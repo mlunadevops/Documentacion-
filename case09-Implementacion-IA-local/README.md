@@ -59,9 +59,21 @@ router bgp 100
 
 4.1) [Descargar Ubuntu Server 24.04 LTS](https://ubuntu.com/download/server?utm_source=gemini)
 
-4.2) Crear la Máquina Virtual en Proxmox, con los siguientes parámetros:  
+4.2) Crear la Máquina Virtual en Proxmox, con los siguientes parámetros: 
+
+  * **Systema (Proxmox):**
+Marca la casilla Qemu Agent:** Habilítala, para que Proxmox se comunique con la VM, permita apagarla/reiniciarla desde el panel, monitorear RAM y disco.
+
+![IA Local Sistema](images/12requerimientosSystem.png)
+
+   * **Disco:** 60 GB (SCSI/NVMe).
+     
+Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no la habilitamos por ser un disco mecanico.
+
+![IA Local CPU](images/11requerimientosDisco.png)
 
    * **Cores:** 4 vCPUs (con tipo de CPU `host`).
+ 
  Implementacion minima CPU: La opción `host` le permite a la VM "heredar"  las instrucciones avanzadas del CPU físico (como AVX2 o instrucciones vectoriales).
 
 ![IA Local CPU](images/10requerimientosCPU.png)
@@ -74,19 +86,8 @@ router bgp 100
 
 ![IA Local CPU](images/14requerimientosRED.png)
      
-   * **Disco:** 60 GB (SCSI/NVMe).
-     
-Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no la habilitamos por ser un disco mecanico.
 
-![IA Local CPU](images/11requerimientosDisco.png)
-
-
-  * **Systema (Proxmox):**
-Marca la casilla Qemu Agent:** Habilítala, para que Proxmox se comunique con la VM, permita apagarla/reiniciarla desde el panel, monitorear RAM y disco.
-
-![IA Local Sistema](images/12requerimientosSystem.png)
-
-Nota: Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
+**Nota:** Una vez instalada la VM de Ubuntu debe tener acceso por SSH.
      
 4.3) Instalación oficial y limpia de Ollama:
 
