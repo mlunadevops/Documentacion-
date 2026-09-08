@@ -69,6 +69,8 @@ router bgp 100
 ![IA Local CPU](images/13requerimientosRAM.png)
  
    * **Red:** VirtIO (paravirtualizado).
+
+![IA Local CPU](images/14requerimientosRED.png)
      
    * **Disco:** 60 GB (SCSI/NVMe).
      
