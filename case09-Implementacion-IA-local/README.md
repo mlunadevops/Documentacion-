@@ -81,3 +81,10 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código, configuraciones de redes y scripts de auditoría.
+
+Ejecuta el siguiente comando en la terminal de tu VM para descargar el modelo de forma segura:
+
+```text
+ollama run qwen2.5:7b
+```
+
