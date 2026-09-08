@@ -64,7 +64,7 @@ router bgp 100
 
 ![IA Local CPU](images/10requerimientosCPU.png)
 
-   * **Memoria:** 12288 MB (12 GB).
+   * **Memoria:** 12288 MB (12 GB), le coloque 16 RAM
    * 
 ![IA Local CPU](images/13requerimientosRAM.png)
  
