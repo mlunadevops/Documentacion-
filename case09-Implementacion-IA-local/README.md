@@ -61,3 +61,11 @@ router bgp 100
 
 4.1) [Descargar Ubuntu Server 24.04 LTS](https://ubuntu.com/download/server?utm_source=gemini)
 
+4.2) Crear la Máquina Virtual en Proxmox, con los siguientes parámetros:  
+   * **Cores:** 4 vCPUs (con tipo de CPU `host`).
+   * **Memoria:** 12288 MB (12 GB).
+   * **Red:** VirtIO (paravirtualizado).
+   * **Disco:** 60 GB (SCSI/NVMe).
+
+4.3)
+
