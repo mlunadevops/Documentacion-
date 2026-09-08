@@ -57,5 +57,6 @@ router bgp 100
 !
 ```
 
-### 4. BGP Configuration:
+### 4. IMPLEMENTACION IA LOCAL:
 
+4.1) Descargar Ubuntu Server 24.04 LTS
