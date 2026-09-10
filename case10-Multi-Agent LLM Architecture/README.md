@@ -16,8 +16,10 @@ Los 3 Pilares Universales de los Multi-Agentes (Una arquitectura multiagente sie
 
 Esto se implementa usando herramientas **100% gratuitas** y de codigo abierto como **(LangGraph, CrewAI y AutoGen)** son  en su versión *open-source* bajo licencias de libre uso (como MIT).
 
-05Pasosimplementacion.jpg
+PASOS GENERALES DE IMPLEMENTACION:
 ---
+
+05Pasosimplementacion.jpg
 
 ## INFOGRAFIA:
 
