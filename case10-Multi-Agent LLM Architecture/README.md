@@ -37,7 +37,7 @@
 
 ## 2. Capas de funcionamiento:
 
-## El Prompt del Sistema (System Prompt / Persona): Aquí configuras la "personalidad", las restricciones y el contexto técnico del agente.
+* **El Prompt (System Prompt):** Aquí configuras la "personalidad", las restricciones y el contexto técnico del agente.
 
 
 
