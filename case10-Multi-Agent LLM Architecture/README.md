@@ -61,11 +61,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 **The Router / Master Agent:** Es el "director de orquesta" (el FM principal) que recibe tu petición inicial y **decide a qué sub-agente enviarla**. **¿Dónde se hace?** En la lógica de control principal (puede ser un prompt maestro o un framework multiagente).
 
 
-
-
-
-
-## 3. BGP Configuration:
+## 3. IMPLEMENTATION:
 
 **Router A (RTA - AS 100):**
 
