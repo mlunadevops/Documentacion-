@@ -7,11 +7,11 @@
 
 Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
-1) **Estructura de directorios:** permite ser escalable, modular y con separacion de funciones.
+**1) Estructura de directorios:** permite ser escalable, modular y con separacion de funciones.
    
 ![AEstructura de directorios](images/04Estructuradirectorios.png).
    
-2) **Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se realizara en los siguientes archivos:
+**2) Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se realizara en los siguientes archivos:
 
 **supervisor.py**
 
@@ -19,7 +19,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 **agents/security_agent.py:**
 
-3) **Declarar las dependencias python (requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
+**3) **Declarar las dependencias python (requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
 
 **google-genai>=0.1.0:** Libreria que comunica la API de google y comunicarse con sus modelos.
 
@@ -28,20 +28,20 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 **pydantic>=2.0.0:** Libreria que valida datos estructurados.
 
    
-4) **Instalar librerias (pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero. En lugar de inventar la rueda escribiendo código complejo para conectar sockets de red o descifrar protocolos HTTP hacia la nube, utilizas librerías especializadas que actúan como los **cimientos tecnológicos** de tu arquitectura.
+**4) Instalar librerias (pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero. En lugar de inventar la rueda escribiendo código complejo para conectar sockets de red o descifrar protocolos HTTP hacia la nube, utilizas librerías especializadas que actúan como los **cimientos tecnológicos** de tu arquitectura.
 
 **Importante:** librerías se cargan en la memoria RAM de tu computadora para que el procesador pueda ejecutar las funciones y clases que contienen.
    
-5) **Configurar credenciales (.env):**.
+**5) Configurar credenciales (.env):**.
 
 **6) Crear agentes especializados:** Se crean para aplicar el principio de **especialización por dominio técnico**, permitiendo que cada componente del sistema se concentre exclusivamente en un área específica de la red en lugar de depender de un único modelo genérico que intente resolver todo a la vez.
    
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
    
-7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
+**7) Crear el Supervisor / Plano de Control (`supervisor.py`)**.
 
-8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
+**8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.**
 
 
 ## **Google AI Studio (API KEY):** 
