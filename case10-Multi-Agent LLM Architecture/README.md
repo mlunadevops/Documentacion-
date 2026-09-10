@@ -29,12 +29,7 @@ Para esto se instalaran las librerias descritas en el archivo **(requirements.tx
 
 El archivo **(`main.py`)** se encargara de inciar todo el sistema a traves del comando **python main.py**.
 
-*   Instanciar el orquestador principal (`SupervisorOrchestrator`).
-*   Definir los casos de prueba o consultas técnicas de entrada (tanto de enrutamiento como de seguridad).
-*   Ejecutar el flujo completo llamando al método de coordinación para que el sistema comience a procesar y delegar las tareas de forma automatizada.
-
 Todo el proyecto funciona bajo una arquitectura modular, limpia y escalable, conectada de forma segura a modelos de Inteligencia Artificial mediante Python.
-
 
 En este proyecto se desea implementar un multiagente
 
