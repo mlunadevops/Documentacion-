@@ -113,6 +113,14 @@ New-Item -ItemType File main.py, supervisor.py, requirements.txt, .env
 New-Item -ItemType File agents/__init__.py, agents/routing_agent.py, agents/security_agent.py
 ```
 
-Si se corre en powershell (cmd windows) usar el siguiente script:
+## Paso 3: Instalar las dependencias de Python
+
+Inserta la siguiente informacion en el archivo **(requirements.txt)**:
+
+```text
+google-genai>=0.1.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+```
 
 ### 4. BGP Configuration:
