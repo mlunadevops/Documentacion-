@@ -37,7 +37,11 @@
 
 ## 2. Capas de funcionamiento:
 
-* **El Prompt (System Prompt):** Aquí configuras la "personalidad", las restricciones y el contexto técnico del agente.
+* **El Prompt (System Prompt):** Aquí configuras la "personalidad", las restricciones y el contexto técnico del agente.  ¿Dónde se hace? en la configuración del agente dentro de tu framework de IA (como LangChain, CrewAI, AutoGen o Cursor).
+
+### Ejemplo de instrucción
+
+> "Eres un Ingeniero de Seguridad de Redes senior, experto en firewalls Palo Alto (PAN-OS), Fortinet (FortiOS) y Cisco ISE. Tu único objetivo es diseñar, validar y auditar políticas de seguridad, NAT y control de acceso. No respondas sobre routing dinámico BGP a menos que afecte directamente al filtrado de tráfico."
 
 
 
