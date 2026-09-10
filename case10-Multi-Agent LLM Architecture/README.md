@@ -131,4 +131,6 @@ POWERSHEL ruta (G:\Mi unidad\Publicaciones Linkedin)
 pip install -r requirements.txt
 ```
 
+![Instalacion Librerias](images/03Instalandolibrerias.png)
+
 ### 4. BGP Configuration:
