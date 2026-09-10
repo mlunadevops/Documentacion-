@@ -88,7 +88,7 @@ netdevops-ai-agent/
     └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
 ```
 
-**Paso 3.1: Obtener tu API Key Gratuita:**
+<div id="api-gratuita">**Paso 3.1: Obtener tu API Key Gratuita:**
 
 * **[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat):** Dirígete a la plataforma oficial para desarrolladores.
 * **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
@@ -123,7 +123,7 @@ python-dotenv>=1.0.0
 pydantic>=2.0.0
 ```
 
-## Paso 4.3: Instala las librerías:
+## Paso 3.4: Instala las librerías:
 
 POWERSHEL ruta (G:\Mi unidad\Publicaciones Linkedin)
 
@@ -133,4 +133,13 @@ pip install -r requirements.txt
 
 ![Instalacion Librerias](images/03Instalandolibrerias.png)
 
+
+## Paso 3.5: Configurar las credenciales (`.env`)
+
+Crea un archivo llamado `.env` en la raíz del proyecto y pega tu clave API de Google que obtuviste en el Paso 1:
+
+```env
+GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
+```
+[Ir a la sección de configuración](#configuracion-inicial)
 ### 4. BGP Configuration:
