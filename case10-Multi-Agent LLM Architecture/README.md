@@ -13,7 +13,11 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    
 2) **Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se realizara en los siguientes archivos:
 
-   
+**supervisor.py**
+
+**agents/routing_agent.py:**
+
+**agents/security_agent.py:**
 
 3) Instalar dependencias python **(requirements.txt)**.
 4) Instalar librerias **(pip install -r requirements.txt)**.
