@@ -8,7 +8,7 @@
 ```text
 AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
 ```
-**Google AI Studio (API KEY) NOMBRE DE PROYECTO:** 
+**Google AI Studio (API KEY) Nombre y numero de Proyecto:** 
 ```text
 projects/854096024384
 ```
