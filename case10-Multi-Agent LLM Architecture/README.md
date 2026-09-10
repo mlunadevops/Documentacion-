@@ -12,7 +12,7 @@ Los 3 Pilares Universales de los Multi-Agentes (Una arquitectura multiagente sie
   
 *   **3. El Orquestador o Supervisor:** Es el director de la orquesta. Sin un plano de control central que analice las peticiones de entrada, los agentes actuarían de forma aislada y caótica. El supervisor garantiza que el flujo de trabajo tenga dirección, orden y lógica de negocio.
 
-> Estos principios imitan la forma en que trabaja un equipo humano de ingeniería: tienes especialistas en áreas concretas (redes, seguridad) y un líder o supervisor (arquitecto de soluciones) que coordina qué tarea le toca a quién.
+**> Estos principios imitan la forma en que trabaja un equipo humano de ingeniería: tienes especialistas en áreas concretas (redes, seguridad) y un líder o supervisor (arquitecto de soluciones) que coordina qué tarea le toca a quién.**
 
 Esto se implementa usando herramientas **100% gratuitas** y de codigo abierto como **(LangGraph, CrewAI y AutoGen)** son  en su versión *open-source* bajo licencias de libre uso (como MIT).
 
