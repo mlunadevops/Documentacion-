@@ -63,8 +63,6 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 ## 3. IMPLEMENTATION:
 
-## Estructura del Proyecto (`netdevops-ai-agent/`)
-
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
 **Estructura de Directorios:**
@@ -82,7 +80,11 @@ netdevops-ai-agent/
     └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
 ```
 
+**Paso 1: Obtener tu API Key Gratuita:**
 
+* **Entra a Google AI Studio:** Dirígete a la plataforma oficial para desarrolladores.
+* **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
+* **Genera tu clave:** Haz clic en **"Get API key"** y crea una nueva clave. Cópiala y guárdala un momento; la usaremos en el Paso 4.
 
 
 ### 4. BGP Configuration:
