@@ -155,35 +155,31 @@ GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
 
 ### A. Agente de Routing (`agents/routing_agent.py`)
 
-En el archivo creado anteriormente **`agents`**  con la siguiente configuración y lógica para el dominio de encaminamiento:
+En el archivo creado anteriormente  dentro de la carpeta agents **`routing_agent.py`**  coloca la lógica para el dominio de enrutamiento:
 
 ```python
-# agents/routing_agent.py
 import os
 from google import genai
-from google.genai import types
-from dotenv import load_dotenv
 
-load_dotenv()
+class RoutingAgent:
+    def __init__(self):
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        self.system_instruction = (
+            "Eres un Ingeniero de Redes Senior experto en Routing & Switching, BGP, OSPF y topologías complejas. "
+            "Tu objetivo es analizar problemas de enrutamiento y proponer diseños o configuraciones robustas."
+        )
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-ROUTING_SYSTEM_PROMPT = """
-Eres un Ingeniero de Redes senior, experto en protocolos de enrutamiento dinámico BGP y OSPF, así como en la arquitectura de redes de centros de datos y Proxmox VE (SDN / VLANs).
-Tu objetivo es diseñar, validar y solucionar problemas de routing y conectividad bajo estrictas normas de seguridad.
-No respondas sobre firewalls de nueva generación a menos que afecte directamente al plano de control del enrutamiento.
-"""
-
-def run_routing_agent(query: str) -> str:
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=query,
-        config=types.GenerateContentConfig(
-            system_instruction=ROUTING_SYSTEM_PROMPT,
-            temperature=0.2,
-        ),
-    )
-    return response.text
+    def run(self, user_task: str) -> str:
+        print("   [RoutingAgent] Consultando a Gemini Flash (Gratuito)...")
+        response = self.client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=user_task,
+            config={
+                "system_instruction": self.system_instruction,
+                "max_output_tokens": 1000,
+            }
+        )
+        return response.text
 ```
 
 
