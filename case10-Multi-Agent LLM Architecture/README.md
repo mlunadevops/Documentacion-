@@ -56,7 +56,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 **(Tools & Capabilities):** Aquí es donde el agente deja de ser solo un "conversador" y pasa a tener superpoderes técnicos específicos. **¿Dónde se hace?** Al configurar los servidores del *Model Context Protocol* (MCP). **¿Cómo funciona?** Al Agente de Seguridad no le das herramientas para configurar BGP en un router Cisco, sino que **le conectas un servidor MCP especializado en la API REST de Palo Alto o Fortinet**, permitiéndole leer y validar objetos, reglas de seguridad y perfiles de amenaza directamente contra un firewall de pruebas o la API del fabricante.
 
-**2.4) El Enrutador o Orquestador (The Router / Master Agent):** 
+**2.4) El Enrutador o Orquestador (The Router / Master Agent) PLANO DE CONTROL:** 
 
 **The Router / Master Agent:** Es el "director de orquesta" (el FM principal) que recibe tu petición inicial y **decide a qué sub-agente enviarla**. **¿Dónde se hace?** En la lógica de control principal (puede ser un prompt maestro o un framework multiagente).
 
