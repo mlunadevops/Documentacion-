@@ -95,6 +95,10 @@ netdevops-ai-agent/
 * **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
 * **Genera tu clave:** Haz clic en **"Get API key"** y crea una nueva clave. Cópiala y guárdala un momento; la usaremos en el Paso 4.
 
+```text
+AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
+```
+
 ![AP Key](images/01APIgoogleAIstudio.png)
 
 ![AP Key](images/02APIkeyAIstudio.png)
