@@ -379,6 +379,3 @@ Una vez guardados todos los archivos, ejecuta el script principal con:
 ```python
 python main.py
 ```
-
-
-### 4. BGP Configuration:
