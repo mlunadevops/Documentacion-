@@ -43,7 +43,7 @@ Pasos para implementar el multiagente:
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y (Cisco ISE).
    
-7) Crear el Supervisor / Plano de Control **(`supervisor.py`)** Es el orquestador que elige según el área de dominio al subagente.
+7) Crear el Supervisor / Plano de Control **(`supervisor.py`)** Es el orquestador que elige según el área de dominio de los subagente 6.1 y 6.2.
 8) Crear el archivo principal **(`main.py`)** que ejecuta (inicia) el sistema multi-agente.
 
 ![Infografia de Pasos](images/05Pasosimplementacion.jpg)
