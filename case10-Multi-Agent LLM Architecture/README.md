@@ -176,6 +176,7 @@ Inserta la siguiente informacion en el archivo **(requirements.txt)**:
 google-genai>=0.1.0
 python-dotenv>=1.0.0
 pydantic>=2.0.0
+tenacity>=8.0.0
 ```
 
 ## Paso 3.4: Instala las librerías:
