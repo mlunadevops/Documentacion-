@@ -123,9 +123,9 @@ python-dotenv>=1.0.0
 pydantic>=2.0.0
 ```
 
-## Paso 4.3: Instala las librerías POWERSHELL:
+## Paso 4.3: Instala las librerías:
 
-POWERSHEL en la ruta (G:\Mi unidad\Publicaciones Linkedin)
+POWERSHEL ruta (G:\Mi unidad\Publicaciones Linkedin)
 
 ```text
 pip install -r requirements.txt
