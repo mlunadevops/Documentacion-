@@ -16,10 +16,27 @@ Los 3 Pilares Universales de los Multi-Agentes (Una arquitectura multiagente sie
 
 Esto se implementa usando herramientas **100% gratuitas** y de codigo abierto como **(LangGraph, CrewAI y AutoGen)** son  en su versión *open-source* bajo licencias de libre uso (como MIT).
 
-PASOS GENERALES DE IMPLEMENTACION:
+PASOS GENERALES DE IMPLEMENTACION Y OBJETIVO:
 ---
 
-En este proyecto se desea implementar un multiag
+Al terminar de implementar estos pasos tendrás listo un sistema inteligente multi-agente de NetDevOps. Consiste en un asistente automatizado donde un plano de control central **(supervisor.py)** recibe consultas técnicas de infraestructura y las delega de forma autónoma a dos agentes especializados:
+
+Un experto en enrutamiento dinámico (BGP, OSPF): **routing_agent.py**.
+
+Un experto en seguridad y firewalls (Palo Alto, Fortinet, Cisco ISE): **security_agent.py**.
+
+Para esto se instalaran las librerias descritas en el archivo **(requirements.txt)** y se utilizara las credenciales API KEY del archivo **(.env)** obtenida desde **Google AI studio** que permitiran conectar a los Modelos Fundacionales de Google Gratuitos especificamente **gemini-3.6-flash**.
+
+El archivo **(`main.py`)** se encargara de inciar todo el sistema a traves del comando **python main.py**.
+
+*   Instanciar el orquestador principal (`SupervisorOrchestrator`).
+*   Definir los casos de prueba o consultas técnicas de entrada (tanto de enrutamiento como de seguridad).
+*   Ejecutar el flujo completo llamando al método de coordinación para que el sistema comience a procesar y delegar las tareas de forma automatizada.
+
+Todo el proyecto funciona bajo una arquitectura modular, limpia y escalable, conectada de forma segura a modelos de Inteligencia Artificial mediante Python.
+
+
+En este proyecto se desea implementar un multiagente
 
 1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
 2) Obtener la API key Gratuita (Google AI studio).
