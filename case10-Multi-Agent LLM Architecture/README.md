@@ -82,9 +82,10 @@ Pasos generales de implementacion:
     7.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    7.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
    
-9) Crear el Supervisor / Plano de Control (`supervisor.py`).
-10) Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
-
+9) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
+ 
+ 
+ ## Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
 
 
 1) Crear **automaticamente** la estructura de directorios (espacio de trabajo).
