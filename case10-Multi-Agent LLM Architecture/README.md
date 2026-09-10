@@ -1,7 +1,6 @@
 # TECHNICAL LOG & MULTI AGENT LLM ARCHITECTURE
 
-## TOPOLOGIA
-**CCNP Miguelangel Luna**
+## **CCNP Miguelangel Luna**
 ---
 
 ## INFOGRAFIA:
