@@ -88,7 +88,7 @@ netdevops-ai-agent/
 
 ![AP Key](images/01APIgoogleAIstudio.png)
 
-
+![AP Key](images/02APIkeyAIstudio.png)
 
 
 
