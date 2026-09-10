@@ -98,6 +98,15 @@ netdevops-ai-agent/
 
 ![AP Key](images/02APIkeyAIstudio.png)
 
+## Paso 2: Crear la estructura del proyecto en tu PC:
 
+Abre tu terminal y ejecuta los siguientes comandos para crear la carpeta del proyecto y su organización interna:
+
+```bash
+mkdir netdevops-ai-agent
+cd netdevops-ai-agent
+mkdir agents
+touch main.py supervisor.py requirements.txt .env agents/__init__.py agents/routing_agent.py agents/security_agent.py
+```
 
 ### 4. BGP Configuration:
