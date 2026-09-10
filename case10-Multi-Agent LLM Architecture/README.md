@@ -41,7 +41,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    
 **7) Crear el Supervisor / Plano de Control (`supervisor.py`)**. Su función fundamental es interceptar la petición o consulta que realiza el usuario, analizar su contenido para comprender el objetivo técnico, y decidir de manera inteligente a qué agente especializado debe delegar la tarea.
 
-**8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.**
+**8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente:** El archivo `main.py` cumple la función de ser el punto de entrada oficial (*entry point*) y el **"botón de encendido"** de todo tu sistema multi-agente de NetDevOps.
 
 
 ## **Google AI Studio (API KEY):** 
