@@ -88,7 +88,9 @@ netdevops-ai-agent/
     └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
 ```
 
-<div id="api-gratuita">**Paso 3.1: Obtener tu API Key Gratuita:**
+**Paso 3.1: Obtener tu API Key Gratuita:**
+
+<div id="api-gratuita">
 
 * **[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat):** Dirígete a la plataforma oficial para desarrolladores.
 * **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
