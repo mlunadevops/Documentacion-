@@ -39,12 +39,15 @@ Pasos para implementar el multiagente:
 4) Instalar en RAM las librerias **(pip install -r requirements.txt)**.
 5) Guardar en el archivo  **(.env)** las credenciales del paso 2 obtenidas desde **(Google AI studio)**.
 6) Crear agentes especializados (dominios de conocimiento):
+
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y (Cisco ISE).
-7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
-8) Crear el archivo principal **(`main.py`)** que ejecuta el sistema multi-agente.
+   
+7) Crear el Supervisor / Plano de Control **(`supervisor.py`)** Es el orquestador que elige según el área de dominio al subagente.
+8) Crear el archivo principal **(`main.py`)** que ejecuta (inicia) el sistema multi-agente.
 
-05Pasosimplementacion.jpg
+![Infografia de Pasos](images/05Pasosimplementacion.jpg)
+
 
 ## INFOGRAFIA:
 
