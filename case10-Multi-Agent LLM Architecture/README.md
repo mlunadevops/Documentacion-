@@ -39,7 +39,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
    
-**7) Crear el Supervisor / Plano de Control (`supervisor.py`)**.
+**7) Crear el Supervisor / Plano de Control (`supervisor.py`)**. Su función fundamental es interceptar la petición o consulta que realiza el usuario, analizar su contenido para comprender el objetivo técnico, y decidir de manera inteligente a qué agente especializado debe delegar la tarea.
 
 **8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.**
 
