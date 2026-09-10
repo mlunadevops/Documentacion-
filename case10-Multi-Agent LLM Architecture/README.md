@@ -78,10 +78,12 @@ Pasos generales de implementacion:
 5) Instalar librerias **(pip install -r requirements.txt)**.
 6) Configurar credenciales **(.env)**.
 7) Crear agentes especializados:
-   7.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
+
+    7.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    7.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
-8) Crear el Supervisor / Plano de Control (`supervisor.py`).
-9) Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
+   
+9) Crear el Supervisor / Plano de Control (`supervisor.py`).
+10) Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
 
 
 
