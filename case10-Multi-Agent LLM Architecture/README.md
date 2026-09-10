@@ -12,6 +12,15 @@ AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
 projects/854096024384
 ```
 
+## CONTENIDOS:
+
+| Case | Title | Description |
+| :--- | :--- | :--- |
+| **01** | [Claude & n8n AI Agents](./case-01-Google-Auth/) | Agentes Claude . |
+| **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
+
+[Google](https://www.google.com)
+
 
 ## 1. Introduction and Theoretical Framework:
 
@@ -99,17 +108,6 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 **8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente:** El archivo `main.py` cumple la función de ser el punto de entrada oficial (*entry point*) y el **"botón de encendido"** de todo tu sistema multi-agente de NetDevOps.
 
-
-## CONTENIDOS:
-
-| Case | Title | Description |
-| :--- | :--- | :--- |
-| **01** | [Claude & n8n AI Agents](./case-01-Google-Auth/) | Agentes Claude . |
-| **02** | [Packet Tracert & VS CODE](./case-02-PT-MCP-VS-Code/) | Conecta Packet Tracert con MCP |
-| **03** | [Generar un Archivo Word desde Markdown usando Phyton](./case-03-Markdown-Word-Using-Phyton/) | Convierte un MD a Word usando Phyton |
-| **04** | [GNS3 AI](./case04-GNS3-AI/) | Conexion GNS3 MCP. |
-
-[Google](https://www.google.com)
 
 ## 1. Arquitectura de LLM Multi-Agente (Arquitectura de LLMs Multi-Agente):
 
