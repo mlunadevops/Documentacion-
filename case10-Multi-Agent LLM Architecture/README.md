@@ -100,13 +100,19 @@ netdevops-ai-agent/
 
 ## Paso 2: Crear la estructura del proyecto en tu PC:
 
-Abre tu terminal y ejecuta los siguientes comandos para crear la carpeta del proyecto y su organización interna:
+Abre tu terminal y ejecuta los siguientes comandos para crear la carpeta del proyecto y su organización interna, con el siguiente script la vamos a crear directamente en Google Drive en el siguiente path :
+
+Correr en Powershell el siguiente script (Creacion automatica de la estructura de directorios y archivos):
 
 ```bash
+Set-Location "G:\Mi unidad\Publicaciones Linkedin"
 mkdir netdevops-ai-agent
 cd netdevops-ai-agent
 mkdir agents
-touch main.py supervisor.py requirements.txt .env agents/__init__.py agents/routing_agent.py agents/security_agent.py
+New-Item -ItemType File main.py, supervisor.py, requirements.txt, .env
+New-Item -ItemType File agents/__init__.py, agents/routing_agent.py, agents/security_agent.py
 ```
+
+Si se corre en powershell (cmd windows) usar el siguiente script:
 
 ### 4. BGP Configuration:
