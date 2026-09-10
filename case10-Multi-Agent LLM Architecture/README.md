@@ -21,6 +21,10 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 3) Instalar dependencias python **(requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
 
+**google-genai>=0.1.0:** Libreria que comunica la API de google y comunicarse con sus modelos
+**python-dotenv>=1.0.0:** Libreria que lee en el archivo **.env** el API KEY de forma segura.
+**pydantic>=2.0.0:** Libreria que valida datos estructurados.
+
    
 5) Instalar librerias **(pip install -r requirements.txt)**.
 6) Configurar credenciales **(.env)**.
