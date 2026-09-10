@@ -239,29 +239,26 @@ En el archivo creado anteriormente dentro de la carpeta agents **`security_agent
 # agents/security_agent.py
 import os
 from google import genai
-from google.genai import types
-from dotenv import load_dotenv
 
-load_dotenv()
+class SecurityAgent:
+    def __init__(self):
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        self.system_instruction = (
+            "Eres un Ingeniero de Ciberseguridad de Redes experto en Fortinet (FortiOS), Palo Alto (PAN-OS) y Cisco ISE. "
+            "Tu objetivo es diseñar reglas de firewall seguras, políticas de control de acceso y segmentación de red."
+        )
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-SECURITY_SYSTEM_PROMPT = """
-Eres un Ingeniero de Seguridad de Redes senior, experto en firewalls Palo Alto (PAN-OS), Fortinet (FortiOS) y Cisco ISE.
-Tu único objetivo es diseñar, validar y auditar políticas de seguridad, NAT y control de acceso.
-No respondas sobre routing dinámico BGP a menos que afecte directamente al filtrado de tráfico.
-"""
-
-def run_security_agent(query: str) -> str:
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=query,
-        config=types.GenerateContentConfig(
-            system_instruction=SECURITY_SYSTEM_PROMPT,
-            temperature=0.2,
-        ),
-    )
-    return response.text
+    def run(self, user_task: str) -> str:
+        print("   [SecurityAgent] Consultando a Gemini Flash (Gratuito)...")
+        response = self.client.models.generate_content(
+            model="gemini-3.6-flash",
+            contents=user_task,
+            config={
+                "system_instruction": self.system_instruction,
+                "max_output_tokens": 4000,
+            }
+        )
+        return response.text
 ```
 ## Paso 3.7 : Crear el Supervisor / Plano de Control (`supervisor.py`)
 
