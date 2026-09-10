@@ -184,7 +184,7 @@ class RoutingAgent:
 
 ### B. Agente de Seguridad (`agents/security_agent.py`)
 
-En el archivo creado anteriormente dentro de la carpeta agents `security_agent.py` con la lógica específica para el dominio de seguridad:
+En el archivo creado anteriormente dentro de la carpeta agents **`security_agent.py`** coloca la lógica específica para el dominio de seguridad:
 
 ```python
 # agents/security_agent.py
@@ -213,6 +213,57 @@ def run_security_agent(query: str) -> str:
         ),
     )
     return response.text
+```
+## Paso 3.7 : Crear el Supervisor / Plano de Control (`supervisor.py`)
+
+En el archivo creado anteriormente dentro de la carpeta agents **(`netdevops-ai-agent/supervisor.py`)**. Este componente actúa como el orquestador inteligente que analiza la consulta del usuario y decide a qué agente especializado enviarle la tarea:
+
+```python
+# supervisor.py
+import os
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
+
+from agents.routing_agent import run_routing_agent
+from agents.security_agent import run_security_agent
+
+load_dotenv()
+
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+SUPERVISOR_SYSTEM_PROMPT = """
+Eres un Arquitecto Principal de NetDevOps y Director de Orquesta de un sistema multi-agente.
+Tu única responsabilidad es analizar la petición del operador y decidir a qué especialista delegarla.
+Debes responder estrictamente con una de las siguientes opciones según corresponda:
+- "ROUTING" si la consulta trata sobre BGP, OSPF, enrutamiento dinámico, VLANs o Proxmox SDN.
+- "SECURITY" si la consulta trata sobre firewalls Palo Alto, Fortinet, Cisco ISE, reglas de seguridad o NAT.
+
+No resuelvas la tarea tú mismo, solo clasifícala devolviendo únicamente la palabra clave: ROUTING o SECURITY.
+"""
+
+def supervisor_router(query: str) -> str:
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=query,
+        config=types.GenerateContentConfig(
+            system_instruction=SUPERVISOR_SYSTEM_PROMPT,
+            temperature=0.0,
+        ),
+    )
+    return response.text.strip().upper()
+
+def orchestrate_task(query: str) -> str:
+    print(f"\n[Supervisor] Analizando la consulta: '{query}'...")
+    decision = supervisor_router(query)
+    print(f"[Supervisor] Decisión de enrutamiento: Asignado al agente de {decision}")
+    
+    if "ROUTING" in decision:
+        return run_routing_agent(query)
+    elif "SECURITY" in decision:
+        return run_security_agent(query)
+    else:
+        return f"[Supervisor Error] No se pudo clasificar la tarea correctamente. Decisión obtenida: {decision}"
 ```
 
 ### 4. BGP Configuration:
