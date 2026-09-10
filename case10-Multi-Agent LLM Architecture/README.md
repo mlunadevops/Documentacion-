@@ -148,7 +148,7 @@ AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
 ```
 
 ```env
-GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
+GEMINI_API_KEY="AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA"
 ```
 
 ## Paso 3.6: Crear los Agentes Especializados (en la carpeta `agents/`)
