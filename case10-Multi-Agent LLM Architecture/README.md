@@ -3,6 +3,11 @@
 ## TOPOLOGIA
 **CCNP Miguelangel Luna**
 ---
+
+## INFOGRAFIA:
+
+
+
 **Google AI Studio (API KEY):** 
 
 ```text
