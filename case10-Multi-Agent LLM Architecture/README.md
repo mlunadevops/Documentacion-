@@ -141,7 +141,7 @@ pip install -r requirements.txt
 
 ## Paso 3.5: Configurar las credenciales (`.env`)
 
-Crea un archivo llamado `.env` en la raíz del proyecto y pega tu clave API de Google que obtuviste en el Paso 1:
+En el archivo creado anteriormente **`.env`** en la raíz del proyecto y pega tu clave API de Google que obtuviste en el Paso 3.1:
 
 ```text
 AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
@@ -155,7 +155,7 @@ GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
 
 ### A. Agente de Routing (`agents/routing_agent.py`)
 
-Crea este archivo dentro de la carpeta `agents` con la siguiente configuración y lógica para el dominio de encaminamiento:
+En el archivo creado anteriormente **`agents`**  con la siguiente configuración y lógica para el dominio de encaminamiento:
 
 ```python
 # agents/routing_agent.py
