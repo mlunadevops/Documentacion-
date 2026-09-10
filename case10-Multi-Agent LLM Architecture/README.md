@@ -19,7 +19,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 **agents/security_agent.py:**
 
-3) **Instalar dependencias python (requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
+3) **Declarar las dependencias python (requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
 
 **google-genai>=0.1.0:** Libreria que comunica la API de google y comunicarse con sus modelos.
 
@@ -29,6 +29,8 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
    
 4) Instalar librerias **(pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero. En lugar de inventar la rueda escribiendo código complejo para conectar sockets de red o descifrar protocolos HTTP hacia la nube, utilizas librerías especializadas que actúan como los **cimientos tecnológicos** de tu arquitectura.
+
+**Importante:** librerías se cargan en la memoria RAM de tu computadora para que el procesador pueda ejecutar las funciones y clases que contienen.
    
 5) Configurar credenciales **(.env)**.
 
