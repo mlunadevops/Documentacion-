@@ -268,48 +268,65 @@ En el archivo creado anteriormente **(`netdevops-ai-agent/supervisor.py`)**. Est
 # supervisor.py
 import os
 from google import genai
-from google.genai import types
-from dotenv import load_dotenv
+from agents.routing_agent import RoutingAgent
+from agents.security_agent import SecurityAgent
 
-from agents.routing_agent import run_routing_agent
-from agents.security_agent import run_security_agent
+class SupervisorOrchestrator:
+    def __init__(self):
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        self.routing_agent = RoutingAgent()
+        self.security_agent = SecurityAgent()
 
-load_dotenv()
+    def evaluate_intent(self, user_prompt: str) -> str:
+        classification_prompt = (
+            "Analiza la siguiente petición de red y responde ÚNICAMENTE con una de estas dos palabras: "
+            "'ROUTING' o 'SECURITY'. No agregues texto adicional.\n\n"
+            f"Petición: {user_prompt}"
+        )
+        
+        try:
+            response = self.client.models.generate_content(
+                model="gemini-3.6-flash",
+                contents=classification_prompt,
+                config={"max_output_tokens": 10}
+            )
+            
+            # Verificamos si la respuesta del modelo no es nula
+            if response.text:
+                text_clean = response.text.strip().upper()
+                if "SECURITY" in text_clean:
+                    return "SECURITY"
+                if "ROUTING" in text_clean:
+                    return "ROUTING"
+        except Exception as e:
+            print(f"[Aviso] Ocurrió un detalle al consultar al modelo: {e}")
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        # Respaldo (Fallback) basado en palabras clave si la IA falla o viene vacía
+        print("[Supervisor Warning] Usando respaldo por palabras clave...")
+        prompt_lower = user_prompt.lower()
+        if any(kw in prompt_lower for kw in ["firewall", "seguridad", "regla", "palo alto", "fortinet", "ssl"]):
+            return "SECURITY"
+        
+        return "ROUTING"  # Por defecto si es de redes/routing
 
-SUPERVISOR_SYSTEM_PROMPT = """
-Eres un Arquitecto Principal de NetDevOps y Director de Orquesta de un sistema multi-agente.
-Tu única responsabilidad es analizar la petición del operador y decidir a qué especialista delegarla.
-Debes responder estrictamente con una de las siguientes opciones según corresponda:
-- "ROUTING" si la consulta trata sobre BGP, OSPF, enrutamiento dinámico, VLANs o Proxmox SDN.
-- "SECURITY" si la consulta trata sobre firewalls Palo Alto, Fortinet, Cisco ISE, reglas de seguridad o NAT.
-
-No resuelvas la tarea tú mismo, solo clasifícala devolviendo únicamente la palabra clave: ROUTING o SECURITY.
-"""
-
-def supervisor_router(query: str) -> str:
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=query,
-        config=types.GenerateContentConfig(
-            system_instruction=SUPERVISOR_SYSTEM_PROMPT,
-            temperature=0.0,
-        ),
-    )
-    return response.text.strip().upper()
-
-def orchestrate_task(query: str) -> str:
-    print(f"\n[Supervisor] Analizando la consulta: '{query}'...")
-    decision = supervisor_router(query)
-    print(f"[Supervisor] Decisión de enrutamiento: Asignado al agente de {decision}")
-    
-    if "ROUTING" in decision:
-        return run_routing_agent(query)
-    elif "SECURITY" in decision:
-        return run_security_agent(query)
-    else:
-        return f"[Supervisor Error] No se pudo clasificar la tarea correctamente. Decisión obtenida: {decision}"
+    def coordinate(self, user_prompt: str):
+        print(f"\n[Usuario]: {user_prompt}")
+        print("--------------------------------------------------")
+        print("[Supervisor]: Analizando la intención en el plano de control...")
+        
+        intent = self.evaluate_intent(user_prompt)
+        print(f"[Supervisor]: Decisión tomada -> Destino asignado: {intent}")
+        print("--------------------------------------------------")
+        
+        if "ROUTING" in intent:
+            result = self.routing_agent.run(user_prompt)
+        elif "SECURITY" in intent:
+            result = self.security_agent.run(user_prompt)
+        else:
+            result = "No se pudo clasificar la tarea para ningún agente especializado."
+            
+        print("\n--- Respuesta Final del Especialista ---")
+        print(result)
 ```
 
 ## Paso 3.8: Crear el archivo principal y ejecutar (`main.py`)
