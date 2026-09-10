@@ -87,4 +87,7 @@ netdevops-ai-agent/
 * **Genera tu clave:** Haz clic en **"Get API key"** y crea una nueva clave. Cópiala y guárdala un momento; la usaremos en el Paso 4.
 
 
+
+[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat)
+
 ### 4. BGP Configuration:
