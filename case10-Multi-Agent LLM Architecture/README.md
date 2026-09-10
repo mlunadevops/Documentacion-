@@ -143,8 +143,49 @@ pip install -r requirements.txt
 
 Crea un archivo llamado `.env` en la raíz del proyecto y pega tu clave API de Google que obtuviste en el Paso 1:
 
+```text
+AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
+```
+
 ```env
 GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
 ```
-[Ir a la sección de configuración](#configuracion-inicial)
+
+## Paso 4.5: Crear los Agentes Especializados (en la carpeta `agents/`)
+
+### A. Agente de Routing (`agents/routing_agent.py`)
+
+Crea este archivo dentro de la carpeta `agents` con la siguiente configuración y lógica para el dominio de encaminamiento:
+
+```python
+# agents/routing_agent.py
+import os
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+ROUTING_SYSTEM_PROMPT = """
+Eres un Ingeniero de Redes senior, experto en protocolos de enrutamiento dinámico BGP y OSPF, así como en la arquitectura de redes de centros de datos y Proxmox VE (SDN / VLANs).
+Tu objetivo es diseñar, validar y solucionar problemas de routing y conectividad bajo estrictas normas de seguridad.
+No respondas sobre firewalls de nueva generación a menos que afecte directamente al plano de control del enrutamiento.
+"""
+
+def run_routing_agent(query: str) -> str:
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=query,
+        config=types.GenerateContentConfig(
+            system_instruction=ROUTING_SYSTEM_PROMPT,
+            temperature=0.2,
+        ),
+    )
+    return response.text
+```
+
+
+
 ### 4. BGP Configuration:
