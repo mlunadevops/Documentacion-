@@ -151,11 +151,11 @@ AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
 GEMINI_API_KEY="pega_aqui_tu_api_key_de_google"
 ```
 
-## Paso 4.5: Crear los Agentes Especializados (en la carpeta `agents/`)
+## Paso 3.6: Crear los Agentes Especializados (en la carpeta `agents/`)
 
 ### A. Agente de Routing (`agents/routing_agent.py`)
 
-En el archivo creado anteriormente  dentro de la carpeta agents **`routing_agent.py`**  coloca la lógica para el dominio de enrutamiento:
+En el archivo creado anteriormente dentro de la carpeta agents **`routing_agent.py`**  coloca la lógica para el dominio de enrutamiento:
 
 ```python
 import os
@@ -182,6 +182,37 @@ class RoutingAgent:
         return response.text
 ```
 
+### B. Agente de Seguridad (`agents/security_agent.py`)
 
+En el archivo creado anteriormente dentro de la carpeta agents `security_agent.py` con la lógica específica para el dominio de seguridad:
+
+```python
+# agents/security_agent.py
+import os
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+SECURITY_SYSTEM_PROMPT = """
+Eres un Ingeniero de Seguridad de Redes senior, experto en firewalls Palo Alto (PAN-OS), Fortinet (FortiOS) y Cisco ISE.
+Tu único objetivo es diseñar, validar y auditar políticas de seguridad, NAT y control de acceso.
+No respondas sobre routing dinámico BGP a menos que afecte directamente al filtrado de tráfico.
+"""
+
+def run_security_agent(query: str) -> str:
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=query,
+        config=types.GenerateContentConfig(
+            system_instruction=SECURITY_SYSTEM_PROMPT,
+            temperature=0.2,
+        ),
+    )
+    return response.text
+```
 
 ### 4. BGP Configuration:
