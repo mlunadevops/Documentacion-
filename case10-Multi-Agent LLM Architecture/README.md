@@ -4,6 +4,15 @@
 ---
 ## 1. Introduction and Theoretical Framework:
 
+Los 3 Pilares Universales de los Multi-Agentes (Una arquitectura multiagente siempre tendra):
+
+*   **1. Modularidad y Separación de Responsabilidades:** En lugar de crear un script monolítico gigantesco, divides el sistema en piezas independientes. Esto permite que cada componente maneje una lógica acotada, haciendo el software más limpio y fácil de mantener.
+  
+*   **2. Agentes Especializados:** En vez de darle instrucciones complejas y kilométricas a un solo modelo de IA, creas "mini-expertos" (como el de ruteo o el de seguridad). Un contexto enfocado y pequeño siempre produce respuestas técnicas mucho más precisas y con menos alucinaciones.
+  
+*   **3. El Orquestador o Supervisor:** Es el director de la orquesta. Sin un plano de control central que analice las peticiones de entrada, los agentes actuarían de forma aislada y caótica. El supervisor garantiza que el flujo de trabajo tenga dirección, orden y lógica de negocio.
+
+> Estos principios imitan la forma en que trabaja un equipo humano de ingeniería: tienes especialistas en áreas concretas (redes, seguridad) y un líder o supervisor (arquitecto de soluciones) que coordina qué tarea le toca a quién.
 
 
 ## INFOGRAFIA:
