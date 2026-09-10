@@ -7,11 +7,13 @@
 
 Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
-1) Estructura de directorios, permite ser escalable, modular y con separacion de funciones.
+1) **Estructura de directorios:** permite ser escalable, modular y con separacion de funciones.
    
 ![AEstructura de directorios](images/04Estructuradirectorios.png).
    
-2) Obtener la API key Gratuita **(Google AI studio)**, permite al multi-agente comunicarse y usar los FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local.
+2) **Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se realizara en los siguientes archivos:
+
+   
 
 3) Instalar dependencias python **(requirements.txt)**.
 4) Instalar librerias **(pip install -r requirements.txt)**.
@@ -21,8 +23,8 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
    
-7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
-8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
+8) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
+9) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
 
 
 ## **Google AI Studio (API KEY):** 
