@@ -37,11 +37,21 @@
 
 ## 2. Capas de funcionamiento:
 
+**1) Primera capa:** 
+
 * **El Prompt (System Prompt):** Aquí configuras la "personalidad", las restricciones y el contexto técnico del agente.  ¿Dónde se hace? en la configuración del agente dentro de tu framework de IA (como LangChain, CrewAI, AutoGen o Cursor).
 
-### Ejemplo de instrucción
+### Ejemplo de Prompt instrucción:
 
 > "Eres un Ingeniero de Seguridad de Redes senior, experto en firewalls Palo Alto (PAN-OS), Fortinet (FortiOS) y Cisco ISE. Tu único objetivo es diseñar, validar y auditar políticas de seguridad, NAT y control de acceso. No respondas sobre routing dinámico BGP a menos que afecte directamente al filtrado de tráfico."
+
+**Segunda capa:** 
+
+## 2) La Base de Conocimiento Específica (RAG / Contexto Estático)
+
+> **Definición:** Un LLM general sabe un poco de todo, pero para que sea experto en una tecnología de nicho, debes alimentarlo con la documentación oficial exacta.¿Dónde se hace?
+creando un repositorio de documentos (PDFs de manuales oficiales, guías de comandos CLI, APIs de PAN-OS o FortiOS) indexados en una base de datos vectorial (como Chroma, Pinecone o Qdrant) a la que solo ese agente tenga acceso. Si buscas algo 100% gratuito para correr en tu máquina sin depender de servicios en la nube externos, tanto Chroma (ideal para prototipos rápidos en Python) como Qdrant (excelente para producción y alto rendimiento) son las mejores opciones.
+
 
 
 
