@@ -210,6 +210,8 @@ En el archivo creado anteriormente dentro de la carpeta agents **`routing_agent.
 ```python
 import os
 from google import genai
+from google.genai.errors import ServerError
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 class RoutingAgent:
     def __init__(self):
@@ -219,10 +221,17 @@ class RoutingAgent:
             "Tu objetivo es analizar problemas de enrutamiento y proponer diseños o configuraciones robustas."
         )
 
+    # Decorador para reintentar automáticamente si la API da error 503 (Servidor no disponible)
+    @retry(
+        retry=retry_if_exception_type(ServerError),
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
+    )
     def run(self, user_task: str) -> str:
-        print("   [RoutingAgent] Consultando a Gemini Flash (Gratuito)...")
+        print("   [RoutingAgent] Consultando a Gemini Flash (con reintento automático)...")
         response = self.client.models.generate_content(
-            model="gemini-3.6-flash",
+            model="gemini-2.5-flash", # Mantén aquí el nombre del modelo que uses en tus pruebas
             contents=user_task,
             config={
                 "system_instruction": self.system_instruction,
@@ -240,6 +249,8 @@ En el archivo creado anteriormente dentro de la carpeta agents **`security_agent
 # agents/security_agent.py
 import os
 from google import genai
+from google.genai.errors import ServerError
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 class SecurityAgent:
     def __init__(self):
@@ -249,8 +260,15 @@ class SecurityAgent:
             "Tu objetivo es diseñar reglas de firewall seguras, políticas de control de acceso y segmentación de red."
         )
 
+    # Decorador para reintentar automáticamente si la API da un error de servidor (como el 503)
+    @retry(
+        retry=retry_if_exception_type(ServerError),
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
+    )
     def run(self, user_task: str) -> str:
-        print("   [SecurityAgent] Consultando a Gemini Flash (Gratuito)...")
+        print("   [SecurityAgent] Consultando a Gemini Flash (con reintento automático)...")
         response = self.client.models.generate_content(
             model="gemini-3.6-flash",
             contents=user_task,
