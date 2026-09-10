@@ -216,7 +216,7 @@ def run_security_agent(query: str) -> str:
 ```
 ## Paso 3.7 : Crear el Supervisor / Plano de Control (`supervisor.py`)
 
-En el archivo creado anteriormente dentro de la carpeta agents **(`netdevops-ai-agent/supervisor.py`)**. Este componente actúa como el orquestador inteligente que analiza la consulta del usuario y decide a qué agente especializado enviarle la tarea:
+En el archivo creado anteriormente **(`netdevops-ai-agent/supervisor.py`)**. Este componente actúa como el orquestador inteligente que analiza la consulta del usuario y decide a qué agente especializado enviarle la tarea:
 
 ```python
 # supervisor.py
@@ -264,6 +264,34 @@ def orchestrate_task(query: str) -> str:
         return run_security_agent(query)
     else:
         return f"[Supervisor Error] No se pudo clasificar la tarea correctamente. Decisión obtenida: {decision}"
+```
+
+## Paso 3.8: Crear el archivo principal y ejecutar (`main.py`)
+
+En el archivo creado anteriormente **`main.py`** en la raíz del proyecto para lanzar las pruebas del sistema multi-agente:
+
+```python
+# main.py
+from supervisor import orchestrate_task
+
+if __name__ == "__main__":
+    print("==================================================")
+    print("🚀 Iniciando Sistema Multi-Agente NetDevOps (Gemini)")
+    print("==================================================")
+    
+    # Prueba 1: Consulta dirigida al Agente de Routing
+    query_routing = "¿Cómo configuro una sesión iBGP y vecinos OSPF en un entorno Proxmox SDN con VLAN 10?"
+    print(f"\n--- Probando Consulta de Routing ---")
+    result_routing = orchestrate_task(query_routing)
+    print(f"\n[Respuesta del Agente]:\n{result_routing}")
+    
+    print("\n" + "="*50 + "\n")
+    
+    # Prueba 2: Consulta dirigida al Agente de Seguridad
+    query_security = "Necesito diseñar una regla de seguridad en un firewall Palo Alto para permitir tráfico HTTPS desde la zona DMZ hacia la zona interna, aplicando perfiles de amenaza."
+    print(f"--- Probando Consulta de Seguridad ---")
+    result_security = orchestrate_task(query_security)
+    print(f"\n[Respuesta del Agente]:\n{result_security}")
 ```
 
 ### 4. BGP Configuration:
