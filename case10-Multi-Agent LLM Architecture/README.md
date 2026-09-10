@@ -71,6 +71,27 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 ## 3. IMPLEMENTATION:
 
+Pasos generales de implementacion:
+
+1) Crear **automaticamente** la estructura de directorios (espacio de trabajo).
+```text
+netdevops-ai-agent/
+│
+├── .env                  # Credenciales y llaves de la API (nunca se sube a Git)
+├── requirements.txt      # Librerías de Python necesarias
+├── main.py               # Punto de entrada (El Usuario inicia aquí)
+└── supervisor.py         # El Plano de Control (El Agente Supervisor / Router)
+└── agents/
+    ├── __init__.py
+    ├── routing_agent.py  # Agente especialista en BGP / OSPF
+    └─
+```
+3) Obtener la API key Gratuita (Google AI studio).
+4) Instalar dependencias python **(requirements.txt)**.
+5) Instalar librerias **(pip install -r requirements.txt)**.
+6) Configurar credenciales **(.env)**.
+7) Crear agentes especializados 
+
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
 **Estructura de Directorios:**
@@ -272,26 +293,29 @@ En el archivo creado anteriormente **`main.py`** en la raíz del proyecto para l
 
 ```python
 # main.py
-from supervisor import orchestrate_task
+import os
+import time  # <--- 1. Importamos la librería de tiempo
+from dotenv import load_dotenv
+from supervisor import SupervisorOrchestrator
+
+load_dotenv()
 
 if __name__ == "__main__":
-    print("==================================================")
-    print("🚀 Iniciando Sistema Multi-Agente NetDevOps (Gemini)")
-    print("==================================================")
-    
-    # Prueba 1: Consulta dirigida al Agente de Routing
-    query_routing = "¿Cómo configuro una sesión iBGP y vecinos OSPF en un entorno Proxmox SDN con VLAN 10?"
-    print(f"\n--- Probando Consulta de Routing ---")
-    result_routing = orchestrate_task(query_routing)
-    print(f"\n[Respuesta del Agente]:\n{result_routing}")
-    
-    print("\n" + "="*50 + "\n")
-    
-    # Prueba 2: Consulta dirigida al Agente de Seguridad
-    query_security = "Necesito diseñar una regla de seguridad en un firewall Palo Alto para permitir tráfico HTTPS desde la zona DMZ hacia la zona interna, aplicando perfiles de amenaza."
-    print(f"--- Probando Consulta de Seguridad ---")
-    result_security = orchestrate_task(query_security)
-    print(f"\n[Respuesta del Agente]:\n{result_security}")
+    if not os.getenv("GEMINI_API_KEY"):
+        print("Error: Debes configurar tu GEMINI_API_KEY en el archivo .env")
+        exit(1)
+
+    supervisor = SupervisorOrchestrator()
+
+    # Prueba 1: Petición dirigida al Agente de Routing
+    supervisor.coordinate("Necesito diseñar una topología eBGP con dos ISPs diferentes y configurar los filtros de rutas adecuados.")
+
+    # Pausa de seguridad de 4 segundos para respetar los límites de la API gratuita
+    print("\n[Sistema] Pausando 4 segundos para evitar saturar el plan gratuito de la API...")
+    time.sleep(4)
+
+    # Prueba 2: Petición dirigida al Agente de Seguridad
+    supervisor.coordinate("¿Cómo creo una política de seguridad en un firewall Palo Alto para permitir tráfico de usuarios hacia la DMZ con inspección SSL?")
 ```
 
 ¿Cómo probarlo en tu terminal?
