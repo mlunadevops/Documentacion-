@@ -67,6 +67,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
+**Estructura de Directorios:**
 
 ```text
 netdevops-ai-agent/
@@ -79,13 +80,9 @@ netdevops-ai-agent/
     ├── __init__.py
     ├── routing_agent.py  # Agente especialista en BGP / OSPF
     └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
-
-**Router A (RTA - AS 100):**
-
-```text
-! 
-router bgp 100
-!
 ```
+
+
+
 
 ### 4. BGP Configuration:
