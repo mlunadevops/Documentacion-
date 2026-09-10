@@ -99,6 +99,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 **8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente:** El archivo `main.py` cumple la función de ser el punto de entrada oficial (*entry point*) y el **"botón de encendido"** de todo tu sistema multi-agente de NetDevOps.
 
+
 ## CONTENIDOS:
 
 | Case | Title | Description |
@@ -132,6 +133,8 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 * **Contexto / Estado Compartido:** Una memoria centralizada o bus de comunicación (como un patrón de pizarra o un intermediario de mensajes) que permite a los agentes compartir resultados intermedios y mantener la conciencia situacional.
 
 ## 2. Capas de funcionamiento:
+
+![IA Local CPU](images/06Funcionamientomultiagente.jpg)
 
 **2.1) Primera capa (System Prompt):** 
 
