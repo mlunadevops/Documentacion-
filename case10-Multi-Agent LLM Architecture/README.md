@@ -3,7 +3,11 @@
 ## TOPOLOGIA
 **CCNP Miguelangel Luna**
 ---
-**Google AI Studio (API KEY):** AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
+**Google AI Studio (API KEY):** 
+
+```text
+AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
+```
 
 ## CONTENIDOS:
 
