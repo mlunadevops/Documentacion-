@@ -88,7 +88,7 @@ netdevops-ai-agent/
     └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
 ```
 
-**Paso 1: Obtener tu API Key Gratuita:**
+**Paso 3.1: Obtener tu API Key Gratuita:**
 
 * **[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat):** Dirígete a la plataforma oficial para desarrolladores.
 * **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
@@ -98,7 +98,7 @@ netdevops-ai-agent/
 
 ![AP Key](images/02APIkeyAIstudio.png)
 
-## Paso 2: Crear la estructura del proyecto en tu PC:
+## Paso 3.2: Crear la estructura del proyecto en tu PC:
 
 Abre tu terminal y ejecuta los siguientes comandos para crear la carpeta del proyecto y su organización interna, con el siguiente script la vamos a crear directamente en Google Drive en el siguiente path :
 
@@ -113,7 +113,7 @@ New-Item -ItemType File main.py, supervisor.py, requirements.txt, .env
 New-Item -ItemType File agents/__init__.py, agents/routing_agent.py, agents/security_agent.py
 ```
 
-## Paso 3: Instalar las dependencias de Python
+## Paso 3.3: Instalar las dependencias de Python:
 
 Inserta la siguiente informacion en el archivo **(requirements.txt)**:
 
@@ -122,5 +122,8 @@ google-genai>=0.1.0
 python-dotenv>=1.0.0
 pydantic>=2.0.0
 ```
+
+## Paso 4.3: Instalar las dependencias de Python:
+
 
 ### 4. BGP Configuration:
