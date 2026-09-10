@@ -73,6 +73,18 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 Pasos generales de implementacion:
 
+3) Obtener la API key Gratuita (Google AI studio).
+4) Instalar dependencias python **(requirements.txt)**.
+5) Instalar librerias **(pip install -r requirements.txt)**.
+6) Configurar credenciales **(.env)**.
+7) Crear agentes especializados:
+   7.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
+   7.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
+8) Crear el Supervisor / Plano de Control (`supervisor.py`).
+9) Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
+
+
+
 1) Crear **automaticamente** la estructura de directorios (espacio de trabajo).
 ```text
 netdevops-ai-agent/
@@ -86,13 +98,6 @@ netdevops-ai-agent/
     ├── routing_agent.py  # Agente especialista en BGP / OSPF
     └─
 ```
-3) Obtener la API key Gratuita (Google AI studio).
-4) Instalar dependencias python **(requirements.txt)**.
-5) Instalar librerias **(pip install -r requirements.txt)**.
-6) Configurar credenciales **(.env)**.
-7) Crear agentes especializados:
-7.1)
-7.2)
 
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
