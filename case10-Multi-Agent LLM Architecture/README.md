@@ -18,6 +18,8 @@
 
 ## 1. Arquitectura de LLM Multi-Agente (Arquitectura de LLMs Multi-Agente):
 
+![Arquitectura Multiagente](images/00Arquitectura.jpg)
+
 **(Arquitectura de LLMs Multi-Agente):** Sistemas donde múltiples agentes de IA especializados colaboran para resolver tareas complejas que un solo prompt o modelo monolítico no podría manejar eficientemente.
 
 **Orquestación Jerárquica o Supervisor-Trabajador:** Es el patrón de diseño exacto de control. Tienes un agente central (el FM o "Router") como arquitecto jefe o director de orquesta, el cual analiza la tarea y delega subtareas a los agentes especializados en los bordes.
@@ -59,7 +61,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 **The Router / Master Agent:** Es el "director de orquesta" (el FM principal) que recibe tu petición inicial y **decide a qué sub-agente enviarla**. **¿Dónde se hace?** En la lógica de control principal (puede ser un prompt maestro o un framework multiagente).
 
 
-![BGP WEIGTH](images/01Topologia.jpg)
+
 
 
 
