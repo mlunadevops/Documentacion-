@@ -158,8 +158,6 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 ## 3. IMPLEMENTATION:
 
 Pasos generales de implementacion:
-
-
  
  ## Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
 
