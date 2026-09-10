@@ -28,7 +28,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 **pydantic>=2.0.0:** Libreria que valida datos estructurados.
 
    
-4) Instalar librerias **(pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero.
+4) Instalar librerias **(pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero. En lugar de inventar la rueda escribiendo código complejo para conectar sockets de red o descifrar protocolos HTTP hacia la nube, utilizas librerías especializadas que actúan como los **cimientos tecnológicos** de tu arquitectura.
    
 5) Configurar credenciales **(.env)**.
 
