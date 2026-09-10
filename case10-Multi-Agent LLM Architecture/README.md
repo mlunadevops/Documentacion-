@@ -7,7 +7,7 @@
 
 Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
-1) Estructura de directorios: 
+1) Estructura de directorios
 2) Obtener la API key Gratuita (Google AI studio).
 3) Instalar dependencias python **(requirements.txt)**.
 4) Instalar librerias **(pip install -r requirements.txt)**.
@@ -91,7 +91,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 Pasos generales de implementacion:
 
-1) Estructura de directorios: 
+1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
 2) Obtener la API key Gratuita (Google AI studio).
 3) Instalar dependencias python **(requirements.txt)**.
 4) Instalar librerias **(pip install -r requirements.txt)**.
