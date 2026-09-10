@@ -18,7 +18,7 @@
 
 ## 1. Arquitectura de LLM Multi-Agente (Arquitectura de LLMs Multi-Agente):
 
-![Arquitectura Multiagente](images/00Arquitectura.jpg)
+                                   ![Arquitectura Multiagente](images/00Arquitectura.jpg)
 
 **(Arquitectura de LLMs Multi-Agente):** Sistemas donde múltiples agentes de IA especializados colaboran para resolver tareas complejas que un solo prompt o modelo monolítico no podría manejar eficientemente.
 
