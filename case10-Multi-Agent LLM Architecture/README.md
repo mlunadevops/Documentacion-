@@ -123,7 +123,7 @@ python-dotenv>=1.0.0
 pydantic>=2.0.0
 ```
 
-## Paso 4.3: Instala las librerías ejecutando en tu terminal:
+## Paso 4.3: Instala las librerías ejecutando en POWERSHEL en la ruta (G:\Mi unidad\Publicaciones Linkedin) :
 
 ```text
 pip install -r requirements.txt
