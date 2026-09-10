@@ -1,6 +1,6 @@
-# TECHNICAL LOG & BGP ENGINEERING GUIDE
+# TECHNICAL LOG & MULTI AGENT LLM ARCHITECTURE
 
-## Traffic Manipulation via the Weight Attribute
+## TOPOLOGIA
 **CCNP Miguelangel Luna**
 
 ---
