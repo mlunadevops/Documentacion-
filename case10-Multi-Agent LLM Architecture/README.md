@@ -7,7 +7,7 @@
 
 Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
-1) Estructura de directorios
+1) Estructura de directorios, permite ser escalable, modular y con separacion de funciones.
    
 ![AEstructura de directorios](images/04Estructuradirectorios.png).
    
