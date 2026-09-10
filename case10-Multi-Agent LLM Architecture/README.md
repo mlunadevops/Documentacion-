@@ -8,11 +8,14 @@
 Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 1) Estructura de directorios
-2) Obtener la API key Gratuita (Google AI studio).
-3) Instalar dependencias python **(requirements.txt)**.
-4) Instalar librerias **(pip install -r requirements.txt)**.
-5) Configurar credenciales **(.env)**.
-6) Crear agentes especializados:
+   
+![AEstructura de directorios](images/04Estructuradirectorios.png).
+   
+3) Obtener la API key Gratuita (Google AI studio).
+4) Instalar dependencias python **(requirements.txt)**.
+5) Instalar librerias **(pip install -r requirements.txt)**.
+6) Configurar credenciales **(.env)**.
+7) Crear agentes especializados:
    
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
