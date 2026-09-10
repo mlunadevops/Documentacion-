@@ -34,7 +34,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    
 5) **Configurar credenciales (.env):**.
 
-6) Crear agentes especializados:
+**6) Crear agentes especializados:** Se crean para aplicar el principio de **especialización por dominio técnico**, permitiendo que cada componente del sistema se concentre exclusivamente en un área específica de la red en lugar de depender de un único modelo genérico que intente resolver todo a la vez.
    
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
