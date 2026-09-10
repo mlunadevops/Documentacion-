@@ -19,6 +19,8 @@ Esto se implementa usando herramientas **100% gratuitas** y de codigo abierto co
 PASOS GENERALES DE IMPLEMENTACION:
 ---
 
+En este proyecto se desea implementar un multiag
+
 1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
 2) Obtener la API key Gratuita (Google AI studio).
 3) Instalar dependencias python **(requirements.txt)**.
