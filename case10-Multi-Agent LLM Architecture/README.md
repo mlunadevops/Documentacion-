@@ -63,6 +63,23 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 ## 3. IMPLEMENTATION:
 
+## Estructura del Proyecto (`netdevops-ai-agent/`)
+
+> **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
+
+
+```text
+netdevops-ai-agent/
+│
+├── .env                  # Credenciales y llaves de la API (nunca se sube a Git)
+├── requirements.txt      # Librerías de Python necesarias
+├── main.py               # Punto de entrada (El Usuario inicia aquí)
+└── supervisor.py         # El Plano de Control (El Agente Supervisor / Router)
+└── agents/
+    ├── __init__.py
+    ├── routing_agent.py  # Agente especialista en BGP / OSPF
+    └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
+
 **Router A (RTA - AS 100):**
 
 ```text
