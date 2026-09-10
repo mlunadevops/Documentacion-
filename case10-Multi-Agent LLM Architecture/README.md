@@ -118,6 +118,7 @@ Pasos generales de implementacion:
  
  ## Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
 
+**Estructura de Directorios y archivos:**
 
 1) Crear **automaticamente** la estructura de directorios (espacio de trabajo).
 ```text
@@ -135,20 +136,7 @@ netdevops-ai-agent/
 
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
-**Estructura de Directorios:**
-
-```text
-netdevops-ai-agent/
-│
-├── .env                  # Credenciales y llaves de la API (nunca se sube a Git)
-├── requirements.txt      # Librerías de Python necesarias
-├── main.py               # Punto de entrada (El Usuario inicia aquí)
-└── supervisor.py         # El Plano de Control (El Agente Supervisor / Router)
-└── agents/
-    ├── __init__.py
-    ├── routing_agent.py  # Agente especialista en BGP / OSPF
-    └── security_agent.py # Agente especialista en Firewalls (Fortinet/Palo Alto)
-```
+## IMPLEMENTACION SISTEMA MULTI-AGENTE.
 
 ## Paso 3.1: Obtener tu API Key Gratuita:
 
