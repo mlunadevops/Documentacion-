@@ -90,7 +90,9 @@ netdevops-ai-agent/
 4) Instalar dependencias python **(requirements.txt)**.
 5) Instalar librerias **(pip install -r requirements.txt)**.
 6) Configurar credenciales **(.env)**.
-7) Crear agentes especializados 
+7) Crear agentes especializados:
+7.1)
+7.2)
 
 > **Arquitectura de Archivos:** Esta estructura modular separa claramente el plano de control (Supervisor/Router), el punto de entrada para el usuario y los agentes especializados en dominios técnicos específicos.
 
