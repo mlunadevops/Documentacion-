@@ -31,18 +31,18 @@ El archivo **(`main.py`)** se encargara de inciar todo el sistema a traves del c
 
 Todo el proyecto funciona bajo una arquitectura modular, limpia y escalable, conectada de forma segura a modelos de Inteligencia Artificial mediante Python.
 
-En este proyecto se desea implementar un multiagente
+Pasos para implementar el multiagente:
 
 1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
-2) Obtener la API key Gratuita (Google AI studio).
-3) Instalar dependencias python **(requirements.txt)**.
-4) Instalar librerias **(pip install -r requirements.txt)**.
-5) Configurar credenciales **(.env)**.
-6) Crear agentes especializados:
+2) Obtener la API key Gratuita **(Google AI studio)**.
+3) Declarar dependencias y librerias en python **(requirements.txt)**.
+4) Instalar en RAM las librerias **(pip install -r requirements.txt)**.
+5) Guardar en el archivo  **(.env)** las credenciales del paso 2 obtenidas desde **(Google AI studio)**.
+6) Crear agentes especializados (dominios de conocimiento):
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
-   6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
+   6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y (Cisco ISE).
 7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
-8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
+8) Crear el archivo principal **(`main.py`)** que ejecuta el sistema multi-agente.
 
 05Pasosimplementacion.jpg
 
