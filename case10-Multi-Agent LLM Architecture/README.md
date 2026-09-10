@@ -72,13 +72,12 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 **python-dotenv>=1.0.0:** Libreria que lee en el archivo **.env** el API KEY de forma segura.
 
 **pydantic>=2.0.0:** Libreria que valida datos estructurados.
-
    
 **4) Instalar librerias (pip install -r requirements.txt)**. Una **librería** es un conjunto de herramientas y código preescrito por terceros que integras en tu proyecto para dotar a tus agentes de capacidades avanzadas sin tener que programarlas desde cero. En lugar de inventar la rueda escribiendo código complejo para conectar sockets de red o descifrar protocolos HTTP hacia la nube, utilizas librerías especializadas que actúan como los **cimientos tecnológicos** de tu arquitectura.
 
 **Importante:** librerías se cargan en la memoria RAM de tu computadora para que el procesador pueda ejecutar las funciones y clases que contienen.
    
-**5) Configurar credenciales (.env):**.
+**5) Configurar credenciales (.env):** en este archivo se guarda la API KEY generada en el paso 1.
 
 **6) Crear agentes especializados:** Se crean para aplicar el principio de **especialización por dominio técnico**, permitiendo que cada componente del sistema se concentre exclusivamente en un área específica de la red en lugar de depender de un único modelo genérico que intente resolver todo a la vez.
    
