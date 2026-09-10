@@ -54,7 +54,6 @@ Para mantener la eficiencia sin comprometer los recursos generales del servidor 
 
 ```text
 ! 
-router bgp 100
 !
 ```
 
