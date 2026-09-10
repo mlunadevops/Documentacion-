@@ -19,6 +19,17 @@ Esto se implementa usando herramientas **100% gratuitas** y de codigo abierto co
 PASOS GENERALES DE IMPLEMENTACION:
 ---
 
+1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
+2) Obtener la API key Gratuita (Google AI studio).
+3) Instalar dependencias python **(requirements.txt)**.
+4) Instalar librerias **(pip install -r requirements.txt)**.
+5) Configurar credenciales **(.env)**.
+6) Crear agentes especializados:
+   6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
+   6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
+7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
+8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
+
 05Pasosimplementacion.jpg
 
 ## INFOGRAFIA:
@@ -132,16 +143,7 @@ creando un repositorio de documentos (PDFs de manuales oficiales, guías de coma
 
 Pasos generales de implementacion:
 
-1) Estructura de directorios, estructura profesional, escalable, modularidad, responsabilidades.
-2) Obtener la API key Gratuita (Google AI studio).
-3) Instalar dependencias python **(requirements.txt)**.
-4) Instalar librerias **(pip install -r requirements.txt)**.
-5) Configurar credenciales **(.env)**.
-6) Crear agentes especializados:
-   6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
-   6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
-7) Crear el Supervisor / Plano de Control **(`supervisor.py`)**.
-8) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
+
  
  ## Crear el archivo principal (`main.py`) y ejecutar el sistema multi-agente.
 
