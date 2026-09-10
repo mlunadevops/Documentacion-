@@ -14,6 +14,7 @@ Los 3 Pilares Universales de los Multi-Agentes (Una arquitectura multiagente sie
 
 > Estos principios imitan la forma en que trabaja un equipo humano de ingeniería: tienes especialistas en áreas concretas (redes, seguridad) y un líder o supervisor (arquitecto de soluciones) que coordina qué tarea le toca a quién.
 
+Esto se implementa usando herramientas como 
 
 ## INFOGRAFIA:
 
