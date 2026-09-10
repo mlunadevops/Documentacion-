@@ -82,12 +82,14 @@ netdevops-ai-agent/
 
 **Paso 1: Obtener tu API Key Gratuita:**
 
-* **Entra a Google AI Studio:** Dirígete a la plataforma oficial para desarrolladores.
+* **[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat):** Dirígete a la plataforma oficial para desarrolladores.
 * **Inicia sesión:** Utiliza cualquier cuenta de Google (no requiere tarjeta de crédito ni métodos de pago).
 * **Genera tu clave:** Haz clic en **"Get API key"** y crea una nueva clave. Cópiala y guárdala un momento; la usaremos en el Paso 4.
 
+![AP Key](images/01APIgoogleAIstudio.png)
 
 
-[**Entra a Google AI Studio:**](https://aistudio.google.com/prompts/new_chat)
+
+
 
 ### 4. BGP Configuration:
