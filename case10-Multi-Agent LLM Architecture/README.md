@@ -5,7 +5,7 @@
 
 ## INFOGRAFIA:
 
-Pasos de implementacion:
+Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 1) Estructura de directorios: 
 2) Obtener la API key Gratuita (Google AI studio).
