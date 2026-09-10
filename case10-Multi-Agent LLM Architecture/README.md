@@ -24,7 +24,7 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
    
 ![AEstructura de directorios](images/04Estructuradirectorios.png).
    
-**2) Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se realizara en los siguientes archivos:
+**2) Obtener API key Gratuita (Google AI studio):** permite al multi-agente comunicarse y usar FM (como **Gemini Flash**) desde el código de Python que estás ejecutando en tu entorno local, esto se configura en los siguientes archivos:
 
 **supervisor.py**
 
