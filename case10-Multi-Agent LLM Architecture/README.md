@@ -19,10 +19,12 @@ Pasos de implementacion **ARQUITECTURA MULTIAGENTE:**
 
 **agents/security_agent.py:**
 
-3) Instalar dependencias python **(requirements.txt)**.
-4) Instalar librerias **(pip install -r requirements.txt)**.
-5) Configurar credenciales **(.env)**.
-6) Crear agentes especializados:
+3) Instalar dependencias python **(requirements.txt):** Listar todas las **librerías externas** que tu código necesita para funcionar, pero que no vienen incluidas por defecto al instalar Python (por ejemplo, el SDK de **Google GenAI** o la librería para leer archivos de configuración).
+
+   
+5) Instalar librerias **(pip install -r requirements.txt)**.
+6) Configurar credenciales **(.env)**.
+7) Crear agentes especializados:
    
    6.1) **Agente de Routing (`agents/routing_agent.py`)**: Especialista en protocolos de enrutamiento dinámico (BGP, OSPF) y diseño de red.
    6.2) **Agente de Seguridad (`agents/security_agent.py`)**: Especialista en firewalls de nueva generación (Palo Alto, Fortinet) y control de acceso (Cisco ISE).
