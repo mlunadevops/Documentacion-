@@ -22,9 +22,6 @@ Pasos de implementacion:
 9) Crear el archivo principal **(`main.py`)** y ejecutar el sistema multi-agente.
 
 
-
-
-
 **Google AI Studio (API KEY):** 
 
 ```text
