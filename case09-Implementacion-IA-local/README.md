@@ -36,9 +36,9 @@
 * **Ollama:** Funciona como el servidor de aplicaciones y motor de ejecución o reproduccion del FM.
 * **El modelo fundacional (ej. Phi-3.5 o Qwen 2.5):** Es el conjunto de datos y pesos neuronales que procesa la información (conocimiento).
 
-**cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el modelo, y el cliente te muestra la respuesta formateada. En este proyecto vamos a utilizar **Open WebUI**.
+**Cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el FM **(Phi-3.5 o Qwen 2.5)**, mostrandote la respuesta formateada. En este proyecto vamos a utilizar **Open WebUI**.
 
-**Cliente LLM (Open WebUI):** Interfaz web, autohospedada y 100% compatible con la API de Ollama (así como con OpenAI). Funciona como el cliente visual perfecto **(*frontend*)** para interactuar con tus modelos locales de forma similar a **ChatGPT**.
+**¿Que es (Open WebUI) (*frontend*)?** Es un cliente LLM  web, compatible API Ollama, interactua con los FM locales **(Phi-3.5 o Qwen 2.5)**.
 
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
