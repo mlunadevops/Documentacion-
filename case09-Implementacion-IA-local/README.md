@@ -221,8 +221,6 @@ En la misma ventana que muestra la imagen, haz clic en **"Manage Connections"** 
 En la sección de Ollama API, cambia la URL de conexión. En lugar de `http://localhost:11434`, cámbiala por:
 
 ```text
-[http://host.docker.internal:11434](http://host.docker.internal:11434)
-
-```bash
-
+http://10.0.30.59:11434
 ```
+
