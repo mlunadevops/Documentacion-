@@ -38,7 +38,16 @@
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
 
-**cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el modelo, y el cliente te muestra la respuesta formateada.
+**cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el modelo, y el cliente te muestra la respuesta formateada. En este proyecto vamos a utilizar **Open WebUI**.
+
+**Cliente LLM (Open WebUI):** Interfaz web, autohospedada y 100% compatible con la API de Ollama (así como con OpenAI). Funciona como el cliente visual perfecto **(*frontend*)** para interactuar con tus modelos locales de forma similar a **ChatGPT**.
+
+
+
+La forma más rápida y recomendada de desplegarlo en tu servidor es utilizando Docker. Ejecuta el siguiente comando en tu terminal para ponerlo en marcha:
+
+```bash
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
 ****
 
