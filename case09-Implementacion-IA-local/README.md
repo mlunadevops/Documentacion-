@@ -101,7 +101,7 @@ Ollama es el motor de inferencia local.
 
 ### 5. Instalacion de Motor de Inferencia lOCAL OLLAMA IA LOCAL Instalacion de OS (Ubuntu Server):
 
-**Instalacion de OLLAMA:**
+**Instalacion de OLLAMA:** Es la herramienta de software que  permitira correr el FM (Phi-3.5 y/o Qwen 2.5) en tu servidor.
 
 ```text
 curl -fsSL https://ollama.com/install.sh | sh
