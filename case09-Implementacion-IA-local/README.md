@@ -240,3 +240,10 @@ Environment="OLLAMA_HOST=0.0.0.0:11434"
 
 ![Edit Ollama](images/20Ollamaservice.png)
 
+
+8.3) Para aplicar los cambios, recarga el demonio de systemd y reinicia el servicio de Ollama con los siguientes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama.service
+```
