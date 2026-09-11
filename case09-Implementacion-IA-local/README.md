@@ -27,7 +27,7 @@
 
 
 
-## 2. Topology and BGP Neighbor Establishment
+## 2. Infografia.
 
 ![BGP WEIGTH](images/01Topologia.jpg)
 
