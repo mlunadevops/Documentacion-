@@ -247,9 +247,9 @@ sudo systemctl restart ollama.service
 
 ****
 
-### 9. CONECTAR Cliente LLM (Open WebUI) con OLLAMA:
+### 9. Comandos para encender, detener, borrar y listar FM:
 
-9.1) Prender:
+9.1) Prender/Instalar:
 
 ```bash
 ollama run qwen2.5:7b
@@ -263,16 +263,14 @@ ollama stop qwen2.5:7b
 ollama stop phi3.5
 ```
 
-### 10. Borrar FM:
-
-10.1) Prender:
+9.3) Borrar:
 
 ```bash
 ollama rm phi3.5
 ollama rm qwen2.5:7b
 ```
 
-10.2) Para ver que modelos estan instalados:
+10.2) Para listar que modelos estan instalados:
 
 ```bash
 ollama list
