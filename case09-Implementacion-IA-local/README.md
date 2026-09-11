@@ -213,13 +213,9 @@ http://10.0.30.59:3000
 
 En la misma ventana que muestra la imagen, haz clic en **"Manage Connections"** (o ve directamente a **Settings > Connections** en el menú lateral).
 
-![Open WebUI](images/18Openwebgui.png)
-
-
-
 En la sección de Ollama API, cambia la URL de conexión. En lugar de `http://localhost:11434`, cámbiala por:
 
 ```text
 http://10.0.30.59:11434
 ```
-
+![Open WebUI](images/19Openwebgui.png)
