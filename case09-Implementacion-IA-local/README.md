@@ -38,16 +38,10 @@
 
 **Cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el FM **(Phi-3.5 o Qwen 2.5)**, mostrandote la respuesta formateada. En este proyecto vamos a utilizar **Open WebUI**.
 
-**¿Que es (Open WebUI) (*frontend*)?** Es un cliente LLM  web, compatible API Ollama, interactua con los FM locales **(Phi-3.5 o Qwen 2.5)**.
+**¿Que es (Open WebUI) (*frontend*)?** Es un cliente LLM  web, compatible API Ollama, interactua con los FM locales **(Phi-3.5 o Qwen 2.5)**. Lo desplegaremos usando Docker.
 
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
-
-
-
-
-
-La forma más rápida y recomendada de desplegarlo en tu servidor es utilizando Docker. Ejecuta el siguiente comando en tu terminal para ponerlo en marcha:
 
 ```bash
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
