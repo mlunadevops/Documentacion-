@@ -207,3 +207,22 @@ docker ps
 http://10.0.30.59:3000
 ```
 ![Open WebUI](images/17Openwebgui.png)
+
+### 8. CONECTAR Cliente LLM (Open WebUI) con OLLAMA:
+
+8.1) Para registrar OLLAMA para que interactue con Open WebUI:
+
+En la misma ventana que muestra la imagen, haz clic en **"Manage Connections"** (o ve directamente a **Settings > Connections** en el menú lateral).
+
+![Open WebUI](images/18Openwebgui.png)
+
+
+
+En la sección de Ollama API, cambia la URL de conexión. En lugar de `http://localhost:11434`, cámbiala por:
+
+```text
+[http://host.docker.internal:11434](http://host.docker.internal:11434)
+
+```bash
+
+```
