@@ -220,3 +220,23 @@ En la sección de Ollama API, cambia la URL de conexión. En lugar de `http://lo
 http://10.0.30.59:11434
 ```
 ![Open WebUI](images/19Openwebgui.png)
+
+8.2) Configurar Ollama para que escuche en todas las interfaces:
+
+Para permitir que otros contenedores o servicios externos accedan a Ollama en el servidor, debes configurar el servicio systemd para que escuche en todas las interfaces de red.
+
+Ejecuta el siguiente comando para editar la configuración del servicio:
+
+```bash
+sudo systemctl edit ollama.service
+```
+
+Coloca la siguiente linea:
+
+```bash
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0:11434"
+```
+
+![Edit Ollama](images/20Ollamaservice.png)
+
