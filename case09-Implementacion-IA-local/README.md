@@ -95,6 +95,8 @@ Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no l
 
 Ollama es el motor de inferencia local.
 
+### 5. Instalacion de Motor de Inferencia lOCAL OLLAM IA LOCAL Instalacion de OS (Ubuntu Server):
+
 **Instalacion de OLLAMA:**
 
 ```text
