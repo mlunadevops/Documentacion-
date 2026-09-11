@@ -195,8 +195,14 @@ Para conectar Open WebUI con tu instancia local de Ollama en el servidor, ejecut
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-7.6)Una vez que el contenedor esté en marcha, puedes comprobar su estado ejecutando:
+7.6) Una vez que el contenedor esté en marcha, puedes comprobar su estado ejecutando:
 
 ```bash
 docker ps
+```
+
+7.7) Una vez que el contenedor esté en marcha, navegando usando el siguiente enlace:
+
+```bash
+http://10.0.30.59:3000
 ```
