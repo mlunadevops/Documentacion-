@@ -206,6 +206,7 @@ docker ps
 ```bash
 http://10.0.30.59:3000
 ```
+****
 
 ### 8. CONECTAR Cliente LLM (Open WebUI) con OLLAMA:
 
