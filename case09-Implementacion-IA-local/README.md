@@ -177,3 +177,10 @@ sudo sh get-docker.sh
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+
+7.4) Para verificar que quedó instalado correctamente:
+
+```bash
+docker --version
+docker compose version
+```
