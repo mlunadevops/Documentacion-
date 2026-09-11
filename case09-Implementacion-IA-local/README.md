@@ -184,3 +184,11 @@ newgrp docker
 docker --version
 docker compose version
 ```
+
+7.5) Desplegar el contenedor de Open WebUI:
+
+Para conectar Open WebUI con tu instancia local de Ollama en el servidor, ejecuta el siguiente comando en tu terminal:
+
+```bash
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
