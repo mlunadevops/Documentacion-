@@ -155,7 +155,27 @@ ollama run qwen2.5:7b
 ### 7. Implementacion e Instalacion de cliente LLM (Open WebUI):
 
 
+## Paso 1: Instalar Docker y Docker Compose en la VM
+
+Si aún no tienes Docker instalado en tu Ubuntu Server, puedes instalarlo ejecutando los siguientes comandos en la terminal de tu máquina virtual:
 
 ```bash
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+# Actualizar el índice de paquetes e instalar dependencias previas
+sudo apt update && sudo apt install -y curl apt-transport-https ca-certificates gnupg lsb-release
+
+# Añadir la clave GPG oficial de Docker
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL [https://download.docker.com/linux/ubuntu/gpg](https://download.docker.com/linux/ubuntu/gpg) | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+# Configurar el repositorio oficial de Docker para Ubuntu
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Actualizar los repositorios con las fuentes de Docker e instalar el motor junto con Docker Compose
+sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+# (Opcional) Añadir tu usuario actual al grupo docker para evitar usar sudo en cada comando
+sudo usermod -aG docker $USER
+newgrp docker
 ```
