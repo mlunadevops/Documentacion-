@@ -44,7 +44,7 @@
 
 ![BGP WEIGTH](images/01Topologia.jpg)
 
-
+****
 ### 1. Requisitos de Hardware Optimizados
 
 Para mantener la eficiencia sin comprometer los recursos generales del servidor Proxmox:
