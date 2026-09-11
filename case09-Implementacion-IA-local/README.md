@@ -262,3 +262,19 @@ ollama run phi3.5
 ollama stop qwen2.5:7b
 ollama stop phi3.5
 ```
+
+### 10. Borrar FM:
+
+10.1) Prender:
+
+```bash
+ollama rm phi3.5
+ollama rm qwen2.5:7b
+```
+
+10.2) Para ver que modelos estan instalados:
+
+```bash
+ollama list
+```
+
