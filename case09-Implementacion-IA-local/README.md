@@ -29,6 +29,13 @@
 
 **Nota:** **Los modelos SML como Phi-3.5 Mini o Qwen 2.5 son los cerebros (los archivos de pesos neuronales que Ollama ejecuta)**. Son los archivos pesados (de varios gigabytes) que ya vienen entrenados con millones de datos y que contienen todo el conocimiento para redactar, programar o analizar código.
 
+**El Backend (El motor y el cerebro):** Ambos viven y operan juntos en tu VM de Ubuntu Server.
+
+* **Ollama:** Funciona como el servidor de aplicaciones y motor de ejecución o reproduccion del FM.
+* **El modelo fundacional (ej. Phi-3.5 o Qwen 2.5):** Es el conjunto de datos y pesos neuronales que procesa la información (conocimiento).
+
+
+
 
 
 ## 2. Infografia.
