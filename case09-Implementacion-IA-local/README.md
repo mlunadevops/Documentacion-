@@ -38,6 +38,8 @@
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
 
+**cliente LLM (*frontend*):**  Aplicación con la que el usuario humano) o tus programas interactúan directamente. El cliente le envía la pregunta a Ollama, este la procesa con el modelo, y el cliente te muestra la respuesta formateada.
+
 ****
 
 ## 2. Infografia.
