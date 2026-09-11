@@ -150,10 +150,9 @@ ollama run phi3.5
 ```text
 ollama run qwen2.5:7b
 ```
+****
 
 ### 7. Implementacion e Instalacion de cliente LLM (Open WebUI):
-
-
 
 
 
