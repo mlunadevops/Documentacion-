@@ -34,6 +34,11 @@
 * **Ollama:** Funciona como el servidor de aplicaciones y motor de ejecución o reproduccion del FM.
 * **El modelo fundacional (ej. Phi-3.5 o Qwen 2.5):** Es el conjunto de datos y pesos neuronales que procesa la información (conocimiento).
 
+****
+
+**RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).
+
+
 ## 2. Infografia.
 
 ![BGP WEIGTH](images/01Topologia.jpg)
