@@ -225,17 +225,10 @@ http://10.0.30.59:11434
 
 Para permitir que otros contenedores o servicios externos accedan a Ollama en el servidor, debes configurar el servicio systemd para que escuche en todas las interfaces de red.
 
-Ejecuta el siguiente comando para editar la configuración del servicio:
+Ejecuta el siguiente comando para editar la configuración del servicio, el cual añadira (Environment="OLLAMA_HOST=0.0.0.0:11434"):
 
 ```bash
-sudo systemctl edit ollama.service
-```
-
-Coloca la siguiente linea:
-
-```bash
-[Service]
-Environment="OLLAMA_HOST=0.0.0.0:11434"
+sudo mkdir -p /etc/systemd/system/ollama.service.d && echo -e "[Service]\nEnvironment=\"OLLAMA_HOST=0.0.0.0:11434\"" | sudo tee /etc/systemd/system/ollama.service.d/override.conf
 ```
 
 ![Edit Ollama](images/20Ollamaservice.png)
