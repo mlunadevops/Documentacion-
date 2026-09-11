@@ -1,6 +1,6 @@
 # TECHNICAL LOG & IMPLEMENTACION IA LOCAL
 
-## Implementacion de Ollama de forma local
+## Implementacion de Modelo Fundacional de forma local
 **CCNP Miguelangel Luna** P.ssw.rd2018
 
 ---
