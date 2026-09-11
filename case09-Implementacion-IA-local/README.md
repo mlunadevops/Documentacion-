@@ -14,6 +14,8 @@
 
 [Google](https://www.google.com)
 
+****
+
 ## 1. Introduction and Theoretical Framework
 
 **Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
