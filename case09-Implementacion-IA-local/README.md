@@ -50,7 +50,7 @@ Para mantener la eficiencia sin comprometer los recursos generales del servidor 
 
 ---
 
-**Router A (RTA - AS 100):**
+**Comandos:**
 
 ```text
 ! 
