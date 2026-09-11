@@ -18,6 +18,8 @@
 
 **Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
 
+**Motor de inferencia:(inference engine)**  Software encargado de cargar un modelo de IA en la (RAM o VRAM) y ejecutar los cálculos matemáticos necesarios para procesar un texto de entrada (*prompt*) y generar una respuesta (inferencia). En este proyecto vamos a usar **OLLAMA**.
+
 **Modelo Fundacional** Es una IA a gran escala entrenada con volúmenes masivos de datos. Sirve como una base flexible y multipropósito que se puede adaptar fácilmente mediante instrucciones o ajustes para realizar miles de tareas diferentes (como escribir, programar o analizar datos), en lugar de estar limitada a una sola función específica.
 
 **Modelo Fundacional Pequeño (*Small Language Model*)**: es un modelo de IA entrenado a gran escala —igual que los modelos gigantes—, pero diseñado con una cantidad reducida de parámetros (por lo general, menos de 10 mil millones). Ejemplos de SML:
@@ -95,7 +97,7 @@ Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no l
 
 Ollama es el motor de inferencia local.
 
-### 5. Instalacion de Motor de Inferencia lOCAL OLLAM IA LOCAL Instalacion de OS (Ubuntu Server):
+### 5. Instalacion de Motor de Inferencia lOCAL OLLAMA IA LOCAL Instalacion de OS (Ubuntu Server):
 
 **Instalacion de OLLAMA:**
 
