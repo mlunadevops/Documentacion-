@@ -154,28 +154,19 @@ ollama run qwen2.5:7b
 
 ### 7. Implementacion e Instalacion de cliente LLM (Open WebUI):
 
+7.1) Instalar Docker y Docker Compose en la VM:
 
-## Paso 1: Instalar Docker y Docker Compose en la VM
-
-Si aún no tienes Docker instalado en tu Ubuntu Server, puedes instalarlo ejecutando los siguientes comandos en la terminal de tu máquina virtual:
+Si aún no tienes Docker instalado en tu Ubuntu Server, puedes instalarlo ejecutando los siguientes comandos en la terminal de tu VM:
 
 ```bash
-# Actualizar el índice de paquetes e instalar dependencias previas
-sudo apt update && sudo apt install -y curl apt-transport-https ca-certificates gnupg lsb-release
+# 1. Actualizar los paquetes del sistema
+sudo apt update && sudo apt upgrade -y
+```
 
-# Añadir la clave GPG oficial de Docker
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL [https://download.docker.com/linux/ubuntu/gpg](https://download.docker.com/linux/ubuntu/gpg) | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+7.2) Instalar Docker y Docker Compose en la VM:
 
-# Configurar el repositorio oficial de Docker para Ubuntu
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-# Actualizar los repositorios con las fuentes de Docker e instalar el motor junto con Docker Compose
-sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
-# (Opcional) Añadir tu usuario actual al grupo docker para evitar usar sudo en cada comando
-sudo usermod -aG docker $USER
-newgrp docker
+```bash
+# 2. Descargar e instalar Docker mediante el script oficial
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
 ```
