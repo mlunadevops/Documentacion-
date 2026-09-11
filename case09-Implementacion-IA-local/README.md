@@ -206,3 +206,4 @@ docker ps
 ```bash
 http://10.0.30.59:3000
 ```
+![Open WebUI](images/17Openwebgui.png)
