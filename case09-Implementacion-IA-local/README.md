@@ -251,10 +251,12 @@ sudo systemctl restart ollama.service
 
 ```bash
 ollama run qwen2.5:7b
+ollama run phi3.5
 ```
 
 9.2) Apagar:
 
 ```bash
-ollama run qwen2.5:7b
+ollama stop qwen2.5:7b
+ollama stop phi3.5
 ```
