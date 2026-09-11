@@ -170,3 +170,10 @@ sudo apt update && sudo apt upgrade -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
+
+7.3) Agregar tu usuario actual al grupo de Docker para no requerir 'sudo' en cada comando:
+
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+```
