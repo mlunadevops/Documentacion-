@@ -129,23 +129,31 @@ Puntos clave del resultado de la instalación:
 * **Servicio activo:** Ollama ya está corriendo  en `127.0.0.1:11434`, listo para recibir peticiones locales.
 * **Modo CPU:** `WARNING: No NVIDIA/AMD GPU detected. Ollama will run in CPU-only mode.`, es normal ya usaremos CPU la memoria RAM del host (sin tarjeta gráfica dedicada).
 
-5.2)Descarga de los Modelos Optimizados para correr local:
+****
 
-Descargar el primer modelo de lenguaje **(Phi-3.5)**, ejecuta el siguiente comando en tu terminal:
+### 6. Descarga de los Modelos Optimizados para correr local
+
+
+6.1) Descargar e instalar el primer FM **(Phi-3.5)**, ejecuta el siguiente comando en tu terminal:
 
 ```bash
 ollama run phi3.5
 ```
+
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
 
 ![IA Instalacion Ollama](images/16Instalacionfmphi35.png)
 
-Ejecuta el siguiente comando en la terminal de tu VM para descargar el modelo de forma segura:
+6.2) Descargar e instalar el segundo FM **(Qwen 2.5 )**, ejecuta el siguiente comando en tu terminal:
 
 ```text
 ollama run qwen2.5:7b
 ```
+
+### 7. Implementacion e Instalacion de cliente LLM (Open WebUI):
+
+
 
 
 
