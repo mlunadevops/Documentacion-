@@ -20,9 +20,9 @@
 
 **Motor de inferencia (inference engine):**  Software encargado de cargar un modelo de IA en la (RAM o VRAM) y ejecutar los cálculos matemáticos necesarios para procesar un texto de entrada (*prompt*) y generar una respuesta (inferencia). En este proyecto vamos a usar **OLLAMA**. **Ollama** es el reproductor de video y los modelos fundacionales **(Phi-3.5 o Qwen 2.5)** son las películas.
 
-**Modelo Fundacional** Es una IA a gran escala entrenada con volúmenes masivos de datos. Sirve como una base flexible y multipropósito que se puede adaptar fácilmente mediante instrucciones o ajustes para realizar miles de tareas diferentes (como escribir, programar o analizar datos), en lugar de estar limitada a una sola función específica.  En este proyecto vamos a usar los modelos fundacionales **(Phi-3.5 o Qwen 2.5)**.
+**Modelo Fundacional:** Es una IA a gran escala entrenada con volúmenes masivos de datos. Sirve como una base flexible y multipropósito que se puede adaptar fácilmente mediante instrucciones o ajustes para realizar miles de tareas diferentes (como escribir, programar o analizar datos), en lugar de estar limitada a una sola función específica.  En este proyecto vamos a usar los modelos fundacionales **(Phi-3.5 o Qwen 2.5)**.
 
-**Modelo Fundacional Pequeño (*Small Language Model*)**: es un modelo de IA entrenado a gran escala —igual que los modelos gigantes—, pero diseñado con una cantidad reducida de parámetros (por lo general, menos de 10 mil millones). Ejemplos de SML:
+**Modelo Fundacional Pequeño (*Small Language Model*):** es un modelo de IA entrenado a gran escala —igual que los modelos gigantes—, pero diseñado con una cantidad reducida de parámetros (por lo general, menos de 10 mil millones). Ejemplos de SML:
 
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
