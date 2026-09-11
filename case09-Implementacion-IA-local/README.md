@@ -34,10 +34,6 @@
 * **Ollama:** Funciona como el servidor de aplicaciones y motor de ejecución o reproduccion del FM.
 * **El modelo fundacional (ej. Phi-3.5 o Qwen 2.5):** Es el conjunto de datos y pesos neuronales que procesa la información (conocimiento).
 
-
-
-
-
 ## 2. Infografia.
 
 ![BGP WEIGTH](images/01Topologia.jpg)
@@ -60,13 +56,6 @@ Para mantener la eficiencia sin comprometer los recursos generales del servidor 
 * **Justificación de Seguridad:** Las VMs ofrecen un aislamiento completo del kernel (*sandbox*), evitan vulnerabilidades de elevación de privilegios hacia el host Proxmox y simplifican la gestión de controladores y respaldos (*snapshots* nativos).
 
 ---
-
-**Comandos:**
-
-```text
-! 
-!
-```
 
 ### 4. IMPLEMENTACION IA LOCAL Instalacion de OS (Ubuntu Server):
 
@@ -106,19 +95,19 @@ Ideal SSDs/NVMe y habilitar **Discard** (habilita TRIM/UNMAP), sin embargo, no l
 
 Ollama es el motor de inferencia local.
 
-### 5. Instalacion de Motor de Inferencia lOCAL OLLAMA IA LOCAL Instalacion de OS (Ubuntu Server):
+### 5. Instalacion de Motor de Inferencia lOCAL OLLAMA:
 
-**Instalacion de OLLAMA:** Es la herramienta de software que  permitira correr el FM (Phi-3.5 y/o Qwen 2.5) en tu servidor VM UBUNTU.
+5.1)**Instalacion de OLLAMA:** Es la herramienta de software que  permitira correr el FM **(Phi-3.5 y/o Qwen 2.5)** en tu servidor VM UBUNTU.
 
 ```text
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Ollama es el motor de inferencia local (el "cerebro" que ejecuta los FM en la VM). Este comando cumple funciones críticas:
+Ollama es el motor de inferencia local (ejecuta los FM en la VM). Este comando cumple funciones críticas:
 
-* **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (GPU NVIDIA) para configurar los drivers (CUDA, ROCm, etc.).
+* **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (GPU NVIDIA).
 * **Descarga el binario oficial seguro:**  Descarga Ollama la versión binaria compilada.
-* **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si vm se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python.
+* **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio (`systemctl`). Esto garantiza que si vm se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python.
 
 ![IA Instalacion Ollama](images/15Instalacionollama.png)
 
@@ -129,14 +118,13 @@ Puntos clave del resultado de la instalación:
 * **Servicio activo:** Ollama ya está corriendo  en `127.0.0.1:11434`, listo para recibir peticiones locales.
 * **Modo CPU:** `WARNING: No NVIDIA/AMD GPU detected. Ollama will run in CPU-only mode.`, es normal ya usaremos CPU la memoria RAM del host (sin tarjeta gráfica dedicada).
 
-4.4)Descarga de los Modelos Optimizados para correr local:
+5.2)Descarga de los Modelos Optimizados para correr local:
 
 Descargar el primer modelo de lenguaje **(Phi-3.5)**, ejecuta el siguiente comando en tu terminal:
 
 ```bash
 ollama run phi3.5
 ```
-
 * **Phi-3.5 Mini (3.8B):** Excelente velocidad y bajo consumo de RAM.
 * **Qwen 2.5 (7B):** Muy superior en tareas de análisis sintáctico de código.
 
