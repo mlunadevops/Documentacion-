@@ -101,15 +101,15 @@ Ollama es el motor de inferencia local.
 
 ### 5. Instalacion de Motor de Inferencia lOCAL OLLAMA IA LOCAL Instalacion de OS (Ubuntu Server):
 
-**Instalacion de OLLAMA:** Es la herramienta de software que  permitira correr el FM (Phi-3.5 y/o Qwen 2.5) en tu servidor.
+**Instalacion de OLLAMA:** Es la herramienta de software que  permitira correr el FM (Phi-3.5 y/o Qwen 2.5) en tu servidor VM UBUNTU.
 
 ```text
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Ollama es el motor de inferencia local (el "cerebro" que ejecuta los modelos de lenguaje sin salir de tu red). Este comando cumple funciones críticas:
+Ollama es el motor de inferencia local (el "cerebro" que ejecuta los FM en la VM). Este comando cumple funciones críticas:
 
-* **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (como GPU NVIDIA mediante) para configurar los drivers (CUDA, ROCm, etc.).
+* **Automatiza la detección de hardware:** Analiza si la VM tiene CPU compatible o una tarjeta gráfica (GPU NVIDIA) para configurar los drivers (CUDA, ROCm, etc.).
 * **Descarga el binario oficial seguro:**  Descarga Ollama la versión binaria compilada.
 * **Configura el servicio del sistema (Systemd):** Instala Ollama como un servicio de fondo del sistema operativo (`systemctl`). Esto garantiza que si vm se reinicia, el motor de IA arrancará automáticamente y quedará escuchando en el puerto local (`11434`), listo para recibir las peticiones de tus scripts de Python.
 
