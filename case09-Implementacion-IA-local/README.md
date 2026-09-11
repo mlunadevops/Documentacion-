@@ -59,8 +59,6 @@ Para mantener la eficiencia sin comprometer los recursos generales del servidor 
 * **Almacenamiento:** **60 GB en SSD/NVMe** (usando Thin Provisioning en Proxmox) para alojar el OS, los pesos de los SLMs y la persistencia de datos analizados.
 * **Aceleración (Opcional):** GPU compatible (ej. NVIDIA con **6+ GB de VRAM**) mediante PCIe Passthrough si requieres alta velocidad en tiempo real.
 
----
-
 ### 2. Arquitectura Recomendada en Proxmox (VM vs LXC)
 
 * **Elección Segura:** Se recomienda utilizar una **Máquina Virtual (VM)** con Ubuntu Server 24.04 LTS en lugar de un contenedor LXC.  
