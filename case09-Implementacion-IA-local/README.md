@@ -43,9 +43,6 @@
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
 
-```bash
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
-
 ****
 
 ## 2. Infografia.
@@ -152,3 +149,8 @@ Ejecuta el siguiente comando en la terminal de tu VM para descargar el modelo de
 ollama run qwen2.5:7b
 ```
 
+
+
+```bash
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
