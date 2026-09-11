@@ -57,7 +57,7 @@ Para mantener la eficiencia sin comprometer los recursos generales del servidor 
 !
 ```
 
-### 4. IMPLEMENTACION IA LOCAL (Instalacion de OS Ubuntu Server):
+### 4. IMPLEMENTACION IA LOCAL Instalacion de OS (Ubuntu Server):
 
 4.1) [Descargar Ubuntu Server 24.04 LTS](https://ubuntu.com/download/server?utm_source=gemini)
 
