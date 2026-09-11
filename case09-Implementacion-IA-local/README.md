@@ -43,6 +43,8 @@
   
 **RAG (*Retrieval-Augmented Generation*):** Técnica utilizada en IA para mejorar la precisión y confiabilidad los *LLM* (GPT, Gemini, etc.).Lo hace conectando el modelo a fuentes de datos externas y actualizadas antes de generar una respuesta.
 
+**Docker Compose** es una herramienta desarrollada para definir y ejecutar aplicaciones Docker **multi-contenedor**.Mientras que el comando clásico de Docker **(`docker run`)** sirve para arrancar un contenedor de forma individual, Docker Compose te permite gestionar toda una arquitectura de servicios interconectados (por ejemplo, una base de datos, un servidor web, un backend y un panel de administración) de forma conjunta utilizando un único archivo de configuración estructurado en formato YAML.
+
 ****
 
 ## 2. Infografia.
