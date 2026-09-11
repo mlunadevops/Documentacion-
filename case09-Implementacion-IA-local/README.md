@@ -243,3 +243,18 @@ sudo systemctl restart ollama.service
 
 ![Edit Ollama](images/21Ollamaservice.png)
 
+****
+
+### 9. CONECTAR Cliente LLM (Open WebUI) con OLLAMA:
+
+9.1) Prender:
+
+```bash
+ollama run qwen2.5:7b
+```
+
+9.2) Apagar:
+
+```bash
+ollama run qwen2.5:7b
+```
