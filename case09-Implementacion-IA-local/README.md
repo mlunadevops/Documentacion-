@@ -18,7 +18,7 @@
 
 **Inferencia:** Se refiere al momento en que el modelo procesa una pregunta (prompt) y genera una respuesta.
 
-**Motor de inferencia:(inference engine)**  Software encargado de cargar un modelo de IA en la (RAM o VRAM) y ejecutar los cálculos matemáticos necesarios para procesar un texto de entrada (*prompt*) y generar una respuesta (inferencia). En este proyecto vamos a usar **OLLAMA**.
+**Motor de inferencia (inference engine):**  Software encargado de cargar un modelo de IA en la (RAM o VRAM) y ejecutar los cálculos matemáticos necesarios para procesar un texto de entrada (*prompt*) y generar una respuesta (inferencia). En este proyecto vamos a usar **OLLAMA**. **Ollama** es el reproductor de video y los modelos fundacionales **(Phi-3.5 o Qwen 2.5)** son las películas.
 
 **Modelo Fundacional** Es una IA a gran escala entrenada con volúmenes masivos de datos. Sirve como una base flexible y multipropósito que se puede adaptar fácilmente mediante instrucciones o ajustes para realizar miles de tareas diferentes (como escribir, programar o analizar datos), en lugar de estar limitada a una sola función específica.
 
