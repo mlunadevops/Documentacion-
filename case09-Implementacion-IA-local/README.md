@@ -240,3 +240,6 @@ sudo mkdir -p /etc/systemd/system/ollama.service.d && echo -e "[Service]\nEnviro
 sudo systemctl daemon-reload
 sudo systemctl restart ollama.service
 ```
+
+![Edit Ollama](images/21Ollamaservice.png)
+
