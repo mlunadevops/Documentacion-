@@ -48,23 +48,26 @@ router bgp 100
 ! 
 configure terminal
 router bgp 65000
- bgp router-id 10.0.0.1
- neighbor 10.0.0.2 remote-as 65000
- neighbor 10.0.0.2 update-source Loopback0
- neighbor 10.0.0.2 route-reflector-client
- neighbor 10.0.0.3 remote-as 65000
- neighbor 10.0.0.3 update-source Loopback0
- neighbor 10.0.0.3 route-reflector-client
- address-family ipv4
-  neighbor 10.0.0.2 activate
-  neighbor 10.0.0.3 activate
-  network 10.0.0.1 mask 255.255.255.255
- exit-address-family
+bgp router-id 10.0.0.1
+neighbor 10.0.0.2 remote-as 65000
+neighbor 10.0.0.2 update-source Loopback0
+neighbor 10.0.0.2 route-reflector-client
+neighbor 10.0.0.3 remote-as 65000
+neighbor 10.0.0.3 update-source Loopback0
+neighbor 10.0.0.3 route-reflector-client
+address-family ipv4
+neighbor 10.0.0.2 activate
+neighbor 10.0.0.3 activate
+network 10.0.0.1 mask 255.255.255.255
+exit-address-family
 ip route 10.0.0.2 255.255.255.255 192.0.2.2
 ip route 10.0.0.3 255.255.255.255 192.0.2.3
 end
 !
 ```
+
+
+
 
 
 
