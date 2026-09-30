@@ -46,26 +46,23 @@ router bgp 100
 
 ```text
 ! 
-* **Proceso BGP (AS 65000) y Router ID:**
-  * `router bgp 65000`
-  * `bgp router-id 10.0.0.1`
-* **Configuración del vecino iBGP 1 (R1 - `10.0.0.2`):**
-  * `neighbor 10.0.0.2 remote-as 65000`
-  * `neighbor 10.0.0.2 update-source Loopback0`
-  * `neighbor 10.0.0.2 route-reflector-client`
-* **Configuración del vecino iBGP 2 (R2 - `10.0.0.3`):**
-  * `neighbor 10.0.0.3 remote-as 65000`
-  * `neighbor 10.0.0.3 update-source Loopback0`
-  * `neighbor 10.0.0.3 route-reflector-client`
-* **Familia de direcciones IPv4 y redes:**
-  * `address-family ipv4`
-  * `neighbor 10.0.0.2 activate`
-  * `neighbor 10.0.0.3 activate`
-  * `network 10.0.0.1 mask 255.255.255.255`
-  * `exit-address-family`
-* **Rutas estáticas para alcanzar las Loopbacks de los clientes:**
-  * `ip route 10.0.0.2 255.255.255.255 192.0.2.2` (ejemplo de salto o interfaz según la topología)
-  * `ip route 10.0.0.3 255.255.255.255 192.0.2.3`
+configure terminal
+router bgp 65000
+ bgp router-id 10.0.0.1
+ neighbor 10.0.0.2 remote-as 65000
+ neighbor 10.0.0.2 update-source Loopback0
+ neighbor 10.0.0.2 route-reflector-client
+ neighbor 10.0.0.3 remote-as 65000
+ neighbor 10.0.0.3 update-source Loopback0
+ neighbor 10.0.0.3 route-reflector-client
+ address-family ipv4
+  neighbor 10.0.0.2 activate
+  neighbor 10.0.0.3 activate
+  network 10.0.0.1 mask 255.255.255.255
+ exit-address-family
+ip route 10.0.0.2 255.255.255.255 192.0.2.2
+ip route 10.0.0.3 255.255.255.255 192.0.2.3
+end
 !
 ```
 
