@@ -41,19 +41,21 @@ Run the following command in the terminal to install the JSON processor:
 apt update && apt install -y jq
 ```
 
+### Step 2: Create the API Token in Proxmox VE
+To allow the script to communicate with the Proxmox API automatically:
+1. Access the Proxmox VE web interface.
+2. Navigate to **Datacenter** > **Permissions** > **API Tokens** > **Add**.
+3. Configure the following parameters:
+   - **User:** `root@pam`
+   - **Token ID:** `restore-script`
+   - **Privilege Separation:** Uncheck (to inherit full root permissions).
+4. Copy the generated **Secret** value (it is only shown once).
 
 
-
-## 2. Topology and BGP Neighbor Establishment
-
-The topology consists of four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
 
 ![BGP WEIGTH](images/01Topologia.jpg)
 
- four routers across different Autonomous Systems (AS 100, AS 200, AS 300, and AS 400). Before advertising prefixes, BGP neighbor adjacencies were established on each device.
-
-## 3. BGP Configuration:
-
+ 
 
 
 ### 4. BGP Configuration:
