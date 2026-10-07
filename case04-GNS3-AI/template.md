@@ -21,12 +21,6 @@ Recovering (restoring) a VM involves rebuilding its virtual disks and configurat
 ### The `jq` Tool
 `jq` is a lightweight and flexible command-line JSON processor. In the context of this script, it is completely indispensable because the Proxmox VE REST API responds exclusively in JSON format. `jq` allows you to filter, parse, and extract specific data—such as available PBS storage lists or snapshot identifiers—cleanly inside shell scripts.
 
-**JQ Tool (RTA - AS 100):**
-
-```text
-apt update && apt install -y jq
-```
-
 ---
 
 ## 2. Prerequisites
@@ -41,6 +35,11 @@ Follow these steps on any new Proxmox VE server to make the restoration script f
 ### Step 1: Install the `jq` Dependency
 Run the following command in the terminal to install the JSON processor:
 
+**JQ Tool (pve shell)**
+
+```text
+apt update && apt install -y jq
+```
 
 
 
