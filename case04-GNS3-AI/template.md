@@ -1,7 +1,7 @@
 # Technical Documentation: Automated VM Restoration from Proxmox Backup Server (PBS)
 
 ## Traffic Manipulation via the Weight Attribute
-**CCNP Miguelangel Luna**
+**Miguelangel Luna**
 
 ---
 
