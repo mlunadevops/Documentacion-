@@ -30,6 +30,12 @@ Recovering (restoring) a VM involves rebuilding its virtual disks and configurat
 ### The `jq` Tool
 `jq` is a lightweight and flexible command-line JSON processor. In the context of this script, it is completely indispensable because the Proxmox VE REST API responds exclusively in JSON format. `jq` allows you to filter, parse, and extract specific data—such as available PBS storage lists or snapshot identifiers—cleanly inside shell scripts.
 
+**JQ Tool (RTA - AS 100):**
+
+```text
+apt update && apt install -y jq
+```
+
 ---
 
 ## 2. Prerequisites
@@ -37,6 +43,16 @@ Before deploying and executing the script on any new Proxmox VE server, ensure t
 1. **Proxmox VE Connected to PBS:** The PVE node must have the Proxmox Backup Server storage added to its configuration.
 2. **Dependency Installation (`jq`):** The JSON processor must be present on the base operating system.
 3. **Proxmox API Token:** An authentication token with administrator privileges is required to interact with the local API without needing plain-text passwords.
+
+## 3. Implementation and Deployment Steps
+Follow these steps on any new Proxmox VE server to make the restoration script fully operational:
+
+### Step 1: Install the `jq` Dependency
+Run the following command in the terminal to install the JSON processor:
+
+
+
+
 
 ## 2. Topology and BGP Neighbor Establishment
 
@@ -48,12 +64,6 @@ The topology consists of four routers across different Autonomous Systems (AS 10
 
 ## 3. BGP Configuration:
 
-**Router A (RTA - AS 100):**
 
-```text
-! 
-router bgp 100
-!
-```
 
 ### 4. BGP Configuration:
