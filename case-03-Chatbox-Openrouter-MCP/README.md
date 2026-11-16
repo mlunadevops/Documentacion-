@@ -3,7 +3,6 @@
 ## Traffic Manipulation via the Weight Attribute
 **CCNP Miguelangel Luna**
 
-Clave Openrouter Chatboot: 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
 ---
 
 ## CONTENIDOS:
