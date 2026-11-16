@@ -1,6 +1,6 @@
 # TECHNICAL LOG & CHATBOX OPENROUTER MCP
 
-## Traffic Manipulation via the Weight Attribute
+## MCP
 **CCNP Miguelangel Luna**
 
 ---
