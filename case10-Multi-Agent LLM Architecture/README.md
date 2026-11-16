@@ -5,11 +5,11 @@
 ## **Google AI Studio (API KEY):** 
 
 ```text
-AQ.Ab8RN6LKh4mubilNFOizE7TWH7kmmyEj3wT3ks_h2fJY-Fn5tA
+Necesitas tu API KEY
 ```
 **Google AI Studio (API KEY) Nombre y numero de Proyecto:** 
 ```text
-projects/854096024384
+Numero de proyecto
 ```
 
 ## CONTENIDOS:
