@@ -118,9 +118,9 @@ Basándonos en el JSON que acabas de enviar, esto es lo que debes verificar y po
 - **OAuth Redirect URL:**  
   Debe ser: `http://localhost:5678/rest/oauth2-credential/callback` (ya lo tienes bien puesto en la imagen).  
 - **Client ID:**  
-  Copia y pega: `698172404587-m593sqrk7dubcmcq4cgb7drhb6or56eg.apps.googleusercontent.com` (también lo tienes perfecto en la imagen).  
+  Copia y pega: `XXXXXXXXXXXXXXXX` (también lo tienes perfecto en la imagen).  
 - **Client Secret:**  
-  Copia y pega exactamente este valor del JSON: `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` (asegúrate de que esté escrito o pegado correctamente en el campo con los puntos negros).
+  Copia y pega exactamente este valor del JSON: `XXXXXXXXXXXXXXXXXXXXXXXXXX` (asegúrate de que esté escrito o pegado correctamente en el campo con los puntos negros).
 
  7. Siguiente paso:Haz clic en el botón "Save" (Guardar) ubicado arriba a la derecha de esa ventana.  Luego, haz clic en el botón "Sign in with Google" que aparece al centro.  Si te sale la advertencia de que la app no está verificada, dale a Continuar (o Avanzado > Ir a n8n Drive) y acepta los permisos.
 
