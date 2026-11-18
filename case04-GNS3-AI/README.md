@@ -4,7 +4,6 @@
 **CCNP/CCAI Miguelangel Luna**
 
 r
-subrayado
 ---
 
 ## CONTENIDOS:
