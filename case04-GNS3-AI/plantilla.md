@@ -61,6 +61,9 @@ Inside the virtual environment (make sure you see (csr1kv) in your terminal), ru
 pip3 install pyats[full]
 ```
 
+(This command will download quite a few packages. It may take a few minutes. If you see some compilation errors along the way, they can usually be ignored as long as the installation finishes.)
+
+
 ### 4. BGP Configuration:
 
 
