@@ -15,9 +15,17 @@
 
 ## 1. Introduction and Theoretical Framework
 
-The Weight attribute is a Cisco proprietary parameter used in BGP (Border Gateway Protocol) for best path selection. Its main characteristics are:
+Objectives:
 
-* **Local Scope:** It has meaning exclusively within the local router where it is configured and is not propagated via BGP routing updates to neighbors.
+**Parts 1 and 2:** Create a Python virtual environment (venv).
+
+**Part 3:** Install and use the pyATS testing library.
+
+**Part 4:** Use Genie to parse IOS command output into JSON.
+
+**Part 5:** Use Genie to compare configurations.
+
+**Part 6:** Cleanup and exploration.
 
 ## 2. Topology and BGP Neighbor Establishment
 
