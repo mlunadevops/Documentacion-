@@ -17,6 +17,8 @@
 
 **pyATS =** The infrastructure for organizing, running, and reporting automated network tests in a professional way.
 
+**Genie =** The network intelligence inside pyATS that understands router CLI, converts text into structured data (JSON/dictionaries), and detects changes in the network before and after a configuration.
+
 Objectives:
 
 **Parts 1 and 2:** Create a Python virtual environment (venv).
