@@ -1,6 +1,6 @@
 # TECHNICAL LOG & BGP ENGINEERING GUIDE
 
-## Traffic Manipulation via the Weight Attribute
+## Automated Testing Using pyATS and Genie
 **CCNP Miguelangel Luna**
 
 ---
