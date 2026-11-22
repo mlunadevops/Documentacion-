@@ -39,11 +39,20 @@ The
 **Parts 1 and 2:** Create a Python virtual environment (venv).
 We are going to create an "isolated space" to install pyATS without affecting the VM's base system.
 
-**Create the working folder and enter it::**
+**1.1) Create the working folder and enter it::**
 
 ```text
 python3 -m venv csr1kv
 ```
+
+What does each part mean?
+
+**python3:** Runs the Python 3 interpreter on your system.
+
+**-m venv:** Tells Python to run the venv module (included by default in Python 3.3+) as a script to create virtual environments.
+
+**csr1kv:** This is the name (and the folder) that will be given to the virtual environment. In this case, it is usually used as a folder or project name related to the Cisco CSR 1000v virtual router (for example, for network automation scripts with Netmiko, NAPALM, Ansible, or pyATS).
+
 
 **Enter the virtual environment:**
 
