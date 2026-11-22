@@ -86,7 +86,12 @@ Breakdown of the command:
 (This command will download quite a few packages. It may take a few minutes. If you see some compilation errors along the way, they can usually be ignored as long as the installation finishes.)
 
 **3.2) Verify the installation**
+
 Verify that it was installed correctly by running:
+
+```text
+pyats --help
+```
 
 
 ### 4. BGP Configuration:
