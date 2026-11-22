@@ -1,4 +1,4 @@
-# TECHNICAL LOG & BGP ENGINEERING GUIDE
+# TECHNICAL LOG & AUTOMATION ENGINEERING GUIDE
 
 ## Automated Testing Using pyATS and Genie
 **CCNP Miguelangel Luna**
