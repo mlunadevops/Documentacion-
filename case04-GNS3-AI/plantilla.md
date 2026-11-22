@@ -15,6 +15,8 @@
 
 ## 1. Introduction and Theoretical Framework
 
+**pyATS =** The infrastructure for organizing, running, and reporting automated network tests in a professional way.
+
 Objectives:
 
 **Parts 1 and 2:** Create a Python virtual environment (venv).
