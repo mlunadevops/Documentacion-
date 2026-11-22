@@ -83,9 +83,10 @@ Breakdown of the command:
 
 **[full]:** This is a modifier ("extra") that tells pip not to install only the minimal base of pyats, but the complete package, including Genie (which brings thousands of ready-to-use parsers to convert CLI output into JSON/Python dictionaries, data models, and network state comparison tools).
 
-
-
 (This command will download quite a few packages. It may take a few minutes. If you see some compilation errors along the way, they can usually be ignored as long as the installation finishes.)
+
+**3.2) Verify the installation**
+Verify that it was installed correctly by running:
 
 
 ### 4. BGP Configuration:
