@@ -54,7 +54,7 @@ What does each part mean?
 **csr1kv:** This is the name (and the folder) that will be given to the virtual environment. In this case, it is usually used as a folder or project name related to the Cisco CSR 1000v virtual router (for example, for network automation scripts with Netmiko, NAPALM, Ansible, or pyATS).
 
 
-**Enter the virtual environment:**
+**1.2) Enter the virtual environment:**
 
 ```text
 cd csr1kv
@@ -63,12 +63,27 @@ source bin/activate
 
 **Part 3:** Use the pyATS Testing Library
 
-Step 1: Install pyATS
+**3.1) Install pyATS**
+
 Inside the virtual environment (make sure you see (csr1kv) in your terminal), run:
 
 ```text
 pip3 install pyats[full]
 ```
+
+The command pip3 install pyats[full] downloads and **installs the Cisco pyATS framework** along with all its optional packages **and extensions (such as Genie, parsers, connectors, and network testing libraries).**
+
+Breakdown of the command:
+
+**pip3:** The Python 3 package manager (if you already have the csr1kv virtual environment activated, you can just type pip).
+
+**install:** Instruction to download and install the package from the official PyPI repository.
+
+**pyats:** The core of Python Automated Test Systems, Cisco's tool for automating tests, validations, and operations on network devices (such as the CSR 1000v router).
+
+**[full]:** This is a modifier ("extra") that tells pip not to install only the minimal base of pyats, but the complete package, including Genie (which brings thousands of ready-to-use parsers to convert CLI output into JSON/Python dictionaries, data models, and network state comparison tools).
+
+
 
 (This command will download quite a few packages. It may take a few minutes. If you see some compilation errors along the way, they can usually be ignored as long as the installation finishes.)
 
