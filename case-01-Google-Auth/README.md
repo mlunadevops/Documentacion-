@@ -1,6 +1,5 @@
 # Configurar Credenciales de Google en n8n utilizando **OAuth 2.0**
 
-![End-to-End Hybrid Packet Flow](./images/01-hybrid-vpn-flow.svg)
 
 Conocimientos previos: [Set up Google Credentials in n8n in 5 minutes (2025)](https://www.youtube.com/watch?v=3Ai1EPznlAc)
 
